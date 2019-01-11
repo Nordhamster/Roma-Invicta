@@ -1,0 +1,107 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# The Fall of Rome (Germanic Conf.)
+news_event = {
+	id = news.132
+	title = news.132.t
+	desc = news.132.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		2 = { is_controlled_by = CGP }
+		2 = { is_owned_by = RME }
+		NOT = { has_global_flag = fall_of_rome_ger }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_rome_ger
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = CGP
+				TAG = RME
+			}
+		}
+	}
+	option = {
+		name = news.132.b
+		trigger = {
+			TAG = CGP
+		}
+	}
+	option = {
+		name = news.100.c
+		trigger = {
+			TAG = RME
+		}
+	}
+}
+
+# The Fall of Rome (European Coalition)
+news_event = {
+	id = news.133
+	title = news.132.t
+	desc = news.133.d
+	picture = GFX_news_event_057
+	
+	major = yes
+	
+	trigger = {
+		any_country = {
+			is_in_faction_with = CGP
+			controls_state = 2
+		}
+		2 = { is_owned_by = RME }
+		NOT = { has_global_flag = fall_of_rome_ec }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_rome_ec
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			OR = {
+				NOT = {
+					is_in_faction_with = CGP
+				}
+				NOT = {
+					TAG = RME
+				}
+			}
+		}
+	}
+	option = {
+		name = news.132.b
+		trigger = {
+			AND = {
+				is_in_faction_with = CGP
+				controls_state = 2
+			}
+		}
+	}
+	option = {
+		name = news.100.c
+		trigger = {
+			TAG = RME
+		}
+	}
+}

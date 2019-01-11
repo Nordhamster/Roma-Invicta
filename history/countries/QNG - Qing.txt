@@ -1,0 +1,256 @@
+﻿capital = 613 # Nanjing
+
+oob = "QNG_1936"
+set_stability = 0.3
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+}
+
+set_convoys = 40
+
+add_ideas = {
+	CHI_ineffective_bureaucracy
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	set_stability = 0.5
+	set_war_support = 0.7
+
+	add_ideas = {
+		#laws
+		war_economy
+		service_by_requirement
+		closed_economy
+
+		#ministers
+		CHI_bo_yibo
+		CHI_xiao_yisu
+		CHI_chen_shaokuan
+		jiangnan_shipyard_group
+		camco
+
+	}
+	oob = "QNG_1939"
+	set_technology = {
+
+		#PLACEHOLDER techs for vehicles
+		motorised_infantry = 1
+		tech_support = 1		
+		tech_recon = 1
+		tech_engineers = 1
+
+		#doctrines
+		air_superiority = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = QAM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.15
+	}
+	else = {
+		puppet = QAM
+	}
+}
+
+set_politics = {
+
+	parties = {
+		monarchism = { 
+			popularity = 90
+		}
+		oligarchic_democracy = { 
+			popularity = 10
+		}
+	}
+	
+	ruling_party = monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Xuantong Emperor"
+	desc = ""
+	picture = "gfx/leaders/QNG/Portrait_Qing_Xuantong.dds"
+	expire = "1965.1.1"
+	ideology = autocracy
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = democratic_centralism
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Junmai"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+	expire = "1965.1.1"
+	ideology = socialist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = centralism
+	traits = {
+		cornered_fox
+	}
+}
+
+###Army Leaders###(dont forget to add imaages)
+create_field_marshal = {
+	name = "Zhang Xun"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Zheng Shiqi"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ma Lin"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = {  offensive_doctrine trait_reckless career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Wang Zhanyuan"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	traits = { defensive_doctrine trait_cautious infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ma Qi"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Duan Zhigui"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	traits = { politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ma Zhongying"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Zhao Ti"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Zhang Xiluan"
+	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

@@ -1,0 +1,7 @@
+﻿l_english:
+ news.100.c:0 "This is a disaster!"
+ news.132.t:0 "The Fall of Rome"
+ news.132.d:0 "For the first time since the Roman Dark Age, Rome has once again fallen to barbarians. Germanic forces recently entered Rome following a fierce battle through the streets with the defending garrison, and the Germanic tricolour now flies above the Eternal City. The city's many historical landmarks mostly remain intact, save for the occasional bullet-hole. [RME.GetLeader] and the magistrates of the Roman Senate were nowhere to be found, presumably having fled during the attack.\n\nThe fall of it's capital is a terrible blow to the [RME.GetNameDef], both strategically and in terms of morale. Is it possible that after nearly three millenia, Rome had finally reached it's end?"
+ news.132.b:0 "Roma Victa"
+ news.133.d:0 "Earlier today, following a prolonged battle through the streets of Rome, forces of the European Coalition were able to rout the Roman defenders, and are now in control of the capital of [RME.GetNameDef]. There are some reports that there has been looting of historical sites, however these reports have been denied. [RME.GetLeader], along with the rest of the government, were successfully evacuated prior to the attack.\n\nThe fall of it's capital is a terrible blow to the [RME.GetNameDef], both strategically and in terms of morale. Is it possible that after nearly three millenia, Rome had finally reached it's end?"
+ news.145.a:0 "A significant development."

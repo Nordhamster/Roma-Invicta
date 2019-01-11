@@ -1,0 +1,29 @@
+state=
+{
+	id=326
+	name="STATE_326"
+	manpower = 2143516
+	state_category = metropolis
+	history=
+	{
+		owner = CTL
+		add_core_of = CTL
+		victory_points = {
+			10062 3 
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+			arms_factory = 3
+			industrial_complex = 2
+			dockyard = 3
+			10062 = {
+				naval_base = 6
+				coastal_bunker = 1
+			}
+		}
+	}
+	provinces={
+		10062
+	}
+}
