@@ -2551,5 +2551,5 @@
  MAN_western_refinery:0 "Western Refinery"
  MAN_showa_steel_works:0 "Anshan Steel Works"
  CHI_illegal_regime:0 "Illegal Regime"
- CHI_ineffective_bureaucracy:0 "Ineffective Bureaucracy"
- CHI_ineffective_bureaucracy_desc:0 "Our bloated bureaucracy means that large sections of the population cannot be conscripted, as it is simply not known that they exist."
+ QNG_ineffective_bureaucracy:0 "Ineffective Bureaucracy"
+ QNG_ineffective_bureaucracy_desc:0 "Our bloated bureaucracy means that large sections of the population cannot be conscripted, as it is simply not known that they exist."

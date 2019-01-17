@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 40
 
 add_ideas = {
-	CHI_ineffective_bureaucracy
+	QNG_ineffective_bureaucracy
 }
 
 1939.1.1 = {

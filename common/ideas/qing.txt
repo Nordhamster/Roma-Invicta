@@ -19,7 +19,7 @@ ideas = {
 			}
 		}
 
-		CHI_civil_war_deserters = {
+		QNG_civil_war_deserters = {
 
 			picture = generic_morale_bonus
 		
@@ -45,7 +45,7 @@ ideas = {
 		}
 
 		# Communist uprisings may cause states to defect to PRC
-		CHI_communist_uprisings = {
+		QNG_communist_uprisings = {
 
 			picture = FRA_scw_intervention_republicans_focus
 		
@@ -66,7 +66,7 @@ ideas = {
 
 		}
 
-		CHI_nine_power_treaty = {
+		QNG_nine_power_treaty = {
 
 			picture = HUN_treaty_of_triannon
 		
@@ -86,11 +86,11 @@ ideas = {
 
 		}
 
-		CHI_army_corruption_1 = {
+		QNG_army_corruption_1 = {
 
 			picture = chi_army_corruption
 
-			name = CHI_army_corruption
+			name = QNG_army_corruption
 		
 			allowed = {
 				always = no
@@ -110,11 +110,11 @@ ideas = {
 
 		}
 
-		CHI_army_corruption_2 = {
+		QNG_army_corruption_2 = {
 
 			picture = chi_army_corruption2
 		
-			name = CHI_army_corruption
+			name = QNG_army_corruption
 			
 			allowed = {
 				always = no
@@ -134,11 +134,11 @@ ideas = {
 
 		}
 		
-		CHI_army_corruption_3 = {
+		QNG_army_corruption_3 = {
 
 			picture = chi_army_corruption3
 		
-			name = CHI_army_corruption
+			name = QNG_army_corruption
 			
 			allowed = {
 				always = no
@@ -158,7 +158,7 @@ ideas = {
 
 		}
 
-		CHI_ineffective_bureaucracy = {
+		QNG_ineffective_bureaucracy = {
 
 			picture = generic_disjointed_gov
 		
@@ -178,7 +178,7 @@ ideas = {
 
 		}
 
-		CHI_incompetent_officers = {
+		QNG_incompetent_officers = {
 
 			picture = chi_incompetent_officers
 		
@@ -200,7 +200,7 @@ ideas = {
 
 		#Chinese Unity levels
 
-		CHI_chinese_unity_1 = {
+		QNG_chinese_unity_1 = {
 
 			picture = chi_chinese_unity
 		
@@ -220,9 +220,9 @@ ideas = {
 
 		}
 
-		CHI_chinese_unity_2 = {
+		QNG_chinese_unity_2 = {
 
-			name = CHI_chinese_unity_1
+			name = QNG_chinese_unity_1
 			picture = chi_chinese_unity
 		
 			allowed = {
@@ -241,10 +241,10 @@ ideas = {
 
 		}
 
-		CHI_chinese_unity_3 = {
+		QNG_chinese_unity_3 = {
 
 			picture = chi_chinese_unity
-			name = CHI_chinese_unity_1
+			name = QNG_chinese_unity_1
 			allowed = {
 				always = no
 			}
@@ -265,7 +265,7 @@ ideas = {
 		##### Hyper inflation level ####
 		################################
 
-		CHI_hyper_inflation_none = {
+		QNG_hyper_inflation_none = {
 
 			picture = chi_hyper_inflation
 		
@@ -280,7 +280,7 @@ ideas = {
 			}
 		}
 
-		CHI_hyper_inflation_1 = {
+		QNG_hyper_inflation_1 = {
 
 			picture = chi_hyper_inflation
 		
@@ -301,7 +301,7 @@ ideas = {
 		}
 
 		
-		CHI_hyper_inflation_2 = {
+		QNG_hyper_inflation_2 = {
 
 			picture = chi_hyper_inflation2
 		
@@ -321,7 +321,7 @@ ideas = {
 			}
 		}
 		
-		CHI_hyper_inflation_3 = {
+		QNG_hyper_inflation_3 = {
 
 			picture = chi_hyper_inflation3
 		
@@ -341,7 +341,7 @@ ideas = {
 			}
 		}
 		
-		CHI_hyper_inflation_4 = {
+		QNG_hyper_inflation_4 = {
 
 			picture = chi_hyper_inflation4
 		
@@ -361,7 +361,7 @@ ideas = {
 			}
 		}
 
-		CHI_hyper_inflation_5 = {
+		QNG_hyper_inflation_5 = {
 
 			picture = chi_hyper_inflation5
 		
@@ -385,7 +385,7 @@ ideas = {
 		##### From focus ####
 		#####################
 
-		CHI_executive_yuan = {
+		QNG_executive_yuan = {
 
 			picture = generic_constitutional_guarantees
 		
@@ -404,7 +404,7 @@ ideas = {
 			}
 		}
 
-		CHI_legislative_yuan = {
+		QNG_legislative_yuan = {
 
 			picture = generic_democratic_drift_bonus
 		
@@ -424,7 +424,7 @@ ideas = {
 			}
 		}
 
-		CHI_inter_party_coordination_council = {
+		QNG_inter_party_coordination_council = {
 
 			picture = generic_neutrality_drift_bonus
 		
@@ -443,7 +443,7 @@ ideas = {
 			}
 		}
 
-		CHI_war_of_resistance = {
+		QNG_war_of_resistance = {
 
 			picture = chi_war_of_resistance		
 
@@ -462,9 +462,9 @@ ideas = {
 			}
 		}
 
-		CHI_war_of_resistance_2 = {
+		QNG_war_of_resistance_2 = {
 
-			name = CHI_war_of_resistance
+			name = QNG_war_of_resistance
 
 			picture = chi_war_of_resistance2
 
@@ -484,7 +484,7 @@ ideas = {
 			}
 		}
 
-		CHI_war_of_national_liberation = {
+		QNG_war_of_national_liberation = {
 
 			picture = chi_war_of_resistance3			
 
@@ -503,7 +503,7 @@ ideas = {
 			}
 		}
 
-		CHI_forced_conscription = {
+		QNG_forced_conscription = {
 
 			picture = chi_forced_conscription
 
@@ -523,7 +523,7 @@ ideas = {
 			}
 		}
 
-		CHI_military_affairs_commission = {
+		QNG_military_affairs_commission = {
 
 			picture = generic_army_war_college		
 
@@ -543,7 +543,7 @@ ideas = {
 			}
 		}
 		
-		CHI_whampoa_military_academy = {
+		QNG_whampoa_military_academy = {
 
 			picture = chi_whampoa_military_academy		
 
@@ -563,7 +563,7 @@ ideas = {
 			}
 		}
 
-		CHI_grain_tax = {
+		QNG_grain_tax = {
 
 			picture = generic_agrarian_society			
 
@@ -584,9 +584,9 @@ ideas = {
 			}
 		}
 
-		CHI_warlord_integration_1 = {
+		QNG_warlord_integration_1 = {
 
-			name = CHI_warlord_integration
+			name = QNG_warlord_integration
 
 			picture = chi_warlord_integration5		
 
@@ -605,9 +605,9 @@ ideas = {
 			}
 		}
 
-		CHI_warlord_integration_2 = {
+		QNG_warlord_integration_2 = {
 
-			name = CHI_warlord_integration
+			name = QNG_warlord_integration
 
 			picture = chi_warlord_integration4
 
@@ -626,9 +626,9 @@ ideas = {
 			}
 		}
 		
-		CHI_warlord_integration_3 = {
+		QNG_warlord_integration_3 = {
 
-			name = CHI_warlord_integration
+			name = QNG_warlord_integration
 
 			picture = chi_warlord_integration3			
 
@@ -647,9 +647,9 @@ ideas = {
 			}
 		}
 
-		CHI_warlord_integration_4 = {
+		QNG_warlord_integration_4 = {
 
-			name = CHI_warlord_integration
+			name = QNG_warlord_integration
 
 			picture = chi_warlord_integration2			
 
@@ -668,9 +668,9 @@ ideas = {
 			}
 		}
 
-		CHI_warlord_integration_5 = {
+		QNG_warlord_integration_5 = {
 
-			name = CHI_warlord_integration
+			name = QNG_warlord_integration
 
 			picture = chi_warlord_integration			
 
@@ -689,7 +689,7 @@ ideas = {
 			}
 		}
 
-		CHI_war_of_anti_imperialism = {
+		QNG_war_of_anti_imperialism = {
 
 			picture = FRA_scw_intervention_nationalists_focus		
 
@@ -716,7 +716,7 @@ ideas = {
 			}
 		}
 
-		CHI_illegal_regime = {
+		QNG_illegal_regime = {
 
 			picture = generic_purge
 		
@@ -740,67 +740,67 @@ ideas = {
 
 	political_advisor = {
 
-		CHI_chiang_ching_kuo = {
+		QNG_chiang_ching_kuo = {
 
 			picture = chi_chiang_ching_kuo
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { silent_workhorse }
 		}
 
-		CHI_h_h_kung = {
+		QNG_h_h_kung = {
 
 			picture = chi_h_h_kung
 				
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { captain_of_industry }
 		}
 
-		CHI_chen_yi = {
+		QNG_chen_yi = {
 
 			picture = chi_chen_yi
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { compassionate_gentleman }
 		}
 
-		CHI_kwong_jiang = {
+		QNG_kwong_jiang = {
 
-			name = CHI_generic_democratic_reformer
+			name = QNG_generic_democratic_reformer
 
 			picture = generic_political_advisor_asia_1
 
 			available = {
-				has_completed_focus = CHI_legislative_yuan
+				has_completed_focus = QNG_legislative_yuan
 			}
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { democratic_reformer }
 		}
 
-		CHI_dai_li = {
+		QNG_dai_li = {
 
 			picture = GFX_idea_chi_dai_li
 
 			available = {
-				has_completed_focus = CHI_bureau_of_investigation_and_statistics				
+				has_completed_focus = QNG_bureau_of_investigation_and_statistics				
 			}
 			
 			allowed = {
 				OR = {
-					original_tag = CHI
+					original_tag = QNG
 					is_chinese_warlord = yes
 				}
 				has_dlc = "Waking the Tiger"
@@ -809,30 +809,30 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 
-		CHI_lin_sen = {
+		QNG_lin_sen = {
 
 			picture = GFX_idea_chi_lin_sen
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 				has_dlc = "Waking the Tiger"
 			}
 			
 			traits = { popular_figurehead }
 		}
-		CHI_chen_guofu = {
+		QNG_chen_guofu = {
 
 			picture = GFX_idea_chi_chen_guofu
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 				has_dlc = "Waking the Tiger"
 			}
 			
 			traits = { backroom_backstabber }
 		}
 
-		CHI_soong_mei_ling = {
+		QNG_soong_mei_ling = {
 
 			picture = GFX_idea_chi_soong_mei_ling
 			
@@ -841,24 +841,24 @@ ideas = {
 			}
 
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 				has_dlc = "Waking the Tiger"
 			}
 			
 			traits = { first_lady }
 		}
 
-		CHI_t_v_soong = {
+		QNG_t_v_soong = {
 
 			picture = GFX_idea_chi_t_v_soong
 
 			available = {
-				has_completed_focus = CHI_financial_policy
+				has_completed_focus = QNG_financial_policy
 			}
 			
 			allowed = {
 				OR = {
-					original_tag = CHI
+					original_tag = QNG
 					is_chinese_warlord = yes
 				}
 				has_dlc = "Waking the Tiger"
@@ -872,12 +872,12 @@ ideas = {
 		
 		#Communist
 
-		CHI_zhu_de = {
+		QNG_zhu_de = {
 			
 			picture = generic_army_asia_4
 
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -889,12 +889,12 @@ ideas = {
 
 		#Clique
 
-		CHI_chen_jitang = {
+		QNG_chen_jitang = {
 
 			picture = generic_army_asia_5
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 
@@ -908,12 +908,12 @@ ideas = {
 
 		#Nationalist
 
-		CHI_li_zongren = {
+		QNG_li_zongren = {
 			
 			picture = generic_army_asia_2
 
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 					
 			traits = { army_chief_defensive_3 }
@@ -923,12 +923,12 @@ ideas = {
 			}
 		}
 
-		CHI_he_yingqin = {
+		QNG_he_yingqin = {
 			
 			picture = generic_army_asia_1
 
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 						
 			traits = { army_chief_maneuver_2 }
@@ -949,12 +949,12 @@ ideas = {
 
 		#Clique
 
-		CHI_wang_shuming = {
+		QNG_wang_shuming = {
 			
 			picture = generic_air_asia_1
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 
@@ -968,12 +968,12 @@ ideas = {
 
 		#Nationalist
 
-		CHI_zhou_zhirou = {
+		QNG_zhou_zhirou = {
 
 			picture = generic_air_asia_2
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 
@@ -990,12 +990,12 @@ ideas = {
 		
 		#Communist
 
-		CHI_xiao_jinguang = {
+		QNG_xiao_jinguang = {
 			
 			picture = generic_navy_asia_1
 
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 					
 			traits = { navy_chief_commerce_raiding_2 }
@@ -1007,12 +1007,12 @@ ideas = {
 
 		#Clique
 
-		CHI_bai_chongxi = {
+		QNG_bai_chongxi = {
 			
 			picture = generic_navy_asia_2
 
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 					
 			traits = { navy_chief_reform_2 }
@@ -1024,12 +1024,12 @@ ideas = {
 
 		#Nationalist
 
-		CHI_chen_shaokuan = {
+		QNG_chen_shaokuan = {
 
 			picture = generic_navy_asia_3
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 					
 			traits = { navy_chief_decisive_battle_2 }
@@ -1053,7 +1053,7 @@ ideas = {
 
 			allowed = {
 				NOT = { has_dlc = "Waking the Tiger" }
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			research_bonus = {
@@ -1072,12 +1072,12 @@ ideas = {
 
 
 	theorist = {
-		CHI_bo_yibo = { 
+		QNG_bo_yibo = { 
 
 			picture = generic_army_asia_2
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			research_bonus = {
@@ -1087,12 +1087,12 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		CHI_fang_zeyi = { 
+		QNG_fang_zeyi = { 
 
 			picture = generic_air_asia_2
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			research_bonus = {
@@ -1102,12 +1102,12 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 
-		CHI_huang_shen = {
+		QNG_huang_shen = {
 
 			picture = generic_navy_asia_2
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			research_bonus = {
@@ -1122,12 +1122,12 @@ ideas = {
 
 	high_command = {
 
-		CHI_gao_zhihang = {
+		QNG_gao_zhihang = {
 
-			picture = CHI_gao_zihang
+			picture = QNG_gao_zihang
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { air_air_superiority_3 }
@@ -1137,12 +1137,12 @@ ideas = {
 			}
 		}
 		
-		CHI_xiao_yisu = {
+		QNG_xiao_yisu = {
 
 			picture = generic_army_asia_2
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { army_infantry_2 }
@@ -1152,12 +1152,12 @@ ideas = {
 			}
 		}
 
-		CHI_chen_cheng = {
+		QNG_chen_cheng = {
 
 			picture = generic_army_asia_3
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { army_regrouping_2 }
@@ -1167,12 +1167,12 @@ ideas = {
 			}
 		}
 
-		CHI_yu_hanmou = {
+		QNG_yu_hanmou = {
 
 			picture = generic_army_asia_1
 			
 			allowed = {
-				original_tag = CHI
+				original_tag = QNG
 			}
 			
 			traits = { army_logistics_2 }
@@ -1185,17 +1185,17 @@ ideas = {
 
 	industrial_concern = {
 
-		CHI_mining_commission = {
+		QNG_mining_commission = {
 
 			picture = generic_industrial_concern_3		
 			
 			available = {
-				has_completed_focus = CHI_mining_commission
+				has_completed_focus = QNG_mining_commission
 			}
 
 			allowed = {
 				has_dlc = "Waking the Tiger"
-				original_tag = CHI
+				original_tag = QNG
 			}
 
 			cost = 0
