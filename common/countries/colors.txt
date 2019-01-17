@@ -264,7 +264,10 @@ SOU = {
 	color = rgb { 210 0 60 }
 	color_ui = rgb { 210 0 60 }
 }
-
+TAN = {
+	color = rgb { 120 155 255 }
+	color_ui = rgb { 120 155 255 }
+}
 
 
 
