@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = RME
+		owner = GAL
 		victory_points = {
 			3652 5 
 		}
@@ -20,7 +20,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = RME
+		add_core_of = GAL
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3
