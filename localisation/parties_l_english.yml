@@ -133,6 +133,11 @@
  SIA_monarchism_party: "Chakri Dynasty"
  SIA_collectivism_party: "Collectivist Party of Siam"
  SIA_democratic_party: "Khana Ratsadon"
+ FRI_oligarchic_democracy_party:0 "Conservtive Frisian Folkpartij"
+ FRI_dictatorship_party:0 "Nederlandistenbond"
+ FRI_monarchism_party:0 "House Brunswick-Nordheim"
+ FRI_collectivism_party:0 "Collectivistische Partij Holland"
+ FRI_democratic_party:0 "Conservtive Frisian Folkpartij"
  
  
  

@@ -99,7 +99,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.5
 		
 		modifiers = {
-			generate_wargoal_tension = 0.5
+			generate_wargoal_tension = 1.0
 			join_faction_tension = 0.4
 			lend_lease_tension = 0.4
 			send_volunteers_tension = 0.4

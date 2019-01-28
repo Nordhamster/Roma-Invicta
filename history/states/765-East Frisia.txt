@@ -1,0 +1,25 @@
+state={
+	id=765
+	name="STATE_765"
+	state_category = large_town
+	
+	history = {
+		victory_points = {
+			241 5 
+		}
+		owner = FRI
+		add_core_of = FRI
+		buildings = {
+			dockyard = 2
+			industrial_complex = 1
+			241 = {
+				naval_base = 8
+			}
+		}
+	}
+	provinces={
+		241 336 374 11360 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+}

@@ -1,6 +1,6 @@
 ﻿capital = 36
 
-oob = "FRI_1936"
+oob = "HOL_1936"
 
 # Starting tech
 set_technology = {
@@ -66,66 +66,102 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 92
+			popularity = 10
 		}
 
 		dictatorship = {
-			popularity = 3
+			popularity = 18
 		}
 		
 		collectivism = {
-			popularity = 5
+			popularity = 15
+		}
+		
+		oligarchic_democracy = {
+			popularity = 42
+		}
+		
+		monarchism = {
+			popularity = 15
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = oligarchic_democracy
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 92
-			}
-
-			fascism = {
-				popularity = 3
-			}
-			
-			communism = {
-				popularity = 5
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1937.6.6"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Pierre Dupong"
-		desc = "POLITICS_PIERRE_DUPONG_DESC"
-		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-		expire = "1965.1.1"
-		ideology = conservatism
-		traits = {
-			#
-		}
-	}
-}
-#Pierre Dupong from 37
 create_country_leader = {
-	name = "Joseph Bech"
+	name = "Jan de Vries"
 	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "GFX_portrait_luxembourg_joseph_bech"
+	picture = "gfx/leaders/FRI/Portrait_FRI_Jan_de_Vries.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = aristocratic_democracy
 	traits = {
 		#
 	}
+}
+create_country_leader = {
+	name = "Jan de Vries"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/FRI/Portrait_FRI_Jan_de_Vries.dds"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Matthijs Brunswick-Nordheim"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/FRI/Portrait_FRI_Matthijs_Brunswick-Nordheim.dds"
+	expire = "1965.1.1"
+	ideology = aristocracy
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Daan-Phiilips Bakkerszoon"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/FRI/Portrait_FRI_Daan-Phiilips_Bakkerszoon.dds"
+	expire = "1965.1.1"
+	ideology = centralism
+	traits = {
+		#
+	}
+}
+#Order is important, Rick will be leader first
+create_country_leader = {
+	name = "Sjaak Jager"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/FRI/Portrait_FRI_Sjaak_Jager.dds"
+	expire = "1965.1.1"
+	ideology = military
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Rick Broeder Oranjegezind"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/FRI/Portrait_FRI_Rick_Broeder_Oranjegenzind.dds"
+	expire = "1965.1.1"
+	ideology = nationalism
+	traits = {
+		#
+	}
+}
+
+#ARMY
+create_field_marshal = {
+	name = "Sjaak Jager"
+	picture = "Portrait_FRI_Sjaak_Jager.dds"
+	traits = { defensive_doctrine old_guard trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
 }

@@ -268,7 +268,10 @@ ALT = {
 	color = rgb { 120 155 255 }
 	color_ui = rgb { 120 155 255 }
 }
-
+MUT = {
+	color = rgb { 240 225 85 }
+	color_ui = rgb { 240 225 85 }
+}
 
 
 
