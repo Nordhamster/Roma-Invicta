@@ -77,6 +77,7 @@ set_politics = {
 create_faction = "Tsar Pact"
 add_to_faction = SLV
 add_to_faction = GLC
+add_to_faction = DAC
 
 create_country_leader = {
 	name = "Tsar Svetoslav III"
