@@ -138,7 +138,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zhang Junmai"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+	picture = "Portrait_Asia_Generic_communism.dds"
 	expire = "1965.1.1"
 	ideology = socialist
 	traits = {
@@ -148,7 +148,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zhang Guotao"
 	desc = "POLITICS_ZHANG_GUOTAO_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	picture = "Portrait_Asia_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = centralism
 	traits = {
@@ -156,10 +156,10 @@ create_country_leader = {
 	}
 }
 
-###Army Leaders###(dont forget to add imaages)
+###Army Leaders###(dont forget to add images)
 create_field_marshal = {
 	name = "Zhang Xun"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	gfx = "GFX_portrait_chi_fu_zuoyi"
 	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
 	skill = 4
 	attack_skill = 4
@@ -170,7 +170,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Zheng Shiqi"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	gfx = "GFX_portrait_chi_sun_li_jen"
 	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
 	skill = 3
 	attack_skill = 3
@@ -181,7 +181,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Ma Lin"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	gfx = "GFX_portrait_chi_tai_an_lan"
 	traits = {  offensive_doctrine trait_reckless career_officer }
 	skill = 3
 	attack_skill = 3
@@ -192,7 +192,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Wang Zhanyuan"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	gfx = "GFX_portrait_chi_xue_yue"
 	traits = { defensive_doctrine trait_cautious infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -203,7 +203,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Ma Qi"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	gfx = "GFX_portrait_chi_wang_yaowu"
 	traits = { brilliant_strategist }
 	skill = 4
 	attack_skill = 5
@@ -214,7 +214,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Duan Zhigui"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	gfx = "GFX_portrait_chi_xue_yue"
 	traits = { politically_connected }
 	skill = 4
 	attack_skill = 4
@@ -225,7 +225,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Ma Zhongying"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	gfx = "GFX_portrait_chi_du_yuming"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 3
@@ -236,7 +236,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Zhao Ti"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	gfx = "GFX_portrait_chi_sun_li_jen"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -247,7 +247,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Zhang Xiluan"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	gfx = "GFX_portrait_chi_zhang_xueliang"
 	traits = { }
 	skill = 3
 	attack_skill = 3
