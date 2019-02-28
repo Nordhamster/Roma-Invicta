@@ -57,8 +57,8 @@ THU = {
 	color_ui = rgb { 180 55 50 }
 }
 SAX = {
-	color = rgb { 50 50 50 }
-	color_ui = rgb { 50 50 50 }
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
 }
 QAM = {
 	color = rgb { 230 220 50 }
@@ -113,8 +113,8 @@ KAZ = {
 	color_ui = rgb { 75 184 203 }
 }
 PRS = {
-	color = rgb { 100 100 100 }
-	color_ui = rgb { 100 100 100 }
+	color = rgb { 50 50 100 }
+	color_ui = rgb { 50 50 100 }
 }
 PAN = {
 	color = rgb { 120 160 100 }
@@ -272,7 +272,18 @@ MUT = {
 	color = rgb { 240 225 85 }
 	color_ui = rgb { 240 225 85 }
 }
-
+MAJ = {
+	color = rgb { 240 200 70 }
+	color_ui = rgb { 240 200 70 }
+}
+AST = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 57 143 97 }
+}
+NIB = {
+	color = rgb { 222 187 91 }
+	color_ui = rgb { 222 187 91 }
+}
 
 
 
