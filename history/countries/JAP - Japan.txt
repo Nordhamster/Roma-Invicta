@@ -9,6 +9,9 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	
+	JAP_samurai_stipends
+	JAP_zaibatsus
 }
 
 set_research_slots = 4
@@ -61,8 +64,14 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.30
 	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_colony
+		freedom_level = 0.45
+	}
 	else = {
 		puppet = JAM
+		puppet = AST
 	}
 }
 

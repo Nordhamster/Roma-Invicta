@@ -29,13 +29,15 @@
  
  #monarchist ideologies
  autocracy:0 "Autocratic"
- autocracy_desc:0 "Autocratic \nAutocracy believes in the concentration of power in the hands of a single individiual. The ruler is not bound by law or a constitution. Differs from dictatorship in that it is hereditary."
+ autocracy_desc:0 "Autocrat \nAutocracy believes in the concentration of power in the hands of a single individiual. The ruler is not bound by law or a constitution. Differs from dictatorship in that it is hereditary."
  aristocracy:0 "Aristocratic"
- aristocracy_desc:0 "Aristocratic \nAristocratism places the right to rule in the hands of a small ruling class, differing from oligarchy in that it is hereditary."
+ aristocracy_desc:0 "Aristocrat \nAristocratism places the right to rule in the hands of a small ruling class, differing from oligarchy in that it is hereditary."
  feudalism:0 "Feudalistic"
- feudalism_desc:0 "Feudalistic \nFeudalism is a system of government where the population is divided into seperate social classes, each in service to the one above it, usually culminating in a single ruler."
+ feudalism_desc:0 "Feudalist \nFeudalism is a system of government where the population is divided into seperate social classes, each in service to the one above it, usually culminating in a single ruler."
  tribalism:0 "Tribalistic"
- tribalism_desc:0 "Tribalistic \nTribalism places power in the hands of tribal leaders, who can often be replaced by being voted out or challenged and losing. Generally exists in uncivilised areas."
+ tribalism_desc:0 "Tribalist \nTribalism places power in the hands of tribal leaders, who can often be replaced by being voted out or challenged and losing. Generally exists in uncivilised areas."
+ constitutional:0 "Constitutional Monarchist"
+ constitutional_desc:0 "Constitutional Monarchist \nConstitutional Monarchism is a monarchist ideology in which the power and authority of a monarch are bound by a constitution."
  
  #dictatorship ideologies
  absolutism:0 "Absolutist"
@@ -51,13 +53,13 @@
  
  #oligarchic democracy ideologies
  roman_democracy:0 "Roman Democracy"
- roman_democracy_desc:0 "Roman Democracy \nRoman Democracy is a system of government a senate advises the leading magistrate with decrees, and the magistrates are elected from within the senate. Often, senators belong to a privileged social class."
+ roman_democracy_desc:0 "Roman Democrat \nRoman Democracy is a system of government a senate advises the leading magistrate with decrees, and the magistrates are elected from within the senate. Often, senators belong to a privileged social class."
  democratic_centralism:0 "Democratic Centralist"
  democratic_centralism_desc:0 "Democratic Centralist \nDemocratic Centralism entails the government being run in a one-party system, but nevertheless the citizens can influence the government through democratic means."
  aristocratic_democracy:0 "Aristocratic Democracy"
- aristocratic_democracy_desc:0 "Aristocratic Democracy \nAristocratic Democracy is form of democracy in which upper classes are privilaged, either through being the only ones who can vote, or amount of property owned translating to more votes."
+ aristocratic_democracy_desc:0 "Aristocratic Democrat \nAristocratic Democracy is form of democracy in which upper classes are privilaged, either through being the only ones who can vote, or amount of property owned translating to more votes."
  corporatism:0 "Corporatocratic"
- corporatism_desc:0 "Corporatocratic \nCorporatocracy gives a conglomerate of the largest corporations a significant degree of control over the political functions of a nation."
+ corporatism_desc:0 "Corporatocrat \nCorporatocracy gives a conglomerate of the largest corporations a significant degree of control over the political functions of a nation."
     
  #collectivist ideologies
  communalism:0 "Communalist"
@@ -126,18 +128,20 @@
  BRT_monarchism_party:0 "Breton Royalists"
  BRT_collectivism_party:0 "Unionist Party of Brittany"
  BRT_democratic_party:0 "Breton Liberal Party"
- 
- IRE_dictatorship_party: "Pan-Celtic Party"
- 
- SIA_dictatorship_party: "Khana Ratsadon (Military Faction)"
- SIA_monarchism_party: "Chakri Dynasty"
- SIA_collectivism_party: "Collectivist Party of Siam"
- SIA_democratic_party: "Khana Ratsadon"
- FRI_oligarchic_democracy_party:0 "Conservtive Frisian Folkpartij"
+ IRE_oligarchic_democracy_party:0 "Irish Unity Party"
+ IRE_dictatorship_party:0 "Pan-Celtic Party"
+ IRE_monarchism_party:0 "Irish Royalists"
+ IRE_collectivism_party:0 "Irish Communalists"
+ IRE_democratic_party:0 "Irish Conservative Party"
+ SIA_dictatorship_party:0 "Khana Ratsadon (Military Faction)"
+ SIA_monarchism_party:0 "Chakri Dynasty"
+ SIA_collectivism_party:0 "Collectivist Party of Siam"
+ SIA_democratic_party:0 "Khana Ratsadon"
+ FRI_oligarchic_democracy_party:0 "Conservative Frisian Folkpartij"
  FRI_dictatorship_party:0 "Nederlandistenbond"
  FRI_monarchism_party:0 "House Brunswick-Nordheim"
  FRI_collectivism_party:0 "Collectivistische Partij Holland"
- FRI_democratic_party:0 "Conservtive Frisian Folkpartij"
+ FRI_democratic_party:0 "Conservative Frisian Folkpartij"
  
  
  

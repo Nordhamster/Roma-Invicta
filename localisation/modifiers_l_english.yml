@@ -395,7 +395,7 @@
  MODIFIERS_SUBMARINE_DETECTION_FACTOR:0 "Submarine Detection"
  collectivism_drift:0 "Daily Collectivism Support"
  democratic_drift:0 "Daily Democracy Support"
- oligarchic_democracy_democracy_drift:0 "Daily Oligarchic Democracy Support"
+ oligarchic_democracy_drift:0 "Daily Oligarchic Democracy Support"
  dictatorship_drift:0 "Daily Dictatorship Support"
  monarchism_drift:0 "Daily Monarchy Support"
  collectivism_acceptance:0 "Acceptance of Collectivist Diplomacy"

@@ -11,6 +11,10 @@ set_technology = {
 	tech_engineers = 1
 	early_fighter = 1
 }
+
+add_ideas {
+	King_Matthijs_Brunswick-Nordheim
+}
 set_war_support = 0.3
 set_stability = 0.8
 1939.1.1 = {
@@ -117,7 +121,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_BECH_DESC"
 	picture = "gfx/leaders/FRI/Portrait_FRI_Matthijs_Brunswick-Nordheim.dds"
 	expire = "1965.1.1"
-	ideology = aristocracy
+	ideology = constitutional
 	traits = {
 		#
 	}

@@ -12,8 +12,8 @@ focus_tree = {
 		id = RME_political_reform
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
-		x = 5
-		y = 0
+		x = 7
+		y = -1
 
 	}
 	focus = {
@@ -22,6 +22,14 @@ focus_tree = {
 		cost = 10.00
 		x = 13
 		y = 8
+
+	}
+	focus = {
+		id = RME_new_ideas
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		x = 9
+		y = 5
 
 	}
 	focus = {
@@ -104,7 +112,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RME_spqr
-		icon = GFX_focus_RME_SPQR
+		icon = GFX_focus_jap_pacific_guardian
 		cost = 10.00
 		prerequisite = {
 			focus = RME_sic_semper_tyrannis
@@ -157,25 +165,17 @@ focus_tree = {
 
 	}
 	focus = {
-		id = RME_new_ideas
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		prerequisite = {
-			focus = RME_senate_reforms
-		}
-		x = 9
-		y = 6
-
-	}
-	focus = {
-		id = RME_consider_democracy
+		id = RME_smooth_transition
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
 		prerequisite = {
-			focus = RME_new_ideas
+			focus = RME_spqr
 		}
-		x = 11
-		y = 2
+		mutually_exclusive = {
+			focus = RME_democracy_for_masses
+		}
+		x = 12
+		y = 3
 
 	}
 	focus = {
@@ -198,9 +198,11 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = RME_power_to_people
-			focus = RME_consider_democracy
 		}
-		x = 13
+		mutually_exclusive = {
+			focus = RME_smooth_transition
+		}
+		x = 14
 		y = 3
 
 	}
@@ -209,6 +211,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		cost = 10.00
 		prerequisite = {
+			focus = RME_smooth_transition
 			focus = RME_democracy_for_masses
 		}
 		x = 12
@@ -221,6 +224,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = RME_democracy_for_masses
+			focus = RME_smooth_transition
 		}
 		x = 14
 		y = 4
@@ -241,20 +245,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = RME_reform_senate
-		icon = GFX_focus_generic_self_management
-		cost = 10.00
-		prerequisite = {
-			focus = RME_begin_elections
-		}
-		mutually_exclusive = {
-			focus = RME_abolish_senate
-		}
-		x = 13
-		y = 6
-
-	}
-	focus = {
 		id = RME_abolish_senate
 		icon = GFX_focus_SAF_colonialist_crusade
 		cost = 10.00
@@ -265,6 +255,20 @@ focus_tree = {
 			focus = RME_reform_senate
 		}
 		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = RME_reform_senate
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = RME_begin_elections
+		}
+		mutually_exclusive = {
+			focus = RME_abolish_senate
+		}
+		x = 13
 		y = 6
 
 	}
@@ -358,6 +362,28 @@ focus_tree = {
 
 	}
 	focus = {
+		id = RME_world_revolution
+		icon = GFX_focus_ger_great_red_menace
+		cost = 10.00
+		prerequisite = {
+			focus = RME_red_army
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = RME_strike_bourgeoisie
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = RME_world_revolution
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
 		id = RME_reinforce_senate
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
@@ -394,6 +420,17 @@ focus_tree = {
 		}
 		x = 18
 		y = 8
+
+	}
+	focus = {
+		id = RME_destroy_monarchy
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10.00
+		prerequisite = {
+			focus = RME_world_revolution
+		}
+		x = 21
+		y = 6
 
 	}
 }

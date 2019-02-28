@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		King_Matthijs_Brunswick-Nordheim = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = collectivism
+				}
+			}
+			
+			picture = Matthijs_Brunswick-Nordheim
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+	}
+}

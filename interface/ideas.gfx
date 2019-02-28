@@ -1918,6 +1918,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_english_electric.dds"
 	}
 	
+	### FRISIAN IDEAS
+	spriteType = {
+		name = "GFX_idea_Matthijs_Brunswick-Nordheim"
+		texturefile = "gfx/interface/ideas/idea_Matthijs_Brunswick-Nordheim.dds"
+	}
+	
 	### ITALIAN IDEAS	
 	spriteType = {
 		name = "GFX_idea_victor_emmanuel"

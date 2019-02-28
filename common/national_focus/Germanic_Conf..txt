@@ -1,0 +1,11 @@
+focus_tree = {
+	id = Germanic_Conf.
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CGP
+		}
+	}
+	default = no
+}
