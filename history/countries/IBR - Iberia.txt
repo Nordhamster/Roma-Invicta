@@ -25,6 +25,21 @@ set_technology = {
 	transport = 1
 }
 
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NIB
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.70
+	}
+	else = {
+		puppet = NIB
+	}
+}
+
 set_politics = {
 
 	parties = {

@@ -13,11 +13,11 @@ state={
 	}
 
 	history={
-		owner = QAM
+		owner = SHO
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = QAM
+		add_core_of = SHO
 	}
 
 	provinces={

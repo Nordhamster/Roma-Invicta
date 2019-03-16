@@ -50,7 +50,7 @@ news_event = {
 	}
 }
 
-# The Fall of Rome (European Coalition)
+# The Fall of Rome (Generic)
 news_event = {
 	id = news.133
 	title = news.132.t
@@ -61,15 +61,15 @@ news_event = {
 	
 	trigger = {
 		any_country = {
-			is_in_faction_with = CGP
 			controls_state = 2
+			has_war_with = RME
 		}
 		2 = { is_owned_by = RME }
-		NOT = { has_global_flag = fall_of_rome_ec }
+		NOT = { has_global_flag = fall_of_rome }
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_rome_ec
+		set_global_flag = fall_of_rome
 	}
 	
 	mean_time_to_happen = {

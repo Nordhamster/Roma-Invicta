@@ -289,6 +289,30 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		
+		JAP_zaibatsu_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_ally
+			
+			modifier = {
+				trade_laws_cost_factor = -0.15
+				economy_cost_factor = -0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				consumer_goods_factor = 0.10
+			}
+		}
 
 		JAP_zaibatsus_challenged = {
 

@@ -74,6 +74,9 @@ ideologies = {
 			
 			corporatism = {
 			}
+			
+			tribal_confederalism = {
+			}
 		}
 		
 		dynamic_faction_names = {

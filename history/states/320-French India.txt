@@ -7,7 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = MAD
+		owner = GAL
 		add_core_of = MAD
 		buildings = {
 			infrastructure = 5

@@ -1,4 +1,4 @@
-﻿capital = 62 #Pommern
+﻿capital = 63 #Pommerania
 
 oob = "POM_1936"
 

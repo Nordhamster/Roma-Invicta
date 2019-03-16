@@ -60,7 +60,9 @@
  aristocratic_democracy_desc:0 "Aristocratic Democrat \nAristocratic Democracy is form of democracy in which upper classes are privilaged, either through being the only ones who can vote, or amount of property owned translating to more votes."
  corporatism:0 "Corporatocratic"
  corporatism_desc:0 "Corporatocrat \nCorporatocracy gives a conglomerate of the largest corporations a significant degree of control over the political functions of a nation."
-    
+ tribal_confederalism:0 "Tribal Confederalism"
+ tribal_confederalism_desc:0 "Tribal Confederalist \nTribal Confederalism has a council of elders regulating the affairs of the nation, with the king being involved only as 'first among equals'."
+   
  #collectivist ideologies
  communalism:0 "Communalist"
  communalism_desc:0 "Communalist \nCommunalism is a system of government in which independent communes participate in a federation and adhere the principles and practice of communal ownership."

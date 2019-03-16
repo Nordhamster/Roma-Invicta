@@ -6,13 +6,13 @@ state={
 	state_category = town
 	
 	history={
-		owner = LIT
+		owner = VEN
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 1
 		}
-		add_core_of = LIT
+		add_core_of = VEN
 
 		1939.1.1 = {
 			buildings = {

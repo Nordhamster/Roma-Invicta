@@ -13,6 +13,10 @@ set_technology = {
 }
 
 add_ideas {
+	limited_exports
+	volunteer_only
+	civilian_economy
+
 	King_Matthijs_Brunswick-Nordheim
 }
 set_war_support = 0.3

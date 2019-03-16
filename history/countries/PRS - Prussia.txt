@@ -1,4 +1,4 @@
-﻿capital = 5 #Ost Prussen
+﻿capital = 763 #Tvankste
 
 oob = "PRS_1936"
 

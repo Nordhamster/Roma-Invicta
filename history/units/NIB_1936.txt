@@ -1,0 +1,151 @@
+﻿division_template = {
+	name = "División de Infanteria"	
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+  	      engineer = { x = 0 y = 0 }
+ 	}
+}
+division_template = {
+	name = "División de Caballería"  
+	division_names_group = SPAN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	##### Ejército Nacional de Colombia #####
+	division= {	# "1a División de Infanteria"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12790 # Cartegena
+		division_template = "División de Infanteria"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "2a División de Infanteria"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 8056
+		division_template = "División de Infanteria"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "3a División de Infanteria"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 2007
+		division_template = "División de Infanteria"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "4a División de Infanteria"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1887
+		division_template = "División de Infanteria"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "5a División de Infanteria"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10747 # Bogota
+		division_template = "División de Infanteria"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "6a División de Infanteria"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 2023 # Medellin
+		division_template = "División de Infanteria"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	##### Alto Mando de Venezuela #####
+	division= {	# "1a División 'Eduardo Blanco'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Los Caballos de Venezuela"
+		location = 8113 # Caracas
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	##### Ejército de Guatemala #####
+	division= {	
+		name = "División de Infanteria"
+		location = 10886 # Guatemala City
+		division_template = "Brigada de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+
+
+air_wings = {
+	### Fuerza Aérea Colombiana -- Cartegena
+	306 = {
+		# Fighter Air Group -- Curtis II F11Cs
+		fighter_equipment_0 =  {
+			owner = "COL" 
+			amount = 30
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "COL"
+		}
+		requested_factories = 1
+		progress = 0.33
+		efficiency = 100
+	}
+}

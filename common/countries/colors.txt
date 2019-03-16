@@ -284,6 +284,37 @@ NIB = {
 	color = rgb { 222 187 91 }
 	color_ui = rgb { 222 187 91 }
 }
+AMZ = {
+	color = rgb { 130 0 0 }
+	color_ui = rgb { 130 0 0 }
+}
+INC = {
+	color = rgb { 180 135 200 }
+	color_ui = rgb { 180 135 200 }
+}
+MUI = {
+	color = rgb { 200 50 70 }
+	color_ui = rgb { 200 50 70 }
+}
+PAT = {
+	color = rgb { 130 140 215 }
+	color_ui = rgb { 130 140 215 }
+}
+PHI = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 152 130 191 }
+}
+ASH = {
+	color = rgb { 230 230 90 }
+	color_ui = rgb { 230 230 90 }
+}
+KAN = {
+	color = rgb { 140 115 65 }
+	color_ui = rgb { 140 115 65 }
+}
+
+
+
 
 
 

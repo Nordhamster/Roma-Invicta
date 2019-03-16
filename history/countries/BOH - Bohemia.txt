@@ -49,7 +49,7 @@ set_politics = {
 create_country_leader = {
 	name = "Nikolas Turek"
 	desc = "POLITICS_EDVARD_BENES_DESC"
-	picture = "Portrait_Czech_Edvard_Benes.dds"
+	picture = "gfx/leaders/CZE/Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
 	ideology = liberatarian
 	traits = {
@@ -131,9 +131,7 @@ if = {
 		CZE_skoda_works
 		CZE_divided_nation
 		limited_conscription
-}
-	give_guarantee = YUG
-	give_guarantee = ROM
+	}
 }
 
 if = {
@@ -142,6 +140,7 @@ if = {
 	}
 	add_ideas = {
 		CZE_fortification_focus
+		limited_conscription
 	}
 }
 
