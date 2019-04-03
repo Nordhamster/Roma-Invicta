@@ -41,7 +41,7 @@
  STATE_40:0 "Barnaul"
  STATE_41:0 "Madrid"
  STATE_42:0 "Moselland"
- STATE_43:0 "Northern Hungary"
+ STATE_43:0 "Pannonia Inferior"
  STATE_44:0 "Albania"
  STATE_45:0 "Vojvodina"
  STATE_46:0 "Muntenia"
@@ -356,9 +356,9 @@
  STATE_355:0 "Samsun"
  STATE_356:0 "Kastamonu"
  STATE_357:0 "New England"
- STATE_358:0 "New Frisia"
- STATE_359:0 "Novum Italia"
- STATE_360:0 "Pennbosk" #This is pretty dumb, change to some better name
+ STATE_358:0 "Nij Frisia"
+ STATE_359:0 "Nij Ljouwert"
+ STATE_360:0 "Eastwâld"
  STATE_361:0 "Mariaterrum"
  STATE_362:0 "Virginia"
  STATE_363:0 "Carolus Borealis" #Carolina

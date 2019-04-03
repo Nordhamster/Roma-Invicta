@@ -9,11 +9,11 @@
  collectivism_noun:0 "Collectivist"
  democratic:0 "Democracy"
  democratic_noun:0 "Democratic"
- oligarchic_democracy_desc:0 "Oligrachic Democracy"
+ oligarchic_democracy_desc:0 "Oligarchic Government"
  dictatorship_desc:0 "Dictatorial Regime"
  monarchism_desc:0 "Monarchist Regime"
  collectivism_desc:0 "Collectivist Government"
- democratic_desc:0 "Representative Democracy"
+ democratic_desc:0 "Democratic Government"
  
  #democratic ideologies
  conservative:0 "Conservative"
@@ -49,7 +49,7 @@
  military:0 "Military Dictatorship"
  military_desc:0 "Military Dictatorship \nMilitary Dictatorship occurs when a nations military seizes control of the government. Often it is justified as an attempt to protect the nation from incompetent politicians."
  nationalism:0 "Ultra-Nationalist"
- nationalism_desc:0 "Ultra-Nationalist \nUltra-Nationalism believes in the supremacy of the nation above others. Militarist, Racist and National Revivalist rhetoric is used to justify a totalitarian government and the claiming of a previously owned lands."
+ nationalism_desc:0 "Ultra-Nationalist \nUltra-Nationalism believes in the supremacy of the nation above others. Militarist, Racist and National Revivalist rhetoric is used to justify a totalitarian government and irredentist aggression."
  
  #oligarchic democracy ideologies
  roman_democracy:0 "Roman Democracy"
@@ -60,8 +60,8 @@
  aristocratic_democracy_desc:0 "Aristocratic Democrat \nAristocratic Democracy is form of democracy in which upper classes are privilaged, either through being the only ones who can vote, or amount of property owned translating to more votes."
  corporatism:0 "Corporatocratic"
  corporatism_desc:0 "Corporatocrat \nCorporatocracy gives a conglomerate of the largest corporations a significant degree of control over the political functions of a nation."
- tribal_confederalism:0 "Tribal Confederalism"
- tribal_confederalism_desc:0 "Tribal Confederalist \nTribal Confederalism has a council of elders regulating the affairs of the nation, with the king being involved only as 'first among equals'."
+ confederalism:0 "Confederalism"
+ confederalism_desc:0 "Confederalist \nConfederalism has the nation, typically made up of several peoples or former countries in a confederation, ruled by council of elders which regulates the affairs of the nation. Occasionally there is a king, but one who is seen only as 'first among equals'."
    
  #collectivist ideologies
  communalism:0 "Communalist"
@@ -69,9 +69,11 @@
  collective_anarchism:0 "Collective Anarchist"
  collective_anarchism_desc:0 "Collective Anarchist \nCollective Anarchism believes in the abolition of both the state and private ownership, the latter being replaced with democratic collective ownership."
  syndicalism:0 "Syndicalist"
- syndicalism_desc:0 "Syndicalist \nSyndicalism is a form of government in which prioritises the facilitation of worker self-management through direct democracy."
+ syndicalism_desc:0 "Syndicalist \nSyndicalism is a form of government in which prioritises the facilitation of worker self-management through direct democracy, where workers' councils not only facilitate workplace democracy, but also act as political units post-revolution."
  centralism:0 "Centralist Collectivist"
- centralism_desc:0 "Centralist Collectivist \nCentralist Collectivism is a system where control over political and economic power is relegated to a one-party government."
+ centralism_desc:0 "Centralist Collectivist \nCentralist Collectivism is a system where control over political and economic power is relegated to a one-party government, ostensibly acting in the interests of the working class."
+ councilism:0 "Councilism"
+ councilism_desc:0 "Councilist \nCouncilism is opposed to both state capitalism and state socialism, and advocates for workers' councils, arising in factories and municipalities, to form the backbone of working class organization and authority."
  
  ### Party Names ###
  RME_oligarchic_democracy_party:0 "Roman Senate"

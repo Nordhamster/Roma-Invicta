@@ -22,7 +22,12 @@ set_technology = {
 	early_destroyer = 1
 }
 
-add_ideas = neutrality_idea
+
+add_ai_strategy = {
+    type = alliance
+    id = "SLV"
+    value = 200
+}
 
 give_guarantee = TSV
 

@@ -1,6 +1,9 @@
 ideas = {
+
 	country = {
-		King_Matthijs_Brunswick-Nordheim = {
+	
+	
+		king_matthijs_brunswick_nordheim = {
 			allowed = {
 				always = no
 			}

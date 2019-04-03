@@ -4,17 +4,17 @@ state={
 	name="STATE_381"
 
 	history={
-		owner = USA
+		owner = CRO
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = USA
+		add_core_of = CRO
 
 	}
 
 	provinces={
-		1815 4610 4723 4794 4820 7688 7814 10640 10711 12561 12633 12651 
+		1815 4610 4723 7688 7814 10640 10711 12561 12633 
 	}
 	manpower=225564
 	buildings_max_level_factor=1.000

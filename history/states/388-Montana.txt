@@ -7,12 +7,12 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = CRO
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = USA
+		add_core_of = CRO
 		victory_points = {
 			4860 1 
 		}
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		1736 1767 1832 1851 1854 3781 4741 4778 4838 4857 6742 7760 7779 7880 10587 10706 12124 12572 12585 12676 
+		1736 1832 1851 1854 3781 4741 4778 4838 4857 6742 7760 7779 7880 10602 10672 10706 12124 12572 12585 12651 12676 
 	}
 	manpower=537605
 	buildings_max_level_factor=1.000

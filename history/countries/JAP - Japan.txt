@@ -10,6 +10,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	
+	JAP_hirohito
 	JAP_samurai_stipends
 	JAP_zaibatsus
 }

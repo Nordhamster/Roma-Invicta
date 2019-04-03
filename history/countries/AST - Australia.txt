@@ -1,7 +1,7 @@
 ﻿capital = 285
 
 oob = "AST_1936"
-set_stability = 0.8
+set_stability = 0.1
 set_war_support = 0.3
 # Starting tech
 set_technology = {
@@ -140,13 +140,13 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Harukichi Hyakutake"
+	name = "Hisaichi Terauchi"
 	desc = ""
-	picture = ""
+	picture = "gfx/leaders/AST/Portrait_AST_Hisaichi_Terauchi.dds"
 	expire = "1965.1.1"
 	ideology = military
 	traits = {
-		#
+		anti_revolutionary
 	}
 }
 

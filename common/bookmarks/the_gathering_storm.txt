@@ -65,9 +65,9 @@ bookmarks = {
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = monarchism
+			ideology = dictatorship
 			ideas = {
-				state_shintoism
+				JAP_hirohito
 				JAP_zaibatsus
 				JAP_samurai_stipends
 			}	
@@ -125,7 +125,7 @@ bookmarks = {
 		}
 		"MAR"={
 			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
+			history = "MAR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				RAJ_agrarian_society

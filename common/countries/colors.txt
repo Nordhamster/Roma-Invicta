@@ -232,6 +232,10 @@ ZAN = {
 	color = rgb { 170 220 100 }
 	color_ui = rgb { 170 220 100 }
 }
+BAN = {
+	color = rgb { 155 135 195 }
+	color_ui = rgb { 155 135 195 }
+}
 ARB = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 171 190 152 }
@@ -312,9 +316,46 @@ KAN = {
 	color = rgb { 140 115 65 }
 	color_ui = rgb { 140 115 65 }
 }
-
-
-
+SHO = {
+	color = rgb { 70 140 55 }
+	color_ui = rgb { 70 140 55 }
+}
+SOK = {
+	color = rgb { 75 80 130 }
+	color_ui = rgb { 75 80 130 }
+}
+SEN = {
+	color = rgb { 230 190 170 }
+	color_ui = rgb { 230 190 170 }
+}
+SON = {
+	color = rgb { 0 100 100 }
+	color_ui = rgb { 0 100 100 }
+}
+BNI = {
+	color = rgb { 0 120 51 }
+	color_ui = rgb { 0 120 51 }
+}
+KEN = {
+	color = rgb { 255 57 195 }
+	color_ui = rgb { 255 57 195 }
+}
+SOF = {
+	color = rgb { 210 170 90 }
+	color_ui = rgb { 210 170 90 }
+}
+MER = {
+	color = rgb { 255 255 153 }
+	color_ui = rgb { 255 255 153 }
+}
+BUG = {
+	color = rgb { 0 115 255 }
+	color_ui = rgb { 0 115 255 }
+}
+NAV = {
+	color = rgb { 215 195 140 }
+	color_ui = rgb { 215 195 140 }
+}
 
 
 

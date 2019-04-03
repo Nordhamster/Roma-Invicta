@@ -149,6 +149,17 @@ create_country_leader = {
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
 	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 	expire = "1965.1.1"
+	ideology = democratic_centralism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Carl Gustaf Mannerheim"
+	desc = "POLITICS_CARL_MANNERHEIM_DESC"
+	picture = "gfx/leaders/FIN/portrait_fin_carl_mannerheim.dds"
+	expire = "1965.1.1"
 	ideology = autocracy
 	traits = {
 		#

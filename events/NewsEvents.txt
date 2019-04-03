@@ -63,6 +63,7 @@ news_event = {
 		any_country = {
 			controls_state = 2
 			has_war_with = RME
+			NOT = { TAG = CGP }
 		}
 		2 = { is_owned_by = RME }
 		NOT = { has_global_flag = fall_of_rome }
@@ -81,9 +82,6 @@ news_event = {
 		trigger = {
 			OR = {
 				NOT = {
-					is_in_faction_with = CGP
-				}
-				NOT = {
 					TAG = RME
 				}
 			}
@@ -92,10 +90,7 @@ news_event = {
 	option = {
 		name = news.132.b
 		trigger = {
-			AND = {
-				is_in_faction_with = CGP
-				controls_state = 2
-			}
+			controls_state = 2
 		}
 	}
 	option = {

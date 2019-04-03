@@ -7,13 +7,13 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = NAV
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
-		add_core_of = USA
+		add_core_of = NAV
 		victory_points = {
 			1827 5 
 		}

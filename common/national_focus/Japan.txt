@@ -1440,7 +1440,7 @@ focus_tree = {
 						ideology = monarchism
 						popularity = 0.1
 						}
-						
+					remove_ideas = JAP_hirohito
 				}
 	}
 	focus = {
@@ -1733,7 +1733,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_red_volunteers
-		icon = GFX_focus_yug_pan_slavic_congress
+		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_take_on_the_dragon

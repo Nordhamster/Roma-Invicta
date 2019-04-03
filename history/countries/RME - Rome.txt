@@ -164,9 +164,9 @@ add_to_faction = RME
 add_to_faction = RAM
 
 create_country_leader = {
-	name = "Consul Ferruccio Parri"
+	name = "Roman Senate"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
+	picture = "gfx/leaders/RME/Portrait_RME_Senate.dds"
 	expire = "1965.1.1"
 	ideology = roman_democracy
 	traits = {

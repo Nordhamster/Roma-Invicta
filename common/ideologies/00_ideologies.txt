@@ -75,7 +75,7 @@ ideologies = {
 			corporatism = {
 			}
 			
-			tribal_confederalism = {
+			confederalism = {
 			}
 		}
 		
@@ -233,6 +233,9 @@ ideologies = {
 			}
 			
 			centralism = {
+			}
+			
+			councilism = {
 			}
 		}
 		
