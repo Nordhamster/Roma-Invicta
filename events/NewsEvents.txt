@@ -4,11 +4,118 @@
 
 add_namespace = news
 
+#Roman Civil War Begins
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = RME
+			}
+		}
+	}
+	option = {
+		name = news.1.a
+		trigger = {
+			TAG = RME
+			NOT = { has_government = democratic }
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = {
+			original_tag = RME
+			has_government = democratic
+		}
+	}
+}
+
+#China Refuses Japanese Pressure
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = QNG
+					TAG = JAP
+				}
+			}
+		}
+	}
+	option = {
+		name = news.2.a
+		trigger = {
+			TAG = JAP
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = {
+			TAG = QNG
+		}
+	}
+}
+
+#China Buckles to Pressure
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = QNG
+					TAG = JAP
+				}
+			}
+		}
+	}
+	option = {
+		name = news.3.a
+		trigger = {
+			TAG = JAP
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = {
+			TAG = QNG
+		}
+	}
+}
+
 # The Fall of Rome (Germanic Conf.)
 news_event = {
-	id = news.132
-	title = news.132.t
-	desc = news.132.d
+	id = news.101
+	title = news.101.t
+	desc = news.101.d
 	picture = GFX_news_event_soldiers_marching
 	
 	major = yes
@@ -37,7 +144,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.132.b
+		name = news.101.b
 		trigger = {
 			TAG = CGP
 		}
@@ -52,9 +159,9 @@ news_event = {
 
 # The Fall of Rome (Generic)
 news_event = {
-	id = news.133
-	title = news.132.t
-	desc = news.133.d
+	id = news.102
+	title = news.101.t
+	desc = news.101.d
 	picture = GFX_news_event_057
 	
 	major = yes
@@ -88,7 +195,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.132.b
+		name = news.101.b
 		trigger = {
 			controls_state = 2
 		}

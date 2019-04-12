@@ -1,0 +1,417 @@
+﻿division_template = {
+	name = "Kebur Zabagna"				# Imperial Bodyguard
+	division_names_group = ETH_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Infantry Division"		
+	division_names_group = ETH_INF_01
+
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Mountain Division"		
+	division_names_group = ETH_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	##### Imperial Army #####
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5010
+		division_template = "Kebur Zabagna"			# Elite emperor's guard
+		start_experience_factor = 0.2
+	}
+
+	## Northern Front ###
+	# Gojjam Provincial Armed Forces #
+	division = { # "1st Gojjam Levies"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4954
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = { # "2nd Gojjam Levies"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4954
+		division_template = "Infantry Division"		# Militia
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.1
+	}
+	# Wolqayt, Semien and Welega-Ardjo Provincial Armed Forces #
+	division = { # "Wolqayt-Semien Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2072
+		division_template = "Mountain Division"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "Welega-Ardjo Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2072
+		division_template = "Infantry Division"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# Tigray Provincial Armed Forces #
+	division = { # "1st Tigray Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1984
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "2nd Tigray Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1984
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	# Wag and Begemder Provincial Armed Forces #
+	division = { # "Wag Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 5041
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "1st Begemder Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 5041
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "2nd Begemder Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 5041
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+	### Southern Front ###
+	division = { # "Ogaden Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 12812
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "Arusi Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 8062
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	# Willubabor and Sidamo Provincial Armed Forces #
+	division = { # "Illubabor Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 8062
+		division_template = "Infantry Division"		# Militia
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "1st Sidamo Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 4995
+		division_template = "Infantry Division"		# Regular Infantry
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "2nd Sidamo Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 4995
+		division_template = "Infantry Division"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	### Copied from Italy ###
+	### Armata dell'Africa Orientale Italiana ###
+	# I Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		} #  "26a Infantry Division 'Assietta'" 
+		location = 12723 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		} #  "30a Infantry Division 'Sabauda'" 
+		location = 12723 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		} #  "5a Infantry Division Mons 'Pusteria'" 
+		location = 12723 
+		division_template = "Infantry Division Mons" 
+		start_experience_factor = 0.3 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12723 
+		division_template = "Infantry Division"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+
+	# II Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		} #  "19a Infantry Division 'Venezia'" 
+		location = 12766 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		} #  "24a Infantry Division 'Pinerolo'" 
+		location = 12766 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12766 
+		division_template = "Infantry Division"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+
+	# III Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		} #  "27a Divisione Autotrasportabile 'Brescia'" 
+		location = 8043 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8043 
+		division_template = "Infantry Division"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+
+	# IV Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		} #  "5a Infantry Division 'Cosseria'" 
+		location = 8043 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8043 
+		division_template = "Infantry Division"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8043 
+		division_template = "Infantry Division"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+
+	# Corpo d'Armata Eritreo #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		} #  "1a Infantry Division 'Eritrea'" 
+		location = 12766 
+		division_template = "Infantry Division" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ETH" } } 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		} #  "2a Infantry Division 'Eritrea'" 
+		location = 12766 
+		division_template = "Infantry Division" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ETH" } } 
+	} 
+	#
+	# Corpo d'Armata Libico #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		} #  "29a Infantry Division 'Piemonte'" 
+		location = 11014 
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} #  "1a Infantry Division 'Libia'" 
+		location = 2063 
+		division_template = "Infantry Division" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ETH" } } 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		} #  "101a Infantry Division 'Somalia'" 
+		location = 2020 
+		division_template = "Infantry Division" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ETH" } } 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 2063 
+		division_template = "Infantry Division"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	}
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ETH"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

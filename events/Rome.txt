@@ -1,0 +1,195 @@
+﻿###########################
+# Roman Events
+###########################
+
+add_namespace = rome
+
+# Roman Civil War Begins
+country_event = {
+	id = rome.1
+	title = rome.1.t
+	desc = rome.1.d
+	picture = GFX_report_event_worker_protests
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = RME
+		has_stability < 0.01
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = { # Oh no
+		name = rome.1.a
+		hidden_effect = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.3
+				capital = 176
+				states = { 19 20 21 22 23 25 26 31 32 33 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = RME
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				add_named_threat = { threat = 20 name = news.1.t }
+			}
+			news_event = { hours = 6 id = news.1 }
+			set_global_flag = roman_civil_war
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}	
+			random_other_country = {
+				limit = {
+					original_tag = RME
+					has_government = democratic
+				}
+			}
+			set_equipment_fraction = 0.5
+			set_war_support = 0.8
+		}
+		custom_effect_tooltip = republicans_chosen
+	}
+	option = { # Switch Sides (Rome is in italy, after all :P)
+		name = rome.1.b
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 176
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = oligarchic_democracy
+				size = 0.8
+				capital = 41
+				states = { 1 2 3 39 44 47 48 49 102 103 104 105 106 109 114 115 117 118 151 153 156 157 158 159 160 161 162 163 164 169 173 177 178 182 183 184 185 186 187 211 212 273 290 339 340 341 342 343 344 345 346 349 347 348 355 356 448 449 450 451 452 454 458 459 460 461 462 513 514 553 557 661 662 663 665 677 697 698 699 731 735 736 782 786 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = RME
+					NOT = { 
+						has_government = democratic
+					}
+				}
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+			}
+			news_event = { hours = 6 id = news.1 }
+			set_global_flag = roman_civil_war
+		
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_named_threat = { threat = 20 name = news.1.t }
+		}
+		custom_effect_tooltip = nationalists_chosen
+}
+
+# Japanese Demand Consessions
+country_event = {
+	id = china.2
+	title = china.2.t
+	desc = china.2.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { # Breaking point!
+		name = china.2.a
+		ai_chance = { factor = 90 }
+		effect_tooltip = {
+			JAP = {
+				add_war_support = 0.05
+				country_event = { id = japan.1 }
+				create_wargoal = {
+  					type = annex_everything
+  					target = CHI
+  				}
+  				create_wargoal = {
+  					type = annex_everything
+  					target = SHX
+  				}
+			}
+		}
+		hidden_effect = {
+			JAP = { country_event = { id = japan.1 } }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+		}
+	}
+	option = { # Make more concessions
+		name = china.2.b
+		ai_chance = { factor = 10 }
+		JAP = {
+			set_truce = { target = ROOT days = 180 }
+			effect_tooltip = {
+				transfer_state = 608
+				transfer_state = 597
+				transfer_state = 614
+				add_state_claim = 613
+				if = {
+					limit = {
+						ROOT = { controls_state = 743 }
+					}
+					transfer_state = 743
+				}
+			}
+			country_event = { id = japan.2 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_country_flag = CHI_AI_RANDOM_HISTORICAL
+					has_game_rule = {
+						rule = CHI_ai_behavior
+						option = HISTORICAL
+					}
+				}
+				NOT = {
+					has_game_rule = { #used here instead of checking for default because people might not have WTT
+						rule = CHI_ai_behavior
+						option = ALTERNATE
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				JAP = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				JAP = {
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+			}
+		}
+	}
+}

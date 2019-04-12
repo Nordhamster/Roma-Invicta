@@ -18,6 +18,8 @@
  JAP_unsanctioned_war:0 "Unsanctioned War"
  JAP_unsanctioned_war_desc:0 "The current war in China was started hurriedly, and without the sanction of the Emperor."
  JAP_hirohito:0 "Hirohito"
+ JAP_hirohito_puppet:0 "Hirohito"
+ JAP_hirohito_cult:0 "Hirohito"
  JAP_the_london_naval_treaty:0 "The London Naval Treaty"
  MAN_exiled_imperial_family:0 "Exiled Imperial Family"
  JAP_military_purges:0 "Military Purges"

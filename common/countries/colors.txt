@@ -356,6 +356,14 @@ NAV = {
 	color = rgb { 215 195 140 }
 	color_ui = rgb { 215 195 140 }
 }
+CRO = {
+	color = rgb { 150 90 25 }
+	color_ui = rgb { 150 90 25 }
+}
+BFT = {
+	color = rgb { 130 130 130 }
+	color_ui = rgb { 130 130 130 }
+}
 
 
 

@@ -1,0 +1,96 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"		
+	division_names_group = VIN_INF_01
+	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
+	# Difference from DI is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+	}
+}
+division_template = {
+	name = "Infantry Brigade"			# Represents: 2xRgt colonial forces and , usually with old equipment
+	division_names_group = VIN_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	##### Indochina Theatre #####
+	### Army Group: Troupes d'Indochine ### -- Saigon
+	division= {	# "Division de Tonkin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 91
+		}
+		location = 4401
+		division_template = "Infantry Division"	# Colonial unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "VIN" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "Division de Cochinchine-Cambodge"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 92
+		}
+		location = 4075
+		division_template = "Infantry Division" 	# Colonial unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "VIN" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+
+### Air Wings
+air_wings = {
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "VIN"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "VIN" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+###################

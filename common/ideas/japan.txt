@@ -452,6 +452,47 @@ ideas = {
 			}
 
 			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = dictatorship
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				stability_factor = 0.4
+			}
+		}
+		
+		JAP_hirohito_puppet = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = dictatorship
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				stability_factor = 0.45
+				political_power_gain = 0.1
+			}
+		}
+		
+		JAP_hirohito_cult = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = dictatorship
 				has_government = democratic
 			}
 			
@@ -460,7 +501,8 @@ ideas = {
 			picture = jap_hirohito
 			
 			modifier = {
-				stability_factor = 0.5
+				stability_factor = 0.50
+				political_power_gain = 0.05
 			}
 		}
 

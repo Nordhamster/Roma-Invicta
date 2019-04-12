@@ -1,0 +1,181 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = china
+
+# Japanese Apply Political Pressure
+country_event = {
+	id = china.1
+	title = china.1.t
+	desc = china.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = { # Refuse
+		name = china.1.a
+		ai_chance = { factor = 90 }
+		effect_tooltip = {
+			JAP = {
+				add_war_support = 0.05
+				country_event = { id = japan.1 }
+				create_wargoal = {
+  					type = annex_everything
+  					target = QNG
+  				}
+			}
+		}
+		hidden_effect = {
+			JAP = { country_event = { id = japan.1 } }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+		}
+	}
+	option = { # Make concessions
+		name = china.1.b
+		ai_chance = { factor = 10 }
+		JAP = {
+			set_truce = { target = ROOT days = 180 }
+			effect_tooltip = {
+				transfer_state = 743
+			}
+			country_event = { id = japan.2 }
+			716 = {
+				set_demilitarized_zone = yes
+			}
+			328 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		add_political_power = -50
+		add_stability = -0.1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				JAP = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				JAP = {
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+# Japanese Demand Consessions
+country_event = {
+	id = china.2
+	title = china.2.t
+	desc = china.2.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { # Breaking point!
+		name = china.2.a
+		ai_chance = { factor = 90 }
+		effect_tooltip = {
+			JAP = {
+				add_war_support = 0.05
+				country_event = { id = japan.1 }
+				create_wargoal = {
+  					type = annex_everything
+  					target = CHI
+  				}
+  				create_wargoal = {
+  					type = annex_everything
+  					target = SHX
+  				}
+			}
+		}
+		hidden_effect = {
+			JAP = { country_event = { id = japan.1 } }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+		}
+	}
+	option = { # Make more concessions
+		name = china.2.b
+		ai_chance = { factor = 10 }
+		JAP = {
+			set_truce = { target = ROOT days = 180 }
+			effect_tooltip = {
+				transfer_state = 608
+				transfer_state = 597
+				transfer_state = 614
+				add_state_claim = 613
+				if = {
+					limit = {
+						ROOT = { controls_state = 743 }
+					}
+					transfer_state = 743
+				}
+			}
+			country_event = { id = japan.2 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_country_flag = CHI_AI_RANDOM_HISTORICAL
+					has_game_rule = {
+						rule = CHI_ai_behavior
+						option = HISTORICAL
+					}
+				}
+				NOT = {
+					has_game_rule = { #used here instead of checking for default because people might not have WTT
+						rule = CHI_ai_behavior
+						option = ALTERNATE
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				JAP = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				JAP = {
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+			}
+		}
+	}
+}

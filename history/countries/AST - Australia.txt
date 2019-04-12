@@ -113,19 +113,19 @@ set_politics = {
 
 	parties = {
 		dictatorship = { 
-			popularity = 48
+			popularity = 43
 		}
 		
 		collectivism = {
-			popularity = 32
+			popularity = 30
 		}
 		
 		democratic = {
-			popularity = 20
+			popularity = 17
 		}
 		
 		oligarchic_democracy = {
-			popularity = 0
+			popularity = 10
 		}
 		
 		monarchism = {

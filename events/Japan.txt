@@ -1,0 +1,202 @@
+﻿###########################
+# Japanese Events
+###########################
+
+add_namespace = japan
+
+# Chinese Refuse Concessions
+country_event = {
+	id = japan.1
+	title = japan.1.t
+	desc = japan.1.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.1.a
+		add_war_support = 0.05
+		create_wargoal = {
+  			type = annex_everything
+  			target = QNG
+  		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.2 }
+		}
+	}
+}
+
+# Chinese Accept Concessions
+country_event = {
+	id = japan.2
+	title = japan.2.t
+	desc = japan.2.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.2.a
+		effect_tooltip = {
+			set_truce = { target = FROM days = 180 }
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.3 }
+		}
+		if = {
+			limit = {
+				743 = {
+					is_controlled_by = FROM
+				}
+			}
+			JAP = {
+				transfer_state = 743
+			}
+		}
+		if = {
+			limit = {
+				716 = {
+					is_controlled_by = FROM
+				}
+			}
+			716 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		if = {
+			limit = {
+				328 = {
+					is_controlled_by = FROM
+				}
+			}
+			328 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		
+		add_ai_strategy = {
+			type = antagonize
+			id = "QNG"
+			value = 500
+		}
+	}
+}
+
+add_namespace = japan_border_conflict
+
+#initial border incident against China
+country_event = {
+	id = japan_border_conflict.1
+	title = japan_border_conflict.1.t
+	desc = japan_border_conflict.1.desc
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan_border_conflict.1.a
+	}
+}
+#Japan wins
+country_event = {
+	id = japan_border_conflict.2
+	title = japan_border_conflict.2.t
+	desc = japan_border_conflict.2.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan_border_conflict.2.a
+		trigger = {
+			original_tag = JAP
+		}
+		add_tech_bonus = {
+			name = qng_jap_border_conflict_won
+			category = land_doctrine
+			bonus = 1.0
+		}
+		add_tech_bonus = {
+			name = qng_jap_border_conflict_won
+			category = armor
+			bonus = 1.0
+		}
+	}
+	option = {
+		name = japan_border_conflict.2.b
+		trigger = {
+			original_tag = QNG
+		}
+		army_experience = 20
+	}
+}
+#Japan loses
+country_event = {
+	id = japan_border_conflict.3
+	title = japan_border_conflict.3.t
+	desc = japan_border_conflict.3.desc
+	picture = GFX_report_event_japanese_soldiers_03
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan_border_conflict.3.a
+		trigger = {
+			original_tag = JAP
+		}
+		army_experience = 25
+		set_country_flag = JAP_lost_KBI
+	}
+	option = {
+		name = japan_border_conflict.3.b
+		trigger = {
+			original_tag = QNG
+		}
+		add_tech_bonus = {
+			name = sov_jap_border_conflict_won
+			category = land_doctrine
+			bonus = 1.0
+		}
+	}
+}
+
+#stalemate
+country_event = {
+	id = japan_border_conflict.4
+	title = japan_border_conflict.4.t
+	desc = japan_border_conflict.4.desc
+	picture = GFX_report_event_japanese_army_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan_border_conflict.4.a
+		trigger = {
+			original_tag = JAP
+		}
+		army_experience = 50
+	}
+	option = {
+		name = japan_border_conflict.3.b
+		trigger = {
+			original_tag = QNG
+		}
+		army_experience = 50
+	}
+}
+
+#japan escalates
+country_event = {
+	id = japan_border_conflict.5
+	title = japan_border_conflict.5.t
+	desc = japan_border_conflict.5.desc
+	picture = GFX_report_event_japanese_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan_border_conflict.5.a
+		
+	}
+	
+}
