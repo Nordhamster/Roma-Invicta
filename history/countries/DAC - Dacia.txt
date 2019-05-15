@@ -29,7 +29,32 @@ add_ai_strategy = {
     value = 200
 }
 
-give_guarantee = TSV
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		set_autonomy = {
+			target = TSV
+			autonomous_state = autonomy_satellite
+			freedom_level = 0.35
+		}
+	}
+	else = {
+		set_autonomy = {
+			target = TSV
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.35
+		}
+	}
+	else = {
+		puppet = TSV
+	}
+}
+
+give_guarantee = MOE
 
 set_convoys = 10
 1939.1.1 = {

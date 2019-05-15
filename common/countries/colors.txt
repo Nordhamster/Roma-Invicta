@@ -364,6 +364,39 @@ BFT = {
 	color = rgb { 130 130 130 }
 	color_ui = rgb { 130 130 130 }
 }
+BUK = {
+	color = rgb { 90 175 40 }
+	color_ui = rgb { 90 175 40 }
+}
+
+CHI = {
+	color = rgb { 255 244 190 }
+	color_ui = rgb { 255 244 190 }
+}
+YUN = {
+	color = rgb { 114 148 80 }
+	color_ui = rgb { 222 247 198 }
+}
+TIB = {
+	color = rgb { 80 115 45}
+	color_ui = rgb { 222 247 198 }
+}
+XSM = {
+	color = rgb { 105 90 132 }
+	color_ui = rgb { 105 90 132 }
+}
+FEN = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}
+MON = {
+	color = rgb { 108 140 42 }
+	color_ui = rgb { 209 247 133 }
+}
+UYG = {
+	color = rgb { 171  190  152 }
+	color_ui = rgb { 171  190  152 }
+}
 
 
 

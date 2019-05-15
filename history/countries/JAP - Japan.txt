@@ -13,6 +13,7 @@ add_ideas = {
 	JAP_hirohito
 	JAP_samurai_stipends
 	JAP_zaibatsus
+	JAP_powerful_aristocracy
 }
 
 set_research_slots = 4

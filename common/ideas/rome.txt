@@ -67,48 +67,6 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-
-		RME_german_millitary_cooperation_focus = {
-
-			picture = german_advisors
-
-			allowed = {
-				original_tag = RME
-			}
-
-			allowed_civil_war = {
-				OR = {
-					AND = {
-						has_government = fascism
-						GER = {
-							has_government = fascism
-						}
-					}
-					AND = {
-						has_government = communism
-						GER = {
-							has_government = communism
-						}
-					}
-					AND = {
-						has_government = democratic
-						GER = {
-							has_government = democratic
-						}
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			research_bonus = {
-				land_doctrine = 0.05
-			}
-			research_bonus = {
-				air_doctrine = 0.05
-			}				
-		}
-	}
 		
 	political_advisor = {
 		amadeo_bordiga = {

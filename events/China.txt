@@ -179,3 +179,416 @@ country_event = {
 		}
 	}
 }
+
+#Chinese Civil War Begins!
+country_event = {
+	id = china.3
+	title = china.3.t
+	desc = china.3.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_country_flag = chinese_civil_war }
+		tag = QNG
+		has_government = monarchism
+		date > 1938.1.1 # Trigger at some point after 1938
+	}
+	
+	immediate = {
+		hidden_effect = {
+			CHI = {
+				declare_war_on = {
+					target = QNG
+					type = annex_everything
+				}
+				transfer_state = 613
+				add_state_core = 613
+				transfer_state = 596
+				add_state_core = 596
+				transfer_state = 595
+				add_state_core = 595
+				transfer_state = 600
+				add_state_core = 600
+				transfer_state = 749
+				add_state_core = 749
+				transfer_state = 620
+				add_state_core = 620
+				transfer_state = 605
+				add_state_core = 605
+				transfer_state = 744
+				add_state_core = 744
+				transfer_state = 750
+				add_state_core = 750
+				transfer_state = 602
+				add_state_core = 602
+				transfer_state = 599
+				add_state_core = 599
+				transfer_state = 603
+				add_state_core = 603
+				transfer_state = 748
+				add_state_core = 748
+				transfer_state = 753
+				add_state_core = 753
+				transfer_state = 752
+				add_state_core = 752
+				
+				#Core Everything
+				add_state_core = 330
+				add_state_core = 612
+				add_state_core = 611
+				add_state_core = 621
+				add_state_core = 756
+				add_state_core = 761
+				add_state_core = 758
+				add_state_core = 757
+				add_state_core = 322
+				add_state_core = 601
+				add_state_core = 619
+				add_state_core = 287
+				add_state_core = 759
+				add_state_core = 617
+				add_state_core = 618
+				add_state_core = 760
+				add_state_core = 325
+				add_state_core = 747
+				add_state_core = 751
+				
+				load_oob = CHI_1936
+			}
+			
+			QNG = {
+				set_world_flag = chinese_civil_war
+				
+				country_event = { id = china.4 days = 4 }
+				country_event = { id = china.5 days = 2 }
+				country_event = { id = china.6 days = 3 }
+				country_event = { id = china.7 days = 5 }
+				country_event = { id = china.8 days = 6 }
+			}
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+		}
+	}
+	
+	option = { # Join the KMT 
+		name = china.3.b
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+			CHI = { change_tag_from = QNG }
+		}
+	}
+}
+
+#Mongolia Splits Off
+country_event = {
+	id = china.4
+	title = china.4.t
+	desc = china.4.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		hidden_effect = {
+			MON = {
+				declare_war_on = {
+					target = QNG
+					type = take_state_focus
+					generator = { 330 612 611 621 756 761 }
+				}
+				transfer_state = 330
+				add_state_core = 330
+				transfer_state = 612
+				add_state_core = 612
+				transfer_state = 611
+				add_state_core = 611
+				transfer_state = 621
+				add_state_core = 621
+				add_state_core = 756
+				add_state_core = 761
+				
+				load_oob = MON_1936
+			}
+			
+			set_world_flag = chinese_civil_war
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Join the KMT 
+		name = china.3.b
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+			CHI = { change_tag_from = QNG }
+		}
+	}
+}
+
+#Tibet Splits Off
+country_event = {
+	id = china.5
+	title = china.5.t
+	desc = china.5.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			TIB = {
+				declare_war_on = {
+					target = QNG
+					type = take_state_focus
+					generator = { 758 757 322 601 604 }
+				}
+				transfer_state = 758
+				add_state_core = 758
+				transfer_state = 757
+				add_state_core = 757
+				transfer_state = 322
+				add_state_core = 322
+				transfer_state = 601
+				add_state_core = 601
+				
+				add_state_core = 604
+				add_state_claim = 752
+				
+				load_oob = TIB_1936
+			}
+			
+			set_world_flag = chinese_civil_war
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Switch to Mongolians
+		name = china.3.b
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+			TIB = { change_tag_from = QNG }
+		}
+	}
+}
+
+#Uyghurstan Splits Off
+country_event = {
+	id = china.6
+	title = china.6.t
+	desc = china.6.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		hidden_effect = {
+			UYG = {
+				declare_war_on = {
+					target = QNG
+					type = take_state_focus
+					generator = { 619 757 322 601 }
+				}
+				transfer_state = 619
+				add_state_core = 619
+				transfer_state = 287
+				add_state_core = 287
+				transfer_state = 759
+				add_state_core = 759
+				transfer_state = 617
+				add_state_core = 617
+				transfer_state = 618
+				add_state_core = 618
+				transfer_state = 760
+				add_state_core = 760
+				
+				load_oob = UYG_1936
+			}
+			
+			set_world_flag = chinese_civil_war
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Switch to Uyghurshan
+		name = china.3.b
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+			UYG = { change_tag_from = QNG }
+		}
+	}
+}
+
+#Yunnan Splits Off
+country_event = {
+	id = china.7
+	title = china.7.t
+	desc = china.7.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		hidden_effect = {
+			YUN = {
+				declare_war_on = {
+					target = QNG
+					type = take_state_focus
+					generator = { 325 747 751 }
+				}
+				transfer_state = 325
+				add_state_core = 325
+				transfer_state = 747
+				add_state_core = 747
+				transfer_state = 751
+				add_state_core = 751
+				
+				load_oob = YUN_1936
+			}
+			
+			set_world_flag = chinese_civil_war
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Switch to Yunnan
+		name = china.3.b
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+			YUN = { change_tag_from = QNG }
+		}
+	}
+}
+
+#Ma Splits Off
+country_event = {
+	id = china.8
+	title = china.8.t
+	desc = china.8.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		hidden_effect = {
+			XSM = {
+				declare_war_on = {
+					target = QNG
+					type = take_state_focus
+					generator = { 283 616 756 755 754 604 }
+				}
+				transfer_state = 283
+				add_state_core = 283
+				transfer_state = 616
+				add_state_core = 616
+				transfer_state = 756
+				add_state_core = 756
+				transfer_state = 755
+				add_state_core = 755
+				transfer_state = 754
+				add_state_core = 754
+				transfer_state = 604
+				add_state_core = 604
+				
+				load_oob = XSM_1936
+			}
+			
+			set_world_flag = chinese_civil_war
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Switch to Yunnan
+		name = china.3.b
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			news_event = { hours = 5 id = news.4 }
+			XSM = { change_tag_from = QNG }
+		}
+	}
+}

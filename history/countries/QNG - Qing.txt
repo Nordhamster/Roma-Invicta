@@ -1,4 +1,4 @@
-﻿capital = 613 # Nanjing
+﻿capital = 608 # Beijing
 
 oob = "QNG_1936"
 set_stability = 0.0

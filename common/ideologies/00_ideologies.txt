@@ -193,7 +193,7 @@ ideologies = {
 		color = { 100 20 100 }
 		
 		
-		war_impact_on_world_tension = 0.25		#no major danger
+		war_impact_on_world_tension = 0.25		#no major danger, monarchs fight all the time
 		faction_impact_on_world_tension = 0.1
 		
 		rules = {

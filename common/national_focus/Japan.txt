@@ -367,7 +367,13 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-
+			completion_reward = {
+					remove_ideas = JAP_powerful_aristocracy
+					add_popularity = {
+						ideology = dictatorship
+						popularity = -0.1
+						}
+				}
 	}
 	focus = {
 		id = JAP_puppet_emperor
@@ -432,7 +438,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
-
+			completion_reward = {
+				add_ideas = warrior_traditions_idea
+			}
 	}
 	focus = {
 		id = JAP_reinstate_sakoku
@@ -2157,7 +2165,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 9
-
+			completion_reward = {
+				add_ideas = JAP_communist_volunteers
+			}
 	}
 	focus = {
 		id = JAP_status_of_colonies

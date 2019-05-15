@@ -150,51 +150,23 @@ set_politics = {
 			popularity = 20
 		}
 
-		fascism = {
+		oligarchic_democracy = {
 			popularity = 18
 		}
 		
-		communism = {
+		collectivism = {
 			popularity = 2
 		}
 		
-		neutrality = { 
+		dictatorship = { 
 			popularity = 60
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = dictatorship
 	last_election = "1933.12.20"
 	election_frequency = 48
-	elections_allowed = yes
-}
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 20
-			}
-
-			fascism = {
-				popularity = 35
-			}
-			
-			communism = {
-				popularity = 2
-			}
-			
-			neutrality = { 
-				popularity = 43
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1939.7.15"
-		election_frequency = 48
-		elections_allowed = no
-	}
+	elections_allowed = no
 }
 
 create_country_leader = {

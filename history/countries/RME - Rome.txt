@@ -175,7 +175,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperator Mussolini"
+	name = "Imperator Benitus Mussolini"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
@@ -186,7 +186,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Palmiro Togliatti"
+	name = "Palmirus Togliatti"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_RME_palmiro_togliatti"
 	expire = "1965.1.1"
@@ -197,7 +197,7 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Pietro Badoglio"
+	name = "Pietrus Badoglius"
 	picture = "Portrait_italy_Pietro_Badoglio.dds"
 	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
 	skill = 1
@@ -265,7 +265,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Italo Balbo"
+	name = "Italus Balbus"
 	picture = "portrait_italy_italo_balbo.dds"
 	traits = { career_officer politically_connected }
 	skill = 1
