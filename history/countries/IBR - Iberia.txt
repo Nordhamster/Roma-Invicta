@@ -41,25 +41,18 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 47
-		}
-
-		dictatorship = {
-			popularity = 46
-		}
-		
-		oligarchic_democracy = {
-			popularity = 7
-		}
-	}
-	
 	ruling_party = dictatorship
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 47
+	oligarchic_democracy = 7		
+	collectivism = 0	
+	monarchism = 0
+	dictatorship = 46
 }
 
 set_convoys = 150

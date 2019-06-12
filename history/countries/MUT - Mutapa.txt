@@ -115,27 +115,19 @@ if = {
 
 set_convoys = 25
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 75
-		}
-
-		fascism = {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 5
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
+set_popularities = {
+	democratic = 75
+	oligarchic_democracy = 0		
+	collectivism = 20	
+	monarchism = 0
+	dictatorship = 5
+}
 
 create_country_leader = {
 	name = "J. B. M. Hertzog"

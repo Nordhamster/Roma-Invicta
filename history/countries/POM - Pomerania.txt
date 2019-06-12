@@ -38,25 +38,18 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		monarchism = { 
-			popularity = 22
-		}
-
-		democratic = {
-			popularity = 18
-		}
-		
-		dictatorship = {
-			popularity = 60
-		}
-	}
-	
 	ruling_party = dictatorship
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 18
+	oligarchic_democracy = 0		
+	collectivism = 0	
+	monarchism = 22
+	dictatorship = 60
 }
 
 create_faction = "South Baltic Pact"

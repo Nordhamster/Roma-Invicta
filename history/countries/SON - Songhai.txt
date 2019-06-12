@@ -54,28 +54,16 @@ set_convoys = 0
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 15
-		}
-
-		oligarchic_democracy = {
-			popularity = 25
-		}
-		
-		collectivism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		monarchism = { 
-			popularity = 50
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 15
+	oligarchic_democracy = 25	
+	collectivism = 10	
+	monarchism = 50
+	dictatorship = 0
 }

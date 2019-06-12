@@ -61,6 +61,14 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_popularities = {
+	democratic = 25
+	oligarchic_democracy = 0		
+	collectivism = 35	
+	monarchism = 40
+	dictatorship = 0
+}
+
 create_country_leader = {
 	name = "Souphanouvong"
 	desc = ""

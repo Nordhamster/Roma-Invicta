@@ -23,28 +23,19 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		collectivism = { 
-			popularity = 81
-		}
-
-		democratic = {
-			popularity = 15
-		}
-		
-		dictatorship = {
-			popularity = 4
-		}
-	}
-	
 	ruling_party = collectivism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-
+set_popularities = {
+	democratic = 15
+	oligarchic_democracy = 0		
+	collectivism = 81	
+	monarchism = 0
+	dictatorship = 4
+}
 
 create_country_leader = {
 	name = "Comrade Ayarkhaan"

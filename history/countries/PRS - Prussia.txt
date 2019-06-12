@@ -38,28 +38,19 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		monarchism = { 
-			popularity = 32
-		}
-
-		democratic = {
-			popularity = 13
-		}
-		
-		dictatorship = {
-			popularity = 55
-		}
-	}
-	
 	ruling_party = dictatorship
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-
+set_popularities = {
+	democratic = 13
+	oligarchic_democracy = 0		
+	collectivism = 0	
+	monarchism = 32
+	dictatorship = 55
+}
 
 create_country_leader = {
 	name = "Ertmon Labrenz"

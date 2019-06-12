@@ -117,25 +117,18 @@ set_convoys = 20
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 17
-		}
-		
-		collectivism = {
-			popularity = 1
-		}
-
-		monarchism = {
-			popularity = 80
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 4
+	oligarchic_democracy = 23
+	collectivism = 3	
+	monarchism = 70
+	dictatorship = 0
 }
 
 create_country_leader = {

@@ -100,10 +100,16 @@ set_politics = {
 
 	parties = {
 		monarchism = { 
-			popularity = 90
+			popularity = 35
 		}
 		oligarchic_democracy = { 
-			popularity = 10
+			popularity = 30
+		}
+		collectivism = {
+			popularity = 15
+		}
+		democratic = {
+			popularity = 20
 		}
 	}
 	
@@ -111,6 +117,14 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+		democratic = 20
+		dictatorship = 0	
+		monarchism = 35
+		collectivism = 15
+		oligarchic_democracy = 30
 }
 
 create_country_leader = {

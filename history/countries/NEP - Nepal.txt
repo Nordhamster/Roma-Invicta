@@ -57,21 +57,18 @@ set_stability = 0.8
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-		
-		monarchism = { 
-			popularity = 100
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	oligarchic_democracy = 0		
+	collectivism = 0	
+	monarchism = 100
+	dictatorship = 0
 }
 
 create_country_leader = {

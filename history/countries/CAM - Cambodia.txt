@@ -41,25 +41,18 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 40
-		}
-		
-		collectivism = {
-			popularity = 25
-		}
-		
-		monarchism = {
-			popularity = 35
-		}
-	}
-
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 40
+	oligarchic_democracy = 0		
+	collectivism = 25	
+	monarchism = 35
+	dictatorship = 0
 }
 
 create_country_leader = {

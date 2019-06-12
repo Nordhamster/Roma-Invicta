@@ -75,41 +75,25 @@ set_technology = {
 
 
 set_politics = {
-
-
-	parties = {
-
-		democratic = {
- 
-			popularity = 30
-
-		}
-
-		
-		dictatorship = {
-
-			popularity = 70
-
-		}
-	}
-
 	ruling_party = dictatorship
 	last_election = "1935.7.1"
 	election_frequency = 60
 	elections_allowed = no
 }
 
+set_popularities = {
+	democratic = 10
+	oligarchic_democracy = 0		
+	collectivism = 10
+	monarchism = 10
+	dictatorship = 70
+}
 
 create_country_leader = {
-
 	name = "Zahid Ishan"
-
 	desc = ""
-
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
-
 	expire = "1953.3.1"
-
 	ideology = military
 	traits = {
 

@@ -23,27 +23,18 @@ set_technology = {
 set_convoys = 25
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		monarchism = {
-			popularity = 10
-		}
-		
-		collectivism = {
-			popularity = 30
-		}
-		dictatorship = {
-			popularity = 50
-		}
-	}
 	ruling_party = dictatorship
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	oligarchic_democracy = 0		
+	collectivism = 30	
+	monarchism = 10
+	dictatorship = 50
 }
 
 create_country_leader = {

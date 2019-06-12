@@ -63,25 +63,18 @@ set_stability = 0.8
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 92
-		}
-
-		dictatorship = {
-			popularity = 3
-		}
-		
-		collectivism = {
-			popularity = 5
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 92
+	oligarchic_democracy = 0		
+	collectivism = 5	
+	monarchism = 0
+	dictatorship = 3
 }
 
 1939.1.1 = {

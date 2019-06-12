@@ -110,33 +110,18 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		dictatorship = { 
-			popularity = 43
-		}
-		
-		collectivism = {
-			popularity = 30
-		}
-		
-		democratic = {
-			popularity = 17
-		}
-		
-		oligarchic_democracy = {
-			popularity = 10
-		}
-		
-		monarchism = {
-			popularity = 0
-		}
-	}
-	
 	ruling_party = dictatorship
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 17
+	oligarchic_democracy = 10		
+	collectivism = 30	
+	monarchism = 0
+	dictatorship = 43
 }
 
 create_country_leader = {
@@ -162,8 +147,6 @@ create_corps_commander = {
     planning_skill = 5
     logistics_skill = 2
 }
-
-
 
 create_corps_commander = {
 	name = "Thomas Blamey"

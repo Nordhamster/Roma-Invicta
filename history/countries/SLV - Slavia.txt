@@ -74,6 +74,14 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_popularities = {
+	democratic = 15
+	oligarchic_democracy = 0		
+	collectivism = 0	
+	monarchism = 81
+	dictatorship = 4
+}
+
 create_faction = "Tsar Pact"
 add_to_faction = SLV
 add_to_faction = GLC

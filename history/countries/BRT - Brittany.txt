@@ -125,25 +125,18 @@ set_convoys = 300
 
 
 set_politics = {
-
-	parties = {
-		monarchism = { 
-			popularity = 69
-		}
-
-		oligarchic_democracy = {
-			popularity = 1
-		}
-		
-		democratic = {
-			popularity = 30
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 30
+	oligarchic_democracy = 1		
+	collectivism = 0	
+	monarchism = 69
+	dictatorship = 0
 }
 
 add_ideas = {

@@ -79,3 +79,11 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+set_popularities = {
+	democratic = 25
+	oligarchic_democracy = 20	
+	collectivism = 5
+	monarchism = 50
+	dictatorship = 0
+}

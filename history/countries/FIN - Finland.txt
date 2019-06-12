@@ -86,29 +86,18 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		dictatorship = {
-			popularity = 10
-		}
-		
-		collectivism = {
-			popularity = 1
-		}
-
-		monarchism = {
-			popularity = 79
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	oligarchic_democracy = 0		
+	collectivism = 1	
+	monarchism = 79
+	dictatorship = 10
 }
 
 create_country_leader = {

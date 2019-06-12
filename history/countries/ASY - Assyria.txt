@@ -60,30 +60,18 @@ set_convoys = 5
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		dictatorship = {
-			popularity = 50
-		}
-		
-		collectivism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		monarchism = { 
-			popularity = 30
-		}
-	}
-	
 	ruling_party = dictatorship
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	oligarchic_democracy = 0		
+	collectivism = 10	
+	monarchism = 30
+	dictatorship = 50
 }
 
 create_country_leader = {

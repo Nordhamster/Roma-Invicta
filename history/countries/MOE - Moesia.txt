@@ -84,60 +84,20 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 30
-		}
-		
-		communism = {
-			popularity = 20
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 30
-		}
-	}
-	
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 20
-			}
-
-			fascism = {
-				popularity = 30
-			}
-			
-			communism = {
-				popularity = 20
-				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 30
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1938.1.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
+set_popularities = {
+	democratic = 24
+	oligarchic_democracy = 10		
+	collectivism = 0	
+	monarchism = 66
+	dictatorship = 0
 }
+
 set_stability = 0.6
 
 create_country_leader = {
@@ -145,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -167,7 +127,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = Despotism
+	ideology = constitutional
 	traits = {
 		#
 	}

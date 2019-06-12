@@ -60,29 +60,18 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		dictatorship = {
-			popularity = 15
-		}
-		
-		collectivism = {
-			popularity = 10
-		}
-		
-		monarchism = { 
-			popularity = 75
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	oligarchic_democracy = 0		
+	collectivism = 10	
+	monarchism = 75
+	dictatorship = 15
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate

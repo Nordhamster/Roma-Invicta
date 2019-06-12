@@ -79,28 +79,21 @@ set_technology = {
 }
 
 set_convoys = 25
+
 set_politics = {
-
-	parties = {
-		monarchism = { 
-			popularity = 75
-		}
-
-		democratic = {
-			popularity = 20
-		}
-		
-		collectivism = {
-			popularity = 5
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = no
 }
 
+set_popularities = {
+	democratic = 0
+	oligarchic_democracy = 20		
+	collectivism = 5	
+	monarchism = 75
+	dictatorship = 0
+}
 
 create_country_leader = {
 	name = "J. B. M. Hertzog"

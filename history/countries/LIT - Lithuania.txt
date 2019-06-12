@@ -70,29 +70,19 @@ set_convoys = 10
 	}
 }
 
-set_politics = {
-	parties = {
-		democratic = { 
-			popularity = 20
-		}
-
-		oligarchic_democracy = {
-			popularity = 15
-		}
-		
-		collectivism = {
-			popularity = 5
-		}
-		
-		monarchism = { 
-			popularity = 60
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchism
 	last_election = "1926.5.8"
 	election_frequency = 120
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	oligarchic_democracy = 15		
+	collectivism = 5	
+	monarchism = 60
+	dictatorship = 0
 }
 
 create_country_leader = {

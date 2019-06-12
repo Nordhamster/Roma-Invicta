@@ -95,6 +95,14 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_popularities = {
+	democratic = 30
+	oligarchic_democracy = 15		
+	collectivism = 15	
+	monarchism = 50
+	dictatorship = 0
+}
+
 create_country_leader = {
 	name = "Antanas Smetona"
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"

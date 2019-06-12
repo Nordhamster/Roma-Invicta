@@ -63,36 +63,28 @@ set_stability = 0.8
 }
 
 set_politics = {
-
-	parties = {
-		monarchism = { 
-			popularity = 82
-		}
-
-		dictatorship = {
-			popularity = 3
-		}
-		
-		democratic = {
-			popularity = 15
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = no
 }
 
-	create_country_leader = {
-		name = "Germund Metternich"
-		desc = ""
-		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-		expire = "1965.1.1"
-		ideology = aristocracy
-		traits = {
-			#
-		}
+set_popularities = {
+	democratic = 15
+	oligarchic_democracy = 0		
+	collectivism = 0	
+	monarchism = 82
+	dictatorship = 3
+}
+
+create_country_leader = {
+	name = "Germund Metternich"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = aristocracy
+	traits = {
+		#
 	}
 }
 #Pierre Dupong from 37

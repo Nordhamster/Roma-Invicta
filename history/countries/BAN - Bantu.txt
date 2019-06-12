@@ -46,32 +46,20 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
-set_politics = {
+set_politics = {		
+	ruling_party = collectivism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		collectivism = {
-			popularity = 100
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 0
-		}
-	}
-		
-		ruling_party = collectivism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
+set_popularities = {
+	democratic = 0
+	oligarchic_democracy = 5	
+	collectivism = 90	
+	monarchism = 0
+	dictatorship = 5
+}
 
 create_country_leader = {
 	

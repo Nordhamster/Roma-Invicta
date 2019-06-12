@@ -220,27 +220,19 @@ create_country_leader = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 97
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 1
-		}
-	}
-	
 	ruling_party = monarchism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_popularities = {
+	democratic = 0
+	oligarchic_democracy = 1	
+	collectivism = 2	
+	monarchism = 97
+	dictatorship = 0
+}
 
 create_country_leader = {
 	name = "Winston Churchill"

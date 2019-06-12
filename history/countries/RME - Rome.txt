@@ -11,9 +11,22 @@ add_ideas = {
 	stagnant_economy
 	limited_exports
 	limited_conscription
-	partial_economic_mobilisation
+	civilian_economy
 }
 
+#set up roman senate
+set_variable = { var = senators_support value = 55 }
+set_variable = { var = senators_total value = 100 }
+set_variable = { var = representatives_support value = 400 }
+set_variable = { var = representatives_total value = 600 }
+set_variable = { var = quorum_low value = 23 }
+set_variable = { var = quorum_medium value = 33 }
+set_variable = { var = quorum_high value = 43 }
+RME_recalc_congress_icon_frames = yes
+RME = {
+	country_event = { id = rme_senate.14 days = 2 }
+	country_event = { id = rme_senate.15 days = 2 }
+}
 
 # Starting tech
 set_technology = {
@@ -138,25 +151,19 @@ if = {
 set_convoys = 200
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 22
-		}
-		
-		dictatorship = { 
-			popularity = 17
-		}
-
-		oligarchic_democracy = {
-			popularity = 61
-		}
-}
 	
 	ruling_party = oligarchic_democracy
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+		democratic = 20
+		dictatorship = 17	
+		monarchism = 0
+		collectivism = 2	
+		oligarchic_democracy = 61
 }
 
 create_faction = "Foedus Roma"

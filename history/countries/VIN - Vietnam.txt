@@ -41,28 +41,18 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 35
-		}
-
-		dictatorship = {
-			popularity = 15
-		}
-		
-		collectivism = {
-			popularity = 15
-		}
-		monarchism = {
-			popularity = 35
-		}
-	}
-
 	ruling_party = monarchism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 35
+	oligarchic_democracy = 0		
+	collectivism = 15	
+	monarchism = 35
+	dictatorship = 15
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!

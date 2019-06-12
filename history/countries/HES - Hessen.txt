@@ -62,26 +62,19 @@ set_stability = 0.8
 	}
 }
 
-set_politics = {
-
-	parties = {
-		monarchism = { 
-			popularity = 92
-		}
-
-		dictatorship = {
-			popularity = 3
-		}
-		
-		democratic = {
-			popularity = 5
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	oligarchic_democracy = 0		
+	collectivism = 0	
+	monarchism = 92
+	dictatorship = 3
 }
 
 create_country_leader = {

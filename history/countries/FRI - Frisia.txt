@@ -70,33 +70,18 @@ set_stability = 0.8
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		dictatorship = {
-			popularity = 18
-		}
-		
-		collectivism = {
-			popularity = 15
-		}
-		
-		oligarchic_democracy = {
-			popularity = 42
-		}
-		
-		monarchism = {
-			popularity = 15
-		}
-	}
-	
 	ruling_party = oligarchic_democracy
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 10
+	oligarchic_democracy = 42	
+	collectivism = 15	
+	monarchism = 15
+	dictatorship = 18
 }
 
 create_country_leader = {
