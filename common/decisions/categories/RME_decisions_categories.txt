@@ -1,0 +1,14 @@
+################
+##### RME ######
+################
+
+RME_senate = {
+	icon = aus_congress
+	allowed = {
+		original_tag = RME
+	}
+
+	scripted_gui = rme_senate_decision_ui	
+
+	priority = 85
+}

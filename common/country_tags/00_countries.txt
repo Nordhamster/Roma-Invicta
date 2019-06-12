@@ -90,6 +90,7 @@ NAV = "countries/Navajo.txt"
 CRO = "countries/Crow.txt"
 BFT = "countries/Blackfoot.txt"
 BUK = "countries/Bukhara.txt"
+GEL = "countries/Geledi.txt"
 
 #Releasables, Seperatists etc...
 CHI = "countries/China.txt" #Kuomintang Government
@@ -99,3 +100,5 @@ MON = "countries/Mongolia.txt"
 UYG = "countries/Uyghurstan.txt"
 TIB = "countries/Tibet.txt"
 FEN = "countries/Fengtian.txt"
+GXC = "countries/Guangxi.txt"
+SZE = "countries/Sichuan.txt"

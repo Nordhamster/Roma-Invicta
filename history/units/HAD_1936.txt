@@ -1,41 +1,42 @@
 ﻿division_template = {
-	name = "al-Mushati"		
-	division_names_group = EGY_INF_01
+	name = "Alfurqat Almasha"		# Infantry Division 
 
-	# Note: Represents both regular infantry and militia units
+	division_names_group = YEM_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 }
 division_template = {
-	name = "Sipahis"
-	division_names_group = EGY_CAV_02
+	name = "Alfurqat Alfursan"		# Cavalry Division
+
+	division_names_group = YEM_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-        cavalry = { x = 0 y = 3 }
-	}
-	support = {
-        recon = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
 	}
 }
 
 
 units = {
-	#Egypt Units
 	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 12821
-		division_template = "Colonial Garrison"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		division_template = "Alfurqat Almasha"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "HAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -54,7 +55,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "EGY"
+			creator = "HAD"
 		}
 		requested_factories = 2
 		progress = 0.1

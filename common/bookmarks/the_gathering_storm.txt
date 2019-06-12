@@ -51,7 +51,7 @@ bookmarks = {
 		}
 		"RME"={
 			history = "RME_GATHERING_STORM_DESC"
-			ideology = senate_democracy
+			ideology = oligarchic_democracy
 			ideas = {
 				roma_invicta
 				rampant_corruption

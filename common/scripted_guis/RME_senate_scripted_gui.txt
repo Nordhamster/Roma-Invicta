@@ -1,0 +1,19 @@
+scripted_gui = {
+
+	rme_senate_decision_ui = {
+		context_type = decision_category
+		window_name = "rme_senate_decision_ui_window"
+
+		properties = {
+			senate_icon = {
+				frame = current_plebs_icon_frame
+			}
+
+			plebs_icon = {
+				frame = current_senate_icon_frame
+			}
+		}
+	}
+	
+}
+

@@ -1,0 +1,113 @@
+RME_senate = {
+	RME_small_lobby_effort = {
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			not = {
+				has_decision = RME_medium_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.3
+				has_political_power > 10
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 30
+		remove_effect = {
+			RME_congress_small_support = yes
+		}
+	}
+	RME_medium_lobby_effort = {
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			not = {
+				has_decision = RME_small_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.75
+				has_political_power > 35
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 45
+		modifier = {
+			political_power_gain = -0.75
+		}
+		remove_effect = {
+			RME_congress_medium_support = yes
+		}
+	}
+	RME_snap_elections = {
+        icon = generic_political_discourse
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = senate_low_support_trigger_tt
+                OR = {
+                check_variable = { var = representatives_support value = 91 compare = less_than_or_equals }
+                }
+            }
+            OR = {
+                political_power_daily > 0.3
+                has_political_power > 10
+            }
+        }
+        ai_will_do = {
+            factor = 100
+            modifier = {
+                congress_low_support_trigger = yes
+                factor = 0
+            }
+            modifier = {
+                congress_low_support_trigger = yes
+                factor = 0.5
+            }
+        }
+        days_re_enable = 365
+        days_remove = 2
+        complete_effect = {
+            RME_election_senate = yes
+            country_event = { id = rme_senate.16 days = 1 }
+        }
+    }
+}
+

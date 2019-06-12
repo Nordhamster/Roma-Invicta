@@ -9,14 +9,14 @@ state={
 	}
 
 	history={
-		owner = QAM
+		owner = JAM
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 2
 
 		}
-		add_core_of = QAM
+		add_core_of = JAM
 		victory_points = {
 			853 3 
 		}

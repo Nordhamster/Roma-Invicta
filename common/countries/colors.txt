@@ -81,7 +81,7 @@ SCA = {
 	color_ui = rgb { 36 32 155 }
 }
 ENW = {
-	color = rgb { 201 56 93 }
+	color = rgb { 205 28 46 }
 	color_ui = rgb { 255 73 121 }
 }
 IRE = {
@@ -397,7 +397,18 @@ UYG = {
 	color = rgb { 171  190  152 }
 	color_ui = rgb { 171  190  152 }
 }
-
+GXC = {
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 71 113 97 }
+}
+SZE = {
+	color = rgb { 200 130 20 }
+	color_ui = rgb { 200 130 20 }
+}
+GEL = {
+	color = rgb { 80 150 80 }
+	color_ui = rgb { 80 150 80 }
+}
 
 
 D01 = {

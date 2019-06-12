@@ -1,0 +1,485 @@
+﻿###########################
+# Senate Events
+###########################
+
+add_namespace = rme_senate
+
+# Rome senate elections - outcome
+country_event = {
+	id = rme_senate.1
+	title = rme_senate.1.t
+	desc = rme_senate.1.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = rme_senate.1.a
+		clear_variable = sen_loc
+		clear_variable = ror_loc
+		clear_variable = senators_for_reelection
+		clear_variable = representatives_for_reelection
+	}
+
+}
+# elections - new president, opposition/support switch roles
+country_event = {
+	id = rme_senate.2
+	title = rme_senate.2.t
+	desc = rme_senate.2.desc
+	picture = GFX_report_event_rme_senate_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = rme_senate.2.a
+		clear_variable = sen_loc
+		clear_variable = ror_loc
+		clear_variable = senators_for_reelection
+		clear_variable = representatives_for_reelection
+	}
+
+}
+# elections in the US - player has a majority guaranteed
+country_event = {
+	id = rme_senate.3
+	title = rme_senate.3.t
+	desc = rme_senate.3.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	option = {
+		name = rme_senate.3.a
+		RME_return_majority = yes
+	}
+
+}
+
+#midterm elections
+country_event = {
+	id = rme_senate.4
+	title = rme_senate.4.t
+	desc = rme_senate.4.desc
+	picture = GFX_report_event_election_vote
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			random_list = {
+				13 = {
+					set_variable = { election_factor = random }
+					add_to_variable = { election_factor = -0.6 }
+					RME_election_senate = yes
+					RME_election_plebs = yes
+					country_event = rme_senate.1
+				}
+				13 = {
+					set_variable = { election_factor = random }
+					add_to_variable = { election_factor = -0.3 }
+					RME_election_senate = yes
+					RME_election_plebs = yes
+					country_event = rme_senate.1
+				}
+			}
+		}
+		else = {
+			country_event = rme_senate.3
+		}
+	}
+
+	option = {
+		name = rme_senate.4.a
+		
+	}
+
+}
+#small support event - senate
+country_event = {
+	id = rme_senate.5
+	title = rme_senate.5.t
+	desc = rme_senate.5.desc
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.5.a
+		RME_senate_small_support = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.13 days = 70 random = 10 }
+		}
+	}
+
+}
+# small support event - plebs
+country_event = {
+	id = rme_senate.6
+	title = rme_senate.6.t
+	desc = rme_senate.6.desc
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.6.a
+		RME_plebs_small_support = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.14 days = 70 random = 10 }
+		}
+	}
+
+}
+
+#small opposition event - senate
+country_event = {
+	id = rme_senate.7
+	title = rme_senate.7.t
+	desc = rme_senate.7.desc
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.7.a
+		RME_senate_small_opposition = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.13 days = 70 random = 10 }
+		}
+	}
+
+}
+# small opposition event - plebs
+country_event = {
+	id = rme_senate.8
+	title = rme_senate.8.t
+	desc = rme_senate.8.desc
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.8.a
+		RME_plebs_small_opposition = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.14 days = 70 random = 10 }
+		}
+	}
+
+}
+
+#medium support event - senate
+country_event = {
+	id = rme_senate.9
+	title = rme_senate.9.t
+	desc = rme_senate.9.desc
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.9.a
+		RME_senate_medium_support = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.13 days = 70 random = 20 }
+		}
+	}
+
+}
+# medium support event - house
+country_event = {
+	id = rme_senate.10
+	title = rme_senate.10.t
+	desc = rme_senate.10.desc
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.10.a
+		RME_plebs_medium_support = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.14 days = 70 random = 10 }
+		}
+	}
+
+}
+
+#medium opposition event - senate
+country_event = {
+	id = rme_senate.11
+	title = rme_senate.11.t
+	desc = rme_senate.11.desc
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.11.a
+		RME_senate_medium_opposition = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.13 days = 70 random = 20 }
+		}
+	}
+
+}
+# medium opposition event - plebs
+country_event = {
+	id = rme_senate.12
+	title = rme_senate.12.t
+	desc = rme_senate.12.desc
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.12.a
+		RME_plebs_medium_opposition = yes
+		hidden_effect = {
+			country_event = { id = rme_senate.14 days = 70 random = 10 }
+		}
+	}
+
+}
+
+# dispatcher event - senate
+country_event = {
+	id = rme_senate.13
+	Hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	immediate = {
+		random_list = {
+			20 = { 
+				modifier = {
+					not = { congress_medium_support_trigger = yes }
+					factor = 1.25
+				}
+				modifier = {
+					not = { congress_low_support_trigger = yes }
+					factor = 2
+				}
+				country_event = { id = rme_senate.5 days = 14 random = 6 } #small support
+			} 
+			20 = { 
+				modifier = {
+					congress_high_support_trigger = yes
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = fascist_demagogue
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = communist_revolutionary
+					factor = 2
+				}
+				country_event = { id = rme_senate.7 days = 20 random = 6 } #small opposition 
+			} 
+			14 = { 
+				modifier = {
+					not = { congress_medium_support_trigger = yes }
+					factor = 1.25
+				}
+				modifier = {
+					not = { congress_low_support_trigger = yes }
+					factor = 2
+				}
+				country_event = { id = rme_senate.9 days = 20 random = 10 } #medium support
+			} 
+			14 = { 
+				modifier = {
+					congress_high_support_trigger = yes
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = fascist_demagogue
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = communist_revolutionary
+					factor = 2
+				}
+				country_event = { id = rme_senate.11 days = 20 random = 10 }  #medium opposition
+			}
+			1 = { #investment opportunity
+				modifier = {
+					has_country_flag = AUS_congress_investment
+					factor = 0
+				}
+				country_event = { id = rme_senate.14 days = 10 random = 14 } 
+			} 
+		}
+	}
+}
+
+# dispatcher event - house
+country_event = {
+	id = rme_senate.14
+	Hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	immediate = {
+		random_list = {
+			4 = { 
+				modifier = {
+					not = { congress_medium_support_trigger = yes }
+					factor = 1.25
+				}
+				modifier = {
+					not = { congress_low_support_trigger = yes }
+					factor = 2
+				}
+				country_event = { id = rme_senate.6 days = 14 random = 6 } #small support
+			} 
+			25 = {
+				modifier = {
+					congress_high_support_trigger = yes
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = fascist_demagogue
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = communist_revolutionary
+					factor = 2
+				} 
+				country_event = { id = rme_senate.8 days = 20 random = 6 } #small opposition
+			} 
+			25 = { 
+				modifier = {
+					not = { congress_medium_support_trigger = yes }
+					factor = 1.25
+				}
+				modifier = {
+					not = { congress_low_support_trigger = yes }
+					factor = 2
+				}
+				country_event = { id = rme_senate.10 days = 25 random = 10 } #medium support
+			} 
+			14 = { 
+				modifier = {
+					congress_high_support_trigger = yes
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = fascist_demagogue
+					factor = 2
+				}
+				modifier = {
+					has_idea_with_trait = communist_revolutionary
+					factor = 2
+				}
+				country_event = { id = rme_senate.12 days = 1 random = 14 } #medium opposition
+			} 
+		}
+	}
+}
+
+#Snap Elections called
+country_event = {
+	id = rme_senate.15
+	title = rme_senate.15.t
+	desc = rme_senate.15.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.15.a
+		RME_election_plebs = yes
+		clear_variable = ror_loc
+		clear_variable = representatives_for_reelection
+		set_country_flag = snap_elections
+		hidden_effect = {
+			country_event = { id = rme_senate.16 days = 140 }
+		}
+	}
+
+}
+country_event = {
+	id = rme_senate.16
+	title = rme_senate.16.t
+	desc = rme_senate.16.desc
+	picture = GFX_report_event_election_vote
+	trigger = {
+		tag = RME
+		has_country_flag = snap_elections
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		tag = RME
+	}
+
+	option = {
+		name = rme_senate.16.a
+		AUS_election_senate = yes
+		clear_variable = ror_loc
+		clear_variable = representatives_for_reelection
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+	}
+
+	option = {
+		name = rme_senate.16.b
+		RME_election_senate = yes
+		clear_variable = ror_loc
+		clear_variable = representatives_for_reelection
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+	}
+
+	option = {
+		name = rme_senate.16.c
+		RME_election_plebs = yes
+		clear_variable = ror_loc
+		clear_variable = representatives_for_reelection
+		set_politics = { ruling_party = collectivism elections_allowed = no }
+	}
+
+	option = {
+		name = rme_senate.16.d
+		RME_election_senate = yes
+		clear_variable = ror_loc
+		clear_variable = representatives_for_reelection
+		set_politics = { ruling_party = dictatorship elections_allowed = no }
+	}
+
+}
