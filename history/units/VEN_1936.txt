@@ -300,6 +300,25 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 11467
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 11467
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
 }
 
 ##### Wojska Lotnicze i Obrony Powietrzne #####

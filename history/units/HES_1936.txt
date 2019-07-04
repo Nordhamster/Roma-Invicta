@@ -1,0 +1,116 @@
+﻿division_template = {
+	name = "Infanterie Division"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Panzer-Division"
+
+	division_names_group = GER_Arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Gebirgs-Brigade"
+	division_names_group = GER_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Kavallerie-Brigade"  		# cavalry)
+	division_names_group = GER_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Light tank (tankette) bn
+	}
+}
+
+units = {
+	# X. Armeekorps
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 6488
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3
+	}
+}
+
+air_wings = {
+	### Luftstreitkräfte -- Vienna (full air force, consolidated), CR.32 aircraft
+	4 = {
+		fighter_equipment_0 =  {
+			creator = "HES"
+			amount = 42
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HES"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HES"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}
