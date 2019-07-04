@@ -14,9 +14,9 @@
 #
 
 
-congress_house_low_support_trigger = {
+senate_senate_low_support_trigger = {
 	custom_trigger_tooltip = {
-		tooltip = congress_house_low_support_trigger_tt
+		tooltip = senate_senate_low_support_trigger_tt
 		check_variable = { var = representatives_support value = 91 compare = less_than_or_equals }
 	}
 }

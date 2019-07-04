@@ -129,6 +129,9 @@ focus_tree = {
 					popularity = 0.1
 				}
 			}
+		completion_reward = {
+			add_ideas = JAP_monopoly
+		}
 	}
 	focus = {
 		id = JAP_civilian_industry
@@ -249,6 +252,10 @@ focus_tree = {
 			ai_will_do = {
 					factor = 3
 				}
+		completion_reward = {
+			add_ideas = JAP_corporate_advisors_idea
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = JAP_zaibatsu_coup
@@ -306,6 +313,10 @@ focus_tree = {
 					swap_ideas = {
 							remove_idea = JAP_zaibatsus
 							add_idea = JAP_zaibatsus_challenged
+						}
+					add_popularity = {
+						ideology = oligarchic_democracy
+						popularity = -0.1
 						}
 				}
 
@@ -552,7 +563,11 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
-
+		completion_reward = {
+			remove_ideas = JAP_zaibatsus_challenged
+			add_political_power = 50
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = JAP_study_foreign_equipment
@@ -566,7 +581,6 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-
 	}
 	focus = {
 		id = JAP_home_designs
@@ -580,7 +594,14 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
 	}
 	focus = {
 		id = JAP_foreign_intervention
@@ -709,7 +730,63 @@ focus_tree = {
 		}
 		x = 14
 		y = 3
-
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+						free_building_slots = {
+								building = infrastructure
+								size > 0
+							}
+						OR = {
+								is_in_home_area = yes
+								NOT = {
+										owner = {
+												any_owned_state = {
+														free_building_slots = {
+																building = infrastructure
+																size > 0
+															}
+														is_in_home_area = yes
+													}
+											}
+									}
+							}
+					}
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
 	}
 	focus = {
 		id = JAP_war_industry
@@ -723,7 +800,46 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
-
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
 	}
 	focus = {
 		id = JAP_industry_development
@@ -735,7 +851,46 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
-
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
 	}
 	focus = {
 		id = JAP_shogunate_economy
@@ -756,7 +911,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
 	}
 	focus = {
 		id = JAP_collectivist_coup
@@ -798,7 +960,15 @@ focus_tree = {
 		}
 		x = 14
 		y = 6
-
+		available = {
+			AMZ = {
+				has_government = collectivism
+				is_faction_leader = yes
+			}
+		}
+		completion_reward = {
+			AMZ = { country_event = { id = japan.3 } }
+		}
 	}
 	focus = {
 		id = JAP_asian_collectivism
@@ -1820,7 +1990,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 5
 				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_corporate_advisors_idea
+				add_idea = JAP_corporate_collab_idea
+			}
+		}
 	}
 	focus = {
 		id = JAP_return_of_the_emperor

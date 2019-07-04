@@ -82,6 +82,25 @@ country_event = {
 	}
 }
 
+#Commie Japan Asks to join Internationale
+country_event = {
+	id = japan.3
+	title = japan.3.t
+	desc = japan.3.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = { # yes
+		name = japan.3.a
+		ai_will_do = { factor = 10}
+		AMZ = { add_to_faction = JAP }
+	}
+	
+	option = { # no
+		name = japan.3.b
+	}
+}
 add_namespace = japan_border_conflict
 
 #initial border incident against China

@@ -36,7 +36,7 @@ RME_congress_small_opposition = {
 }
 
 RME_plebs_small_opposition = {
-	custom_effect_tooltip = mtg_rme_senate_small_opposition_tt
+	custom_effect_tooltip = mtg_rme_plebs_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -3 }
 	add_to_variable = { senators_support = temp_factor }
@@ -46,7 +46,7 @@ RME_plebs_small_opposition = {
 }
 
 RME_senate_small_opposition = {
-	custom_effect_tooltip = mtg_rme_house_small_opposition_tt
+	custom_effect_tooltip = mtg_rme_senate_small_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -9 }
 	add_to_variable = { representatives_support = temp_factor }
@@ -55,7 +55,7 @@ RME_senate_small_opposition = {
 	RME_recalc_congress_icon_frames = yes
 }
 RME_plebs_small_support = {
-	custom_effect_tooltip = mtg_rme_senate_small_support_tt
+	custom_effect_tooltip = mtg_rme_plebs_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 2 }
 	add_to_variable = { senators_support = temp_factor }
@@ -65,7 +65,7 @@ RME_plebs_small_support = {
 }
 
 RME_senate_small_support = {
-	custom_effect_tooltip = mtg_rme_house_small_support_tt
+	custom_effect_tooltip = mtg_rme_senate_small_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 11 }
 	clamp_temp_variable = { var = temp_factor max = 11 min = 3 }
@@ -76,7 +76,7 @@ RME_senate_small_support = {
 }
 
 RME_plebs_medium_opposition = {
-	custom_effect_tooltip = mtg_rme_senate_medium_opposition_tt
+	custom_effect_tooltip = mtg_rme_plebs_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -5 }
 	clamp_temp_variable = { var = temp_factor max = -3 min = -5 }
@@ -87,7 +87,7 @@ RME_plebs_medium_opposition = {
 }
 
 RME_senate_medium_opposition = {
-	custom_effect_tooltip = mtg_rme_house_medium_opposition_tt
+	custom_effect_tooltip = mtg_rme_senate_medium_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -17 }
 	clamp_temp_variable = { var = temp_factor max = -9 min = -17 }
@@ -97,7 +97,7 @@ RME_senate_medium_opposition = {
 	RME_recalc_congress_icon_frames = yes
 }
 RME_plebs_medium_support = {
-	custom_effect_tooltip = mtg_rme_senate_medium_support_tt
+	custom_effect_tooltip = mtg_rme_plebs_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 3 }
 	clamp_temp_variable = { var = temp_factor max = 3 min = 2 }
@@ -108,7 +108,7 @@ RME_plebs_medium_support = {
 }
 
 RME_senate_medium_support = {
-	custom_effect_tooltip = mtg_rme_house_medium_support_tt
+	custom_effect_tooltip = mtg_rme_senate_medium_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 13 }
 	clamp_temp_variable = { var = temp_factor max = 13 min = 9 }
@@ -118,7 +118,7 @@ RME_senate_medium_support = {
 	RME_recalc_congress_icon_frames = yes
 }
 RME_plebs_large_opposition = {
-	custom_effect_tooltip = mtg_rme_senate_large_opposition_tt
+	custom_effect_tooltip = mtg_rme_plebs_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -11 }
 	clamp_temp_variable = { var = temp_factor max = -5 min = -11 }
@@ -129,7 +129,7 @@ RME_plebs_large_opposition = {
 }
 
 RME_senate_large_opposition = {
-	custom_effect_tooltip = mtg_rme_house_large_opposition_tt
+	custom_effect_tooltip = mtg_rme_senate_large_opposition_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = -42 }
 	clamp_temp_variable = { var = temp_factor max = -22 min = -42 }
@@ -139,7 +139,7 @@ RME_senate_large_opposition = {
 	RME_recalc_congress_icon_frames = yes
 }
 RME_plebs_large_support = {
-	custom_effect_tooltip = mtg_rme_senate_large_support_tt
+	custom_effect_tooltip = mtg_rme_plebs_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 13 }
 	clamp_temp_variable = { var = temp_factor max = 13 min = 10 }
@@ -150,7 +150,7 @@ RME_plebs_large_support = {
 }
 
 RME_senate_large_support = {
-	custom_effect_tooltip = mtg_rme_house_large_support_tt
+	custom_effect_tooltip = mtg_rme_senate_large_support_tt
 	set_temp_variable = { temp_factor = random }
 	multiply_temp_variable = { temp_factor = 53 }
 	clamp_temp_variable = { var = temp_factor max = 53 min = 33 }
@@ -159,8 +159,8 @@ RME_senate_large_support = {
 	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
 	RME_recalc_congress_icon_frames = yes
 }
-RME_congress_medium_opposition = {
-	custom_effect_tooltip = mtg_rme_senate_medium_opposition_tt
+RME_both_medium_opposition = {
+	custom_effect_tooltip = mtg_rme_both_medium_opposition_tt
 	hidden_effect = {
 		RME_plebs_medium_opposition = yes
 		RME_senate_medium_opposition = yes
@@ -168,16 +168,16 @@ RME_congress_medium_opposition = {
 	}
 }
 
-RME_congress_large_opposition = {
-	custom_effect_tooltip = mtg_rme_senate_large_opposition_tt
+RME_both_large_opposition = {
+	custom_effect_tooltip = mtg_rme_both_large_opposition_tt
 	hidden_effect = {
 		RME_plebs_large_opposition = yes
 		RME_senate_large_opposition = yes
 		
 	}
 }
-RME_congress_small_support = {
-	custom_effect_tooltip = mtg_rme_senate_small_support_tt
+RME_both_small_support = {
+	custom_effect_tooltip = mtg_rme_both_small_support_tt
 	hidden_effect = {
 		RME_plebs_small_support = yes
 		RME_senate_small_support = yes
@@ -185,16 +185,16 @@ RME_congress_small_support = {
 	}
 }
 
-RME_congress_medium_support = {
-	custom_effect_tooltip = mtg_rme_senate_medium_support_tt
+RME_both_medium_support = {
+	custom_effect_tooltip = mtg_rme_both_medium_support_tt
 	hidden_effect = {
 		RME_plebs_medium_support = yes
 		RME_senate_medium_support = yes
 		
 	}
 }
-RME_congress_large_support = {
-	custom_effect_tooltip = mtg_rme_senate_large_support_tt
+RME_both_large_support = {
+	custom_effect_tooltip = mtg_rme_both_large_support_tt
 	hidden_effect = {
 		RME_plebs_large_support = yes
 		RME_senate_large_support = yes

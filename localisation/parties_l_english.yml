@@ -91,6 +91,11 @@
  YAK_monarchism_party:0 "Tungus Khanate Loyalists"
  YAK_collectivism_party:0 "Yakuto-Evenk Workers' Council"
  YAK_democratic_party:0 "Liberal Party"
+ AMZ_oligarchic_democracy_party:0 ""
+ AMZ_dictatorship_party:0 "United Amazonia Party"
+ AMZ_monarchism_party:0 "Reactionaries"
+ AMZ_collectivism_party:0 "Amazonian Worker's Party"
+ AMZ_democratic_party:0 "Free Marketeers"
  QNG_oligarchic_democracy_party:0 "KMT"
  QNG_oligarchic_democracy_party_long:0 "Kuomintang"
  QNG_dictatorship_party:0 "Yuan Shikai Loyalists"
@@ -155,6 +160,11 @@
  
  MON_dictatorship_party: "Tsagaan Khas"
  
+ AST_oligarchic_democracy_party:0 "Criminal Syndicates"
+ AST_dictatorship_party:0 "Military Administration"
+ AST_monarchism_party:0 "Monarchist Radicals"
+ AST_collectivism_party:0 "Radicals"
+ AST_democratic_party:0 "Rikken Minseitō"
 
  
  #_oligarchic_democracy_party:0 ""

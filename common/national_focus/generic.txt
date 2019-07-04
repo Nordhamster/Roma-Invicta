@@ -459,6 +459,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = revolution_focus
+					add_popularity = {
+						ideology = collectivism
+						popularity = 0.1
+						}
 				}
 
 	}
@@ -1742,6 +1746,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = dictatorship
+					add_popularity = {
+						ideology = dictatorship
+						popularity = 0.1
+						}
 				}
 
 	}
@@ -1770,6 +1778,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = tradition_idea
+					add_popularity = {
+						ideology = monarchism
+						popularity = 0.1
+						}
 				}
 
 	}
@@ -1866,11 +1878,15 @@ focus_tree = {
 					factor = 5
 					modifier = {
 							factor = 10
-							has_government = senate_democracy
+							has_government = oligarchic_democracy
 						}
 				}
 			completion_reward = {
 					add_ideas = elites_idea
+					add_popularity = {
+						ideology = oligarchic_democracy
+						popularity = 0.1
+						}
 				}
 
 	}
@@ -1897,6 +1913,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = people_idea
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.1
+						}
 				}
 
 	}

@@ -275,6 +275,9 @@ country_event = {
 				country_event = { id = china.9 days = 5 }
 				country_event = { id = china.10 days = 5 }
 			}
+			CTL = {
+				country_event = { id = china.11 days = 3 }
+			}
 		}
 	}
 	
@@ -348,13 +351,13 @@ country_event = {
 		}
 	}
 	
-	option = { # Join the KMT 
+	option = { # Switch to Mongolia
 		name = china.3.b
 		effect_tooltip = {
 			#Put tooltip here
 		}
 		hidden_effect = {
-			CHI = { change_tag_from = QNG }
+			MON = { change_tag_from = QNG }
 		}
 	}
 }

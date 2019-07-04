@@ -283,18 +283,18 @@ country_event = {
 		random_list = {
 			20 = { 
 				modifier = {
-					not = { congress_medium_support_trigger = yes }
+					not = { senate_medium_support_trigger = yes }
 					factor = 1.25
 				}
 				modifier = {
-					not = { congress_low_support_trigger = yes }
+					not = { senate_low_support_trigger = yes }
 					factor = 2
 				}
 				country_event = { id = rme_senate.5 days = 14 random = 6 } #small support
 			} 
 			20 = { 
 				modifier = {
-					congress_high_support_trigger = yes
+					senate_high_support_trigger = yes
 					factor = 2
 				}
 				modifier = {
@@ -309,18 +309,18 @@ country_event = {
 			} 
 			14 = { 
 				modifier = {
-					not = { congress_medium_support_trigger = yes }
+					not = { senate_medium_support_trigger = yes }
 					factor = 1.25
 				}
 				modifier = {
-					not = { congress_low_support_trigger = yes }
+					not = { senate_low_support_trigger = yes }
 					factor = 2
 				}
 				country_event = { id = rme_senate.9 days = 20 random = 10 } #medium support
 			} 
 			14 = { 
 				modifier = {
-					congress_high_support_trigger = yes
+					senate_high_support_trigger = yes
 					factor = 2
 				}
 				modifier = {
@@ -335,7 +335,7 @@ country_event = {
 			}
 			1 = { #investment opportunity
 				modifier = {
-					has_country_flag = AUS_congress_investment
+					has_country_flag = RME_senate_investment
 					factor = 0
 				}
 				country_event = { id = rme_senate.14 days = 10 random = 14 } 
@@ -357,18 +357,18 @@ country_event = {
 		random_list = {
 			4 = { 
 				modifier = {
-					not = { congress_medium_support_trigger = yes }
+					not = { senate_medium_support_trigger = yes }
 					factor = 1.25
 				}
 				modifier = {
-					not = { congress_low_support_trigger = yes }
+					not = { senate_low_support_trigger = yes }
 					factor = 2
 				}
 				country_event = { id = rme_senate.6 days = 14 random = 6 } #small support
 			} 
 			25 = {
 				modifier = {
-					congress_high_support_trigger = yes
+					senate_high_support_trigger = yes
 					factor = 2
 				}
 				modifier = {
@@ -383,18 +383,18 @@ country_event = {
 			} 
 			25 = { 
 				modifier = {
-					not = { congress_medium_support_trigger = yes }
+					not = { senate_medium_support_trigger = yes }
 					factor = 1.25
 				}
 				modifier = {
-					not = { congress_low_support_trigger = yes }
+					not = { senate_low_support_trigger = yes }
 					factor = 2
 				}
 				country_event = { id = rme_senate.10 days = 25 random = 10 } #medium support
 			} 
 			14 = { 
 				modifier = {
-					congress_high_support_trigger = yes
+					senate_high_support_trigger = yes
 					factor = 2
 				}
 				modifier = {
@@ -452,10 +452,10 @@ country_event = {
 
 	option = {
 		name = rme_senate.16.a
-		AUS_election_senate = yes
+		RME_election_plebs = yes
 		clear_variable = ror_loc
 		clear_variable = representatives_for_reelection
-		set_politics = { ruling_party = democratic elections_allowed = yes }
+		set_politics = { ruling_party = oligarchic_democracy elections_allowed = yes }
 	}
 
 	option = {
