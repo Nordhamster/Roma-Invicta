@@ -1,6 +1,6 @@
 ﻿capital = 4
 
-oob = "CGP_1936"
+oob = "GER_1936"
 
 # Starting tech
 set_technology = {
@@ -67,7 +67,7 @@ set_war_support = 0.3
 		extensive_conscription
 	}
 	
-	oob = "CGP_1939"
+	oob = "GER_1939"
 
 	#BUILDINGS
 	
@@ -152,7 +152,7 @@ set_popularities = {
 give_guarantee = PAN
 
 create_faction = "European Coalition"
-add_to_faction = CGP
+add_to_faction = GER
 add_to_faction = GAL
 add_to_faction = RHN
 

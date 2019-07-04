@@ -1,6 +1,6 @@
 RME = "countries/Rome.txt"
 BRT = "countries/Brittany.txt"
-CGP = "countries/CoGP.txt"
+GER = "countries/CoGP.txt"
 SLV = "countries/Slavia.txt"
 POM = "countries/Pomerania.txt"
 BOH = "countries/Bohemia.txt"

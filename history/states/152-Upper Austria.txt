@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = CGP
+		owner = GER
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -20,7 +20,7 @@ state={
 		victory_points = {
 			688 10 
 		}
-		add_core_of = CGP
+		add_core_of = GER
 	}
 
 	provinces={

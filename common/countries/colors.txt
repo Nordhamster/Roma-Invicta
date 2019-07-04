@@ -8,7 +8,7 @@ BRT = {
 	color = rgb { 240 240 215 }
 	color_ui = rgb { 240 240 215 }
 }
-CGP = {
+GER = {
 	color = rgb { 160 200 170 }
 	color_ui = rgb { 160 200 170 }
 }

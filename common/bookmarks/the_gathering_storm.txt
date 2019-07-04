@@ -35,8 +35,8 @@ bookmarks = {
 				USA_pearl_harbor_gambit
 			}
 		}
-		"CGP"={
-			history = "CGP_GATHERING_STORM_DESC"
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				sour_loser

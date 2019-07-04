@@ -155,7 +155,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		2 = { is_controlled_by = CGP }
+		2 = { is_controlled_by = GER }
 		2 = { is_owned_by = RME }
 		NOT = { has_global_flag = fall_of_rome_ger }
 	}
@@ -172,7 +172,7 @@ news_event = {
 		name = news.145.a
 		trigger = {
 			NOT = {
-				TAG = CGP
+				TAG = GER
 				TAG = RME
 			}
 		}
@@ -180,7 +180,7 @@ news_event = {
 	option = {
 		name = news.101.b
 		trigger = {
-			TAG = CGP
+			TAG = GER
 		}
 	}
 	option = {
@@ -204,7 +204,7 @@ news_event = {
 		any_country = {
 			controls_state = 2
 			has_war_with = RME
-			NOT = { TAG = CGP }
+			NOT = { TAG = GER }
 		}
 		2 = { is_owned_by = RME }
 		NOT = { has_global_flag = fall_of_rome }
