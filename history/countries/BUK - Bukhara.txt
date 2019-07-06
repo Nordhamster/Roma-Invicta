@@ -92,11 +92,11 @@ create_country_leader = {
 
 	desc = ""
 
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	picture = "gfx/leaders/BUK/Portrait_BUK_Mohammed_Alim_Khan.dds"
 
 	expire = "1953.3.1"
 
-	ideology = feudalism
+	ideology = aristocracy
 	traits = {
 
 	}

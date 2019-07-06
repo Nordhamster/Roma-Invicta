@@ -182,11 +182,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperator Benitus Mussolini"
+	name = "Imperator Benitus Mussolinius"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
 	ideology = roman_dictatorship
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Cassius Valerianus"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "gfx/leaders/RME/Portrait_RME_Cassius_Valerianus.dds"
+	expire = "1965.1.1"
+	ideology = liberatarian
 	traits = {
 		
 	}

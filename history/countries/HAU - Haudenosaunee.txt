@@ -85,11 +85,11 @@ set_popularities = {
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Lázaro Cárdenas"
+	name = "Split Sky"
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	picture = "gfx/leaders/Native_American.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = confederalism
 	traits = {
 		#
 	}
