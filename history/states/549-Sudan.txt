@@ -11,6 +11,9 @@ state={
 		victory_points = {
 			2096 1
 		}
+		victory_points = {
+			12887 3
+		}
 		owner = SEN
 		add_core_of = SEN
 		buildings = {

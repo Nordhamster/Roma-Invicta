@@ -367,10 +367,10 @@
  STATE_366:0 "Floridum"
  STATE_367:0 "Alabama"
  STATE_368:0 "Tanasium"
- STATE_369:0 "Kentacum"
+ STATE_369:0 "Centacum"
  STATE_370:0 "Mississippi"
  STATE_371:0 "Ludovicia" #Louisiana
- STATE_372:0 "Arkansus" 
+ STATE_372:0 "Arcansus" 
  STATE_373:0 "Wimihsoorita"
  STATE_374:0 "Oklahoma"
  STATE_375:0 "Tehas" #Texas
@@ -381,7 +381,7 @@
  STATE_380:0 "Utah"
  STATE_381:0 "Wyoming"
  STATE_382:0 "Colorado"
- STATE_383:0 "Kansus"
+ STATE_383:0 "Cansus"
  STATE_384:0 "Nebraska"
  STATE_385:0 "Oregon"
  STATE_386:0 "Washington"
