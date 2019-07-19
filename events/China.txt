@@ -193,7 +193,7 @@ country_event = {
 		NOT = { has_country_flag = chinese_civil_war }
 		tag = QNG
 		has_government = monarchism
-		date > 1938.1.1 # Trigger at some point after 1938
+		date > 1936.1.1 # Trigger at some point after 1938
 	}
 	
 	mean_time_to_happen = {
@@ -265,8 +265,6 @@ country_event = {
 			}
 			
 			QNG = {
-				set_world_flag = chinese_civil_war
-				
 				country_event = { id = china.4 days = 4 }
 				country_event = { id = china.5 days = 2 }
 				country_event = { id = china.6 days = 3 }
@@ -275,6 +273,7 @@ country_event = {
 				country_event = { id = china.9 days = 5 }
 				country_event = { id = china.10 days = 5 }
 			}
+			set_global_flag = chinese_civil_war
 			CTL = {
 				country_event = { id = china.11 days = 3 }
 			}
@@ -321,21 +320,23 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			MON = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 330 612 611 621 756 761 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 330 612 611 621 756 761 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 330
 				add_state_core = 330
 				transfer_state = 612
 				add_state_core = 612
-				transfer_state = 611
-				add_state_core = 611
-				transfer_state = 621
-				add_state_core = 621
+				
 				add_state_core = 756
 				add_state_core = 761
+				add_state_core = 611
+				add_state_core = 621
+				add_state_core = 329
 				
 				load_oob = MON_1936
 			}
@@ -380,11 +381,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			TIB = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 758 757 322 601 604 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 758 757 322 601 604 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 758
 				add_state_core = 758
 				transfer_state = 757
@@ -438,11 +441,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			UYG = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 619 757 322 601 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 619 757 322 601 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 619
 				add_state_core = 619
 				transfer_state = 287
@@ -497,11 +502,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			YUN = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 325 747 751 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 325 747 751 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 325
 				add_state_core = 325
 				transfer_state = 747
@@ -550,11 +557,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			XSM = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 283 616 756 755 754 604 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 283 616 756 755 754 604 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 283
 				add_state_core = 283
 				transfer_state = 616
@@ -609,11 +618,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			GXC = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 594 599 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 594 599 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 594
 				add_state_core = 594
 				transfer_state = 599
@@ -649,8 +660,6 @@ country_event = {
 	desc = china.10.d
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
-	fire_only_once = yes
-	
 	is_triggered_only = yes
 	
 	mean_time_to_happen = {
@@ -660,11 +669,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			SZE = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 752 753 605 }
-				}
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 752 753 605 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
 				transfer_state = 752
 				add_state_core = 752
 				transfer_state = 753
@@ -717,6 +728,9 @@ country_event = {
 		effect_tooltip = {
 			#Put tooltip here
 		}
+		ai_will_do = {
+			factor = 5
+		}
 		hidden_effect = {
 			CTL = {
 				transfer_state = 591
@@ -733,3 +747,40 @@ country_event = {
 		name = china.11.b
 	}
 }
+
+#Warlord choice of allegiance
+country_event = {
+	id = china.12
+	title = china.12.t
+	desc = china.12.d
+	picture = GFX_report_event_chinese_soldiers	
+	
+	is_triggered_only = yes
+	
+	option = {# Anti-Qing Stance
+		name = china.12.a
+		ai_will_do = {
+			factor = 10
+		}
+		declare_war_on = { 
+			target = QNG 
+			type = take_core_state
+		}
+	}
+	
+	option = { # Neutrality
+		name = china.12.b
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	option = { # Anti-KMT stance
+		name = china.12.c
+		declare_war_on = { 
+			target = CHI 
+			type = take_core_state
+		}
+	}
+}
+
