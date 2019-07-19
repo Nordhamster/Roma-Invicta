@@ -135,6 +135,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Kyuichi Tokuda"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "GFX_Portrait_kyuichi_tokuda"
+	expire = "1989.1.1"
+	ideology = syndicalism
+	traits = {
+	}
+}
+
 set_convoys = 100
 
 create_corps_commander = {

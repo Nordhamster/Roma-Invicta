@@ -155,12 +155,12 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 
-	create_country_leader = { #from 1940, but he's prettier so he gets to win early
-		name = "Manuel Avila Camacho"
+	create_country_leader = {
+		name = "Canowicakte"
 		desc = "POLITICS_LAZARO_CARDENAS_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+		picture = "gfx/leaders/Native_American2.dds"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = confederalism
 		traits = {
 			#
 		}
