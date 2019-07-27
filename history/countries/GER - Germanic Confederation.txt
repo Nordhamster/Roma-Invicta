@@ -136,7 +136,7 @@ set_war_support = 0.3
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1932.3.5"
+	last_election = "1932.3.5" 28 24 20 16 12 08 04 00
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -166,7 +166,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Eckhart Theismann"
-	desc = ""
+	desc = "POLITICS_ECKHART_THEISMANN_DESC"
 	picture = "gfx/leaders/GER/Portrait_GER_Eckhart_Theismann.dds"
 	expire = "1965.1.1"
 	ideology = conservative

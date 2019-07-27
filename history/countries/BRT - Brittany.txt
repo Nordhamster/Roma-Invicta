@@ -132,10 +132,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 30
-	oligarchic_democracy = 1		
-	collectivism = 0	
-	monarchism = 69
+	democratic = 16
+	oligarchic_democracy = 20		
+	collectivism = 5	
+	monarchism = 59
 	dictatorship = 0
 }
 
@@ -146,48 +146,57 @@ add_ideas = {
 	limited_conscription
 }
 
-#give_guarantee = CZE
-
-#Order matters here Daladier will start as leaders because added last
+#Thomas is first because the last leader is the one chosen
 create_country_leader = {
-	name = "Charles de Gaulle"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	name = "Thomas I"
+	desc = ""
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
 	expire = "1965.1.1"
-	ideology = monarchism_ideology
+	ideology = aristocratic_democracy
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	name = "Waylin XI"
+	desc = ""
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = aristocracy
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "PLACEHOLDER"
+	desc = ""
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = libertarian
 	traits = {
 		stout_defender
 	}
 }
 
 create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	name = "PLACEHOLDER"
+	desc = ""
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = 	stalinism
+	ideology = 	syndicalism
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	name = "Noble Council"
+	desc = ""
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = oligarchy
 	traits = {
 		
 	}

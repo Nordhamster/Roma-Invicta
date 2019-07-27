@@ -172,7 +172,7 @@ add_to_faction = RAM
 
 create_country_leader = {
 	name = "Roman Senate"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	desc = "POLITICS_ROMAN_SENATE_DESC"
 	picture = "gfx/leaders/RME/Portrait_RME_Senate.dds"
 	expire = "1965.1.1"
 	ideology = roman_democracy

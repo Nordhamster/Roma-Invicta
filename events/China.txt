@@ -292,6 +292,9 @@ country_event = {
 	
 	option = { # Join the KMT 
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -354,6 +357,9 @@ country_event = {
 	
 	option = { # Switch to Mongolia
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -414,6 +420,9 @@ country_event = {
 	
 	option = { # Switch to Tibet
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -475,6 +484,9 @@ country_event = {
 	
 	option = { # Switch to Uyghurshan
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -530,6 +542,9 @@ country_event = {
 	
 	option = { # Switch to Yunnan
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -591,6 +606,9 @@ country_event = {
 	
 	option = { # Switch to Ma
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -644,6 +662,9 @@ country_event = {
 	
 	option = { # Switch to Szechuan
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}
@@ -699,6 +720,9 @@ country_event = {
 	
 	option = { # I Want Szechuan Sauce!
 		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
 		effect_tooltip = {
 			#Put tooltip here
 		}

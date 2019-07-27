@@ -135,7 +135,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4549
+		location = 7682
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -145,7 +145,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4549
+		location = 7682
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "KHI" } }
 		start_experience_factor = 0.1
@@ -157,7 +157,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12465
+		location = 1573
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "TRK" } }
 		start_experience_factor = 0.1
@@ -169,7 +169,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12465
+		location = 1573
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "TRK" } }
 		start_experience_factor = 0.1
