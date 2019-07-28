@@ -140,30 +140,29 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_victors_of_wwi
-	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
 	limited_conscription
+	BRT_noble_council
+	BRT_power_struggle
+	BRT_inexperienced_army
 }
 
-#Thomas is first because the last leader is the one chosen
 create_country_leader = {
-	name = "Thomas I"
+	name = "King Waylin XI"
 	desc = ""
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	picture = "gfx/leaders/BRT/Portrait_BRT_Waylin_XI.dds"
 	expire = "1965.1.1"
-	ideology = aristocratic_democracy
+	ideology = aristocracy
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Waylin XI"
+	name = "Thomas I"
 	desc = ""
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
 	expire = "1965.1.1"
-	ideology = aristocracy
+	ideology = aristocratic_democracy
 	traits = {
 		
 	}

@@ -1921,7 +1921,27 @@ spriteTypes = {
 	### FRISIAN IDEAS
 	spriteType = {
 		name = "GFX_idea_Matthijs_Brunswick-Nordheim"
-		texturefile = "gfx/interface/ideas/idea_Matthijs_Brunswick-Nordheim.dds"
+		texturefile = "gfx/interface/ideas/idea_FRI_Matthijs_Brunswick-Nordheim.dds"
+	}
+	
+	### ROMAN IDEAS
+	spriteType = {
+		name = "GFX_idea_RME_rampant_corruption"
+		texturefile = "gfx/interface/ideas/idea_RME_rampant_corruption.dds"
+	}
+	
+	### BRETON IDEAS
+	spriteType = {
+		name = "GFX_idea_BRT_power_struggle"
+		texturefile = "gfx/interface/ideas/idea_BRT_power_struggle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRT_noble_council"
+		texturefile = "gfx/interface/ideas/idea_BRT_noble_council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRT_inexperienced_army"
+		texturefile = "gfx/interface/ideas/idea_BRT_inexperienced_army.dds"
 	}
 	
 	### ITALIAN IDEAS	
