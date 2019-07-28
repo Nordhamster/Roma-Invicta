@@ -35,7 +35,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = generic_disjointed_gov
+			picture = RME_rampant_corruption
 			
 			removal_cost = -1
 			
