@@ -91,6 +91,7 @@ CRO = "countries/Crow.txt"
 BFT = "countries/Blackfoot.txt"
 BUK = "countries/Bukhara.txt"
 GEL = "countries/Geledi.txt"
+HAW = "countries/Hawaii.txt"
 
 #Releasables, Seperatists etc...
 CHI = "countries/China.txt" #Kuomintang Government
