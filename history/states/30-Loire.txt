@@ -17,6 +17,22 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 2
+			11616 = {
+				bunker = 6
+
+			}
+			9867 = {
+				bunker = 6
+
+			}
+			11613 = {
+				bunker = 6
+
+			}
+			9478 = {
+				bunker = 6
+
+			}
 		}
 		add_core_of = BRT
 	}
