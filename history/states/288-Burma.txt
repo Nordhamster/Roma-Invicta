@@ -12,7 +12,7 @@ state={
 
 	history={
 		owner = BUR
-		set_core_of = BUR
+		add_core_of = BUR
 		victory_points = {
 			1330 5 
 		}
