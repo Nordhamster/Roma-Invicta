@@ -2,6 +2,11 @@
 
 oob = "CTL_1936"
 
+#religion
+add_ideas = {
+	confucianism
+}
+
 set_research_slots = 2
 
 # Starting tech

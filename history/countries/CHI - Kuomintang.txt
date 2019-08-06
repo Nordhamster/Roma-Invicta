@@ -9,6 +9,11 @@ if = {
 	}
 }
 
+#religion
+add_ideas = {
+	confucianism
+}
+
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech

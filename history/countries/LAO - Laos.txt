@@ -2,6 +2,11 @@
 
 oob = "LAO_1936"
 
+#religion
+add_ideas = {
+	animism
+}
+
 set_research_slots = 3
 
 # Starting tech

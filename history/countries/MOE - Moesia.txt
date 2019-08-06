@@ -8,6 +8,11 @@ add_ideas = {
 	anti_german_military
 }
 
+#religion
+add_ideas = {
+	christianity
+}
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1

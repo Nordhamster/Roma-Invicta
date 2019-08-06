@@ -2,6 +2,11 @@
 
 oob = "VEN_1936"
 
+#religion
+add_ideas = {
+	christianity
+}
+
 set_research_slots = 3
 
 add_ideas = {
@@ -79,17 +84,17 @@ set_politics = {
 
 set_popularities = {
 	democratic = 50
-	oligarchic_democracy = 15		
+	dictatorship = 15	
 	collectivism = 15	
 	monarchism = 20
 }
 
 create_country_leader = {
-	name = "Antanas Smetona"
-	desc = "POLITICS_ANTANAS_SMETONA_DESC"
-	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	name = "Piotr Modrzewski"
+	desc = "POLITICS_PIOTR_MODRZEWSKI_DESC"
+	picture = "gfx/leaders/VEN/Portrait_VEN_Piotr_Modrzewski.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = conservative
 	traits = {
 		#
 	}

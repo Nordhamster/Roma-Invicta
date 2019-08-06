@@ -2,6 +2,11 @@
 
 oob = "RME_1936"
 
+#religion
+add_ideas = {
+	roman_christianity
+}
+
 set_research_slots = 4
 set_stability = 0.3
 set_war_support = 0.1

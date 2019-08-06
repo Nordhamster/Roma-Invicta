@@ -3,6 +3,10 @@
 
 oob = "KAZ_1936"
 
+#religion
+add_ideas = {
+	islam
+}
 
 set_research_slots = 3
 

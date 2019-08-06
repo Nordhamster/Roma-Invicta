@@ -11,6 +11,11 @@ add_ideas = {
 	limited_conscription
 }
 
+#religion
+add_ideas = {
+	buddhism
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

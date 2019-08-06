@@ -2,6 +2,11 @@
 
 oob = "BRT_1936"
 
+#religion
+add_ideas = {
+	christianity
+}
+
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.15

@@ -2,6 +2,11 @@
 
 oob = "CAU_1936"
 
+#religion
+add_ideas = {
+	secular
+}
+
 set_research_slots = 3
 
 # Starting tech

@@ -2,6 +2,10 @@
 
 oob = "MAD_1936"
 
+#religion
+add_ideas = {
+	christianity
+}
 
 set_stability = 0.6
 set_war_support = 0.1

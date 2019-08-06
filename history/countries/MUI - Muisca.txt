@@ -9,6 +9,11 @@ if = {
 	}
 }
 
+#religion
+add_ideas = {
+	traditional_south_american
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

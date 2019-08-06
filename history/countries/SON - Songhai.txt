@@ -1,5 +1,10 @@
 ﻿capital = 556
 
+#religion
+add_ideas = {
+	islam
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

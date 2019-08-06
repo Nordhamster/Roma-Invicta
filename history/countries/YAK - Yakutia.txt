@@ -2,6 +2,11 @@
 
 oob = "YAK_1936"
 
+#religion
+add_ideas = {
+	atheism
+}
+
 set_research_slots = 1
 
 # Starting tech

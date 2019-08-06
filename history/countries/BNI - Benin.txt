@@ -2,6 +2,11 @@
 
 oob = "BNI_1936"
 
+#religion
+add_ideas = {
+	atheism
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -6,6 +6,10 @@ oob = "KHO_1936"
 
 set_research_slots = 3
 
+#religion
+add_ideas = {
+	islam
+}
 
 # Starting tech
 

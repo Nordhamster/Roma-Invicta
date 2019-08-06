@@ -3718,5 +3718,86 @@ spriteTypes = {
 		name = "GFX_idea_ROM_iuliu_maniu"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
 	}
-	
+	####RELIGION	
+	spriteType = {
+		name = "GFX_idea_religion_christianity"
+		texturefile = "gfx/interface/ideas/idea_religion_christianity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_religion_confucian"
+		texturefile = "gfx/interface/ideas/idea_religion_confucian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_islam"
+		texturefile = "gfx/interface/ideas/idea_religion_islam.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_hindu"
+		texturefile = "gfx/interface/ideas/idea_religion_hindu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_roman_christianity"
+		texturefile = "gfx/interface/ideas/idea_religion_roman_christianity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_shinto"
+		texturefile = "gfx/interface/ideas/idea_religion_shinto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_cult_of_reason"
+		texturefile = "gfx/interface/ideas/idea_religion_cult_of_reason.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_seculiarism"
+		texturefile = "gfx/interface/ideas/idea_religion_seculiarism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_chinese"
+		texturefile = "gfx/interface/ideas/idea_religion_chinese.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_atheism"
+		texturefile = "gfx/interface/ideas/idea_religion_atheism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_buddhism"
+		texturefile = "gfx/interface/ideas/idea_religion_buddhism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_sikh"
+		texturefile = "gfx/interface/ideas/idea_religion_sikh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_animist"
+		texturefile = "gfx/interface/ideas/idea_religion_animist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_celtic"
+		texturefile = "gfx/interface/ideas/idea_religion_celtic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_slavic"
+		texturefile = "gfx/interface/ideas/idea_religion_slavic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_south_american"
+		texturefile = "gfx/interface/ideas/idea_religion_south_american.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_african"
+		texturefile = "gfx/interface/ideas/idea_religion_african.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_zoroastrian"
+		texturefile = "gfx/interface/ideas/idea_religion_zoroastrian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_judaism"
+		texturefile = "gfx/interface/ideas/idea_religion_judaism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_religion_pagan"
+		texturefile = "gfx/interface/ideas/idea_religion_pagan.dds"
+	}
 }

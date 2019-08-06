@@ -1,5 +1,10 @@
 ﻿capital = 303
 
+#religion
+add_ideas = {
+	traditional_south_american
+}
+
 oob = "PRU_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

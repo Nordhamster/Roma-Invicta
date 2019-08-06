@@ -2,6 +2,10 @@
 
 oob = "SIK_1936"
 
+#religion
+add_ideas = {
+	sikhism
+}
 
 set_stability = 0.6
 set_war_support = 0.1

@@ -2,6 +2,11 @@
 
 oob = "TIB_1936"
 
+#religion
+add_ideas = {
+	buddhism
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

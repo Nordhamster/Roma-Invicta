@@ -1,6 +1,11 @@
 ﻿capital = 605
 oob = "SZE_1936"
 
+#religion
+add_ideas = {
+	chinese_folk_religion
+}
+
 set_technology = {
 	infantry_weapons = 1
 }

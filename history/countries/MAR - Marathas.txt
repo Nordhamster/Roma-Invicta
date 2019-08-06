@@ -2,6 +2,10 @@
 
 oob = "MAR_1936"
 
+#religion
+add_ideas = {
+	hinduism
+}
 
 set_stability = 0.6
 set_war_support = 0.1

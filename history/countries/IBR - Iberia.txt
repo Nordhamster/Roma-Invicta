@@ -2,6 +2,11 @@
 
 oob = "IBR_1936"
 
+#religion
+add_ideas = {
+	christianity
+}
+
 set_research_slots = 3
 
 set_technology = {

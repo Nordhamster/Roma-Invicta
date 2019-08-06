@@ -2,6 +2,11 @@
 
 oob = "ENW_1936"
 
+#religion
+add_ideas = {
+	christianity
+}
+
 set_research_slots = 4
 
 set_stability = 0.6

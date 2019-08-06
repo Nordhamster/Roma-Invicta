@@ -2,6 +2,11 @@
 
 oob = "INS_1936"
 
+#religion
+add_ideas = {
+	buddhism
+}
+
 set_research_slots = 2
 
 # Starting tech

@@ -6,6 +6,11 @@ add_ideas = {
 	limited_conscription
 }
 
+#religion
+add_ideas = {
+	chistianity
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

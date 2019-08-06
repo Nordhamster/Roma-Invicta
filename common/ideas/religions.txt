@@ -1,0 +1,360 @@
+ideas = {
+
+	religion = {
+
+christianity = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_christianity
+
+modifier = {
+
+}
+}
+
+
+roman_christianity = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_roman_christianity
+
+modifier = {
+
+}
+}
+
+
+
+islam = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_islam
+
+modifier = {
+
+}
+}
+
+hinduism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_hindu
+
+modifier = {
+
+}
+}
+sikhism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_sikh
+
+modifier = {
+
+}
+}
+
+chinese_folk_religion = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_chinese
+
+modifier = {
+
+}
+}
+
+confucianism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_confucian
+
+modifier = {
+
+}
+}
+
+shintoism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_shinto
+
+modifier = {
+
+}
+}
+
+
+buddhism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_buddhism
+
+modifier = {
+
+}
+}
+
+
+judaism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_judaism
+
+modifier = {
+
+}
+}
+slavic_paganism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_slavic
+
+modifier = {
+
+}
+}
+
+
+
+paganism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_pagan
+modifier = {
+
+}
+}
+
+
+traditional_african_religions = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_african
+
+modifier = {
+
+}
+}
+zoroastrianism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_zoroastrian
+modifier = {
+
+}
+}
+
+
+traditional_south_american = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_south_american
+
+modifier = {
+
+}
+}
+traditional_celtic_religion = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_celtic
+
+modifier = {
+
+}
+}
+
+
+
+animism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_animist
+
+modifier = {
+
+}
+}
+
+
+cult_of_reason = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_cult_of_reason
+
+modifier = {
+
+}
+}
+
+
+
+secularity = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_seculiarism
+
+modifier = {
+
+}
+}
+
+
+
+atheism = {
+
+allowed_to_remove = {
+                always = no
+}
+
+allowed_civil_war = {
+				always = yes
+}
+picture = religion_atheism
+
+modifier = {
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    }
+

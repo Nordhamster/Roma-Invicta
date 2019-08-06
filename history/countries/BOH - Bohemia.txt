@@ -2,6 +2,11 @@
 
 oob = "BOH_1936"
 
+#religion
+add_ideas = {
+	christianity
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
