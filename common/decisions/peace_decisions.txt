@@ -1,0 +1,88 @@
+#Category allowed for JAP
+peace = {
+	generic_peace_deal = {
+	
+		icon = jap_conquer_china
+
+		available = {
+			any_state = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+				OR = {
+					is_claimed_by = ROOT
+					is_core_of = ROOT
+				}
+				is_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			has_war = yes
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 30
+
+		cost = 0
+
+		complete_effect = {
+			all_country = {
+				if = {
+					limit = {
+						has_war_with = ROOT
+					}
+					THIS = {
+						country_event = peace.generic
+					}
+				}
+			}
+
+		}
+	}
+	normandy_peace_deal = {
+	
+		icon = jap_conquer_china
+
+		available = {
+			15 = {
+				is_controlled_by = GAL
+			}
+		}
+
+		visible = {
+			tag = GAL
+			has_war_with = BRT
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 30
+
+		cost = 0
+
+		complete_effect = {
+			BRT = {
+				country_event = peace.1
+			}
+		}
+	}
+}

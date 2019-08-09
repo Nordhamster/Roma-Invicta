@@ -67,6 +67,7 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+	}
 		
 	political_advisor = {
 		amadeo_bordiga = {

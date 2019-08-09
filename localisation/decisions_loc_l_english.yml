@@ -138,6 +138,10 @@
  JAP_border_conflict_back_out_of_conflict:0 "Back down"
  JAP_border_conflict_back_out_of_conflict_desc:0 "The danger of this conflict spiralling out of control and becoming a full-scale war between our countries is simply too big. We should cut our loses now and send out diplomatic feelers to the other side."
 
+ #Peace Decisions
+ peace:0 "Sue for Peace"
+ normandy_peace_deal:0 "Sue §Y[BRT.GetNameWithFlag]§! for Peace"
+
  #Roman Senate GUI
  RME_senate:1 "Roman Senate"
  RME_senate_desc:1 "The Senate is the chief political institution of the Roman Republic. We will have to gain the favour of both the Senate and the Plebian Assembly if we wish to enact any significant change."

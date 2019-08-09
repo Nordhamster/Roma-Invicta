@@ -193,7 +193,7 @@ country_event = {
 		NOT = { has_country_flag = chinese_civil_war }
 		tag = QNG
 		has_government = monarchism
-		date > 1936.1.1 # Trigger at some point after 1938
+		date > 1938.1.1 # Trigger at some point after 1938
 	}
 	
 	mean_time_to_happen = {

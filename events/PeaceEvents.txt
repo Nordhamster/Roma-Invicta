@@ -1,0 +1,65 @@
+﻿###########################
+# Peace Events
+###########################
+
+add_namespace = peace
+
+# Generic Peace
+country_event = {
+	id = peace.generic
+	title = peace.generic.t
+	desc = peace.generic.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = peace.accept
+		any_state = {
+			if = {
+				limit = {
+					THIS = {
+						is_owned_by = FROM
+					}
+				}
+				FROM = {
+					transfer_state = THIS
+				}
+			}
+		}
+		white_peace = FROM
+	}
+	option = {
+		name = peace.reject
+		add_war_support = -0.70
+	}
+}
+
+# Test Peace (Gallia annexes Normandy)
+country_event = {
+	id = peace.1
+	title = peace.1.t
+	desc = peace.1.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = peace.accept
+		if = {
+			limit = {
+				15 = {
+					is_owned_by = BRT
+				}
+			}
+			GAL = {
+				transfer_state = 15
+			}
+		}
+		white_peace = GAL
+	}
+	option = {
+		name = peace.reject
+		add_war_support = -0.70
+	}
+}

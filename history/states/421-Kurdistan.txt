@@ -1,7 +1,7 @@
 
 state={
-	id=419
-	name="STATE_419"
+	id=421
+	name="STATE_421"
 
 	history={
 		owner = PER
@@ -9,17 +9,14 @@ state={
 			infrastructure = 3
 
 		}
-		victory_points = {
-			1896 3 
-		}
 		add_core_of = PER
 
 	}
 
 	provinces={
-		1636 1822 1896 2071 4755 4825 7604 12793 12861 13120 
+		78 829 2097 4943 5050 5098 6826 8123 9816 10774 10793 10793 10793 12773 12855 
 	}
-	manpower=1431714
+	manpower=780278
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

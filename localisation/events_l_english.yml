@@ -204,7 +204,11 @@
  country_capitulated.0.a:0 "Great news!"
  country_capitulated.0.b:0 "These are dark times"
  country_capitulated.0.c:0 "Uncertain times"
-
+ 
+ peace.1.t:0 "Gallia Proposes Peace"
+ peace.1.d:0 "After gaining control of the state of Normandy, Gallia has proposed a peace treaty, where they will annex Normandy in return for the cessation of hostilities between our two nations."
+ peace.accept:0 "We have no choice..."
+ peace.reject:0 "No, we fight to the bitter end!"
  
  rme_senate.1.t:0 "Elections to Congress"
  rme_senate.1.desc:0 "Every two years, a third of the Senate seats and all seats in the House of Representatives are up for election. While often overshadowed by world events, the local situation in each constituency can sometimes make the difference. \n\nAfter all the votes were counted, the faction in support of the government [RME.GetSenateElectionOutcome] in the Senate and [RME.GetHouseElectionOutcome] in the House."

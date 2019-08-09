@@ -137,10 +137,10 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-		"POL"={
+		"VEN"={
 			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "VEN_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
 				
 			}

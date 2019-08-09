@@ -4,7 +4,7 @@ oob = "LAO_1936"
 
 #religion
 add_ideas = {
-	animism
+	buddhism
 }
 
 set_research_slots = 3
