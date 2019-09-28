@@ -1585,4 +1585,78 @@ spriteTypes = {
 		name = "GFX_focus_RME_SPQR"
 		texturefile = "gfx/interface/goals/focus_RME_SPQR.dds"
 	}
+########### Brittany
+
+	SpriteType = { 
+		name = "GFX_focus_brittany_buy_guns"
+		texturefile = "gfx/interface/goals/focus_brittany_buy_guns.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_defense"
+		texturefile = "gfx/interface/goals/focus_brittany_defense.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_develop_new"
+		texturefile = "gfx/interface/goals/focus_brittany_develop_new.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_elite_tank_division"
+		texturefile = "gfx/interface/goals/focus_brittany_elite_tank_division.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_foreign_officers"
+		texturefile = "gfx/interface/goals/focus_brittany_foreign_officers.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_gov_reforms"
+		texturefile = "gfx/interface/goals/focus_brittany_gov_reforms.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_mass_produce_equipement"
+		texturefile = "gfx/interface/goals/focus_brittany_mass_produce_equipement.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_mechanization"
+		texturefile = "gfx/interface/goals/focus_brittany_mechanization.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_tank_wave"
+		texturefile = "gfx/interface/goals/focus_brittany_tank_wave.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_blitzkrieg_theory"
+		texturefile = "gfx/interface/goals/focus_brittany_blitzkrieg_theory.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_offence"
+		texturefile = "gfx/interface/goals/focus_brittany_offence.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_offensive_army"
+		texturefile = "gfx/interface/goals/focus_brittany_offensive_army.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_protect_border"
+		texturefile = "gfx/interface/goals/focus_brittany_protect_border.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_tariff"
+		texturefile = "gfx/interface/goals/focus_brittany_tariff.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_veneti_forts"
+		texturefile = "gfx/interface/goals/focus_brittany_veneti_forts.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_fort_ocean"
+		texturefile = "gfx/interface/goals/focus_brittany_fort_ocean.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_propaganda"
+		texturefile = "gfx/interface/goals/focus_brittany_propaganda.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_brittany_total_war"
+		texturefile = "gfx/interface/goals/focus_brittany_total_war.dds"
+	}
 }

@@ -1,335 +1,318 @@
 ideas = {
 
 	religion = {
+		christianity = {
 
-christianity = {
+			allowed_to_remove = {
+							always = no
+			}
 
-allowed_to_remove = {
-                always = no
-}
+			allowed_civil_war = {
+							always = yes
+			}
+			picture = religion_christianity
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_christianity
+			modifier = {
 
-modifier = {
+			}
+		}
 
-}
-}
 
+	roman_christianity = {
+		allowed_to_remove = {
+						always = no
+		}
 
-roman_christianity = {
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_roman_christianity
 
-allowed_to_remove = {
-                always = no
-}
+		modifier = {
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_roman_christianity
+		}
+	}
 
-modifier = {
 
-}
-}
 
+	islam = {
+		allowed_to_remove = {
+						always = no
+		}
 
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_islam
 
-islam = {
+		modifier = {
 
-allowed_to_remove = {
-                always = no
-}
+		}
+	}
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_islam
+	hinduism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-modifier = {
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_hindu
 
-}
-}
+		modifier = {
 
-hinduism = {
+		}
+	}
+	
+	sikhism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_sikh
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_hindu
+		modifier = {
 
-modifier = {
+		}
+	}
 
-}
-}
-sikhism = {
+	chinese_folk_religion = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_chinese
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_sikh
+		modifier = {
 
-modifier = {
+		}
+	}
 
-}
-}
+	confucianism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-chinese_folk_religion = {
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_confucian
 
-allowed_to_remove = {
-                always = no
-}
+		modifier = {
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_chinese
+		}
+	}
 
-modifier = {
+	shintoism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-}
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_shinto
 
-confucianism = {
+		modifier = {
 
-allowed_to_remove = {
-                always = no
-}
+		}
+	}
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_confucian
 
-modifier = {
+	buddhism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-}
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_buddhism
 
-shintoism = {
+		modifier = {
 
-allowed_to_remove = {
-                always = no
-}
+		}
+	}
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_shinto
 
-modifier = {
+	judaism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-}
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_judaism
 
+		modifier = {
 
-buddhism = {
+		}
+	}
+	
+	slavic_paganism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_slavic
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_buddhism
+		modifier = {
 
-modifier = {
+		}
+	}
 
-}
-}
 
 
-judaism = {
+	paganism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_pagan
+		modifier = {
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_judaism
+		}
+	}
 
-modifier = {
 
-}
-}
-slavic_paganism = {
+	traditional_african_religions = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_african
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_slavic
+		modifier = {
 
-modifier = {
+		}
+	}
+	
+	zoroastrianism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-}
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_zoroastrian
+		modifier = {
 
+		}
+	}
 
 
-paganism = {
+	traditional_south_american = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_south_american
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_pagan
-modifier = {
+		modifier = {
 
-}
-}
+		}
+	}
+	
+	traditional_celtic_religion = {
+		allowed_to_remove = {
+						always = no
+		}
 
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_celtic
 
-traditional_african_religions = {
+		modifier = {
 
-allowed_to_remove = {
-                always = no
-}
+		}
+	}
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_african
 
-modifier = {
 
-}
-}
-zoroastrianism = {
+	animism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_animist
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_zoroastrian
-modifier = {
+		modifier = {
 
-}
-}
+		}
+	}
 
 
-traditional_south_american = {
+	cult_of_reason = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_to_remove = {
-                always = no
-}
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_cult_of_reason
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_south_american
+		modifier = {
 
-modifier = {
+	}
+	}
 
-}
-}
-traditional_celtic_religion = {
 
-allowed_to_remove = {
-                always = no
-}
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_celtic
+	secular = {
+		allowed_to_remove = {
+						always = no
+		}
 
-modifier = {
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_seculiarism
 
-}
-}
+		modifier = {
 
+		}
+	}
 
 
-animism = {
 
-allowed_to_remove = {
-                always = no
-}
+	atheism = {
+		allowed_to_remove = {
+						always = no
+		}
 
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_animist
+		allowed_civil_war = {
+						always = yes
+		}
+		picture = religion_atheism
 
-modifier = {
-
-}
-}
-
-
-cult_of_reason = {
-
-allowed_to_remove = {
-                always = no
-}
-
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_cult_of_reason
-
-modifier = {
-
-}
-}
-
-
-
-secularity = {
-
-allowed_to_remove = {
-                always = no
-}
-
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_seculiarism
-
-modifier = {
-
-}
-}
-
-
-
-atheism = {
-
-allowed_to_remove = {
-                always = no
-}
-
-allowed_civil_war = {
-				always = yes
-}
-picture = religion_atheism
-
-modifier = {
-
-}
+		modifier = {
+	}
 }
 
 

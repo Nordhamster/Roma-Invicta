@@ -1,0 +1,156 @@
+focus_tree = {
+	id = Iran_FOC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PER
+		}
+	}
+	default = no
+	focus = {
+		id = PER_gov_reform
+		text = Address The Government
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = PER_gov_rad
+		text = Unthinkable Option
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_reform
+		}
+		mutually_exclusive = {
+			focus = PER_gov_mon
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = PER_gov_mon
+		text = Continue Status-Quo
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_reform
+		}
+		mutually_exclusive = {
+			focus = PER_gov_dem
+			focus = PER_gov_rad
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = PER_gov_dem
+		text = Modernize the Government
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_reform
+		}
+		mutually_exclusive = {
+			focus = PER_gov_mon
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = PER_ol_dem_gov
+		text = Trust Bazaaris
+		icon = GFX_focus_mex_privatisation
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_dem
+		}
+		mutually_exclusive = {
+			focus = PER_dem_gov
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = PER_dem_gov
+		text = Trust Intellectuals and Scholars
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_dem
+		}
+		mutually_exclusive = {
+			focus = PER_ol_dem_gov
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = PER_parl_mon_gov
+		text = Eternal Shahanshah
+		icon = GFX_focus_rom_handle_king
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_mon
+		}
+		mutually_exclusive = {
+			focus = PER_new_monarch_gov
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = PER_new_monarch_gov
+		text = The Shahanshah is Dead!
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_mon
+		}
+		mutually_exclusive = {
+			focus = PER_parl_mon_gov
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = PER_collect_gov
+		text = Workers, Unite!
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_rad
+		}
+		mutually_exclusive = {
+			focus = PER_auth_gov
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = PER_auth_gov
+		text = Power through Authority
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = PER_gov_rad
+		}
+		mutually_exclusive = {
+			focus = PER_collect_gov
+		}
+		x = 1
+		y = 2
+
+	}
+}

@@ -67,7 +67,15 @@
  japan.6.t:0 "Chinese Civil War Intervention"
  japan.6.d:0 "As predicted, China has decended into civil war. The warlords loyal to our cause stand ready. As soon as we give the word, they will take up arms against the Qing and secure our influence in the region."
  japan.6.a:0 "The Dragon will fall..."
-
+ 
+ venedia.1.t:0 "Nationalist Coup!"
+ venedia.1.d:0 "As the parliament was holding a congress this morning, members of the far-right Iron League marched on the Sejm Complex in Warsaw. Entering the building, they declared the institution dissovled and the nation now under the rule of the Iron League. At the same time, strategic and political targets were siezed all over the country, and the headquarters of newpapers and organisations critical of the League were raided.\n\nSpeaking to the country, INSERT NAME, leader of the Iron League, said: 'Today we begin to return Venedia to its former, rightful glory. Our great nation has cast off the burdens of democracy and collectivism, and marches into the future under the banner of the Iron League! Long Live Venedia!'"
+ venedia.1.a:0 "A New Venedia arises..."
+ venedia.2.t:0 "Venedic Civil War!"
+ venedia.2.d:0 "Disaster! In response to the nationalist coup, the Radical Unionist Party has rallied it's supporters, declaring that the current government is illegitimate, and that armed struggle is the only option left. As militas begin to clash in the streets, the nation is plunged into civil war."
+ venedia.2.a:0 "These leftists need to learn their place!"
+ venedia.2.b:0 "The people will depose these tyrants!"
+ 
  excellent:0 "Excellent."
  unfortunate:0 "Unfortunate."
  stability.21.t:0 "Draft Dodging"
