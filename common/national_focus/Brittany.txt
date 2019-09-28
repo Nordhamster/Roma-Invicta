@@ -1,0 +1,3036 @@
+focus_tree = {
+id = brittany
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 20
+            
+            tag = BRT
+        }
+    }
+
+default = no
+
+
+############################################### Economic-politic Tree ########################################
+
+### ################collectivism##################
+focus = {
+  id = BRT_fund_rich
+  icon = GFX_goal_
+  x = 13
+  y = 0
+  cost = 2
+
+mutually_exclusive = { focus = BRT_fund_poor }
+
+  completion_reward = {
+custom_effect_tooltip = 8_BRM_tt
+  }
+}
+
+
+
+focus = {
+  id = BRT_taxes_poor
+  icon = GFX_goal_
+  x = 13
+  y = 1
+  cost = 2
+
+  prerequisite = { focus = BRT_fund_rich }
+
+  completion_reward = {
+  custom_effect_tooltip = 13_BRM_tt
+  hidden_effect = {
+ unlock_decision_tooltip = BRT_taxes_poor
+  }
+  }
+}
+
+focus = {
+  id = BRT_award_privileges
+  icon = GFX_goal_
+  x = 10
+  y = 2
+  cost = 10
+
+  prerequisite = { focus = BRT_taxes_poor }
+
+  completion_reward = {
+  add_popularity = {
+ideology = dictatorship
+popularity = -0.05
+						}
+add_popularity = {
+ideology = oligarchic_democracy
+popularity = -0.05
+						}
+
+
+  }
+}
+
+focus = {
+  id = BRT_lower_regulations
+  icon = GFX_goal_
+  x = 12
+  y = 2
+  cost = 10
+
+available = { 
+NOT =  { 
+has_idea = BRT_industry_4
+}
+}
+  prerequisite = { focus = BRT_taxes_poor }
+
+  completion_reward = {
+add_ideas = BRT_lower_regulations_idea
+  }
+}
+
+focus = {
+  id = BRT_lower_price_luxury_ressources
+  icon = GFX_goal_
+  x = 11
+  y = 3
+  cost = 10
+
+  prerequisite = { focus = BRT_lower_regulations focus = BRT_award_privileges}
+
+  completion_reward = {
+add_ideas = BRT_lower_tariff_idea
+  }
+}
+focus = {
+  id = BRT_distribute_surplus_to_elites
+  icon = GFX_goal_
+  x = 13
+  y = 3
+  cost = 10
+
+  prerequisite = { focus = BRT_lower_regulations focus = BRT_award_privileges}
+
+  completion_reward = {
+add_popularity = {
+ideology = collectivism
+popularity = 0.1
+						}
+add_popularity = {
+ideology = democratic
+popularity = 0.05
+						}
+
+  }
+}
+
+focus = {
+  id = BRT_remove_syndical_power
+  icon = GFX_goal_
+  x = 9
+  y = 3
+  cost = 10
+
+  prerequisite = { focus = BRT_lower_regulations focus = BRT_award_privileges}
+
+  completion_reward = {
+add_ideas = BRT_syndicat_power_no
+  }
+}
+
+
+
+
+
+
+
+
+
+########## Middle ground( nice ) #########
+
+focus = {
+  id = BRT_build_factories
+  icon = GFX_goal_
+  x = 16
+  y = 2
+  cost = 10
+
+  prerequisite = { focus = BRT_fund_rich focus = BRT_fund_poor}
+
+  completion_reward = {
+custom_effect_tooltip = 19_BRM_tt
+  }
+}
+
+focus = {
+  id = BRT_gold_standart
+  icon = GFX_goal_
+  x = 15
+  y = 1
+  cost = 10
+
+  prerequisite = { focus = BRT_fund_rich focus = BRT_fund_poor}
+
+  completion_reward = {
+add_ideas = BRT_turn_to_gold_standart
+  }
+}
+
+############rich people angry#####################
+focus = {
+  id = BRT_fund_poor
+  icon = GFX_goal_
+  x = 21
+  y = 0
+  cost = 10
+
+mutually_exclusive = { focus = BRT_fund_rich }
+
+  completion_reward = {
+custom_effect_tooltip = 9_BRM_tt
+  }
+}
+
+
+
+focus = {
+  id = BRT_lower_benefits_rich
+  icon = GFX_goal_
+  x = 19
+  y = 1
+  cost = 10
+
+  prerequisite = { focus = BRT_fund_poor }
+
+  completion_reward = {
+add_popularity = {
+ideology = oligarchic_democracy
+popularity = 0.1
+						}
+add_popularity = {
+ideology = dictatorship
+popularity = 0.05
+						}
+  }
+}
+
+focus = {
+  id = BRT_taxes_rich
+  icon = GFX_goal_
+  x = 23
+  y = 1
+  cost = 10
+
+  prerequisite = { focus = BRT_fund_poor }
+
+  completion_reward = {
+custom_effect_tooltip =  14_BRM_tt
+hidden_effect =  {
+ unlock_decision_tooltip  = BRT_taxes_rich
+}
+  }
+}
+
+focus = {
+  id = BRT_invest_cheap_lower_class_buildings
+  icon = GFX_goal_
+  x = 22
+  y = 2
+  cost = 10
+
+  mutually_exclusive = { focus = BRT_grand_works}
+
+  prerequisite = { focus = BRT_taxes_rich focus = BRT_lower_benefits_rich  }
+
+  completion_reward = {
+add_timed_idea = { idea = BRT_buidlings days = 360 }
+  }
+}
+
+focus = {
+  id = BRT_grand_works
+  icon = GFX_goal_
+  x = 20
+  y = 2
+  cost = 10
+
+
+  mutually_exclusive = { focus = BRT_invest_cheap_lower_class_buildings}
+
+  prerequisite = { focus = BRT_taxes_rich focus = BRT_lower_benefits_rich  }
+
+  completion_reward = {
+add_timed_idea = { idea = BRT_sped_consturction days = 360 }
+  }
+}
+
+
+focus = {
+  id = BRT_lower_tariff_basic_need
+  icon = GFX_goal_
+  x = 18
+  y = 3
+  cost = 10
+
+  prerequisite = { focus = BRT_grand_works focus = BRT_invest_cheap_lower_class_buildings}
+
+  completion_reward = {
+add_ideas = BRT_lower_tariff_basic_need
+  }
+}
+
+focus = {
+  id = BRT_allow_cooperatives
+  icon = GFX_goal_
+  x = 23
+  y = 3
+  cost = 10
+
+  prerequisite = { focus = BRT_grand_works focus = BRT_invest_cheap_lower_class_buildings}
+
+  completion_reward = {
+add_ideas = BRT_allow_cooperative
+  }
+}
+
+
+
+############################# Political ###################################
+
+
+################## LEFT WING #######################
+######################DEMOCRATIC###########
+focus = {
+  id = BRT_democratic_meeting
+  icon = GFX_goal_
+  x = 2
+  y = 4
+  cost = 10
+
+mutually_exclusive = { focus = BRT_collectivist_meeting focus = BRT_renforce_royal_power }
+
+  prerequisite = { focus = BRT_remove_syndical_power focus = BRT_distribute_surplus_to_elites focus = BRT_lower_price_luxury_ressources}
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.9 }
+	}
+  }
+}
+
+focus = {
+  id = BRT_push_king_constitutionnal
+  icon = GFX_goal_
+  x = 1
+  y = 5
+  cost = 10
+
+available = {
+democratic > 0.4
+}
+
+
+mutually_exclusive = { focus = BRT_push_king_step_down }
+
+  prerequisite = { focus = BRT_democratic_meeting }
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.16 }
+	}
+  }
+}
+
+focus = {
+  id = BRT_status_king
+  icon = GFX_goal_
+  x = 1
+  y = 6
+  cost = 0.2
+
+bypass = {
+has_country_flag =  BRT_civil_war_demo1
+}
+  prerequisite = { focus = BRT_push_king_constitutionnal }
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.19 }
+	}
+  }
+}
+
+focus = {
+  id = BRT_status_noble
+  icon = GFX_goal_
+  x = 1
+  y = 7
+  cost = 0.2
+bypass = {
+has_country_flag =  BRT_civil_war_demo1
+}
+  prerequisite = { focus = BRT_status_king }
+
+  completion_reward = {
+country_event = { id =  brittany.20 }
+  }
+}
+
+
+focus = {
+  id = BRT_push_king_step_down
+  icon = GFX_goal_
+  x = 3
+  y = 5
+  cost = 10
+
+
+available = {
+democratic > 0.5
+}
+
+
+mutually_exclusive = { focus = BRT_push_king_constitutionnal  }
+
+  prerequisite = { focus = BRT_democratic_meeting }
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.11 }
+	}
+  }
+}
+
+
+
+
+
+
+
+focus = {
+  id = BRT_a_democratic_brittany
+  icon = GFX_goal_
+  x = 2
+  y = 8
+  cost = 2
+
+
+  prerequisite = { focus = BRT_status_noble focus = BRT_push_king_step_down}
+
+  completion_reward = {
+add_stability = 0.2
+add_timed_idea = { idea =  BRT_demo_brittany days = 150 }
+  }
+}
+
+focus = {
+  id = BRT_rebuild_the_nation
+  icon = GFX_goal_
+  x = 6
+  y = 9
+  cost = 2
+
+
+  prerequisite = { focus = BRT_a_democratic_brittany}
+
+  completion_reward = {
+add_stability = 0.1
+add_timed_idea = { idea =  BRT_reconstruction_effort days = 150 }
+  }
+}
+
+
+focus = {
+  id = BRT_join_european_coalition
+  icon = GFX_goal_
+  x = 0
+  y = 9
+  cost = 10
+
+mutually_exclusive = { focus = BRT_international_minor_alliance  }
+
+  prerequisite = { focus = BRT_a_democratic_brittany }
+
+completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+						has_government = democratic
+						is_faction_leader = yes
+					}
+				}
+				GER = {
+					country_event = generic.2
+				}
+			}
+			else = {
+				get_best_alliance_match_democratic_effect = yes
+				var:best_leader = {
+					country_event = generic.2
+				}
+			}
+		}
+}
+
+focus = {
+  id = BRT_request_help_EC
+  icon = GFX_goal_
+  x = 0
+  y = 10
+  cost = 10
+
+  prerequisite = { focus = BRT_join_european_coalition }
+
+  completion_reward = {  
+ hidden_effect  = {  
+ unlock_decision_tooltip = BRT_EC_help
+ }
+ custom_effect_tooltip = 22_BRM_tt
+  }
+}
+
+
+focus = {
+  id = BRT_international_minor_alliance
+  icon = GFX_goal_
+  x = 4
+  y = 9
+  cost = 10
+
+
+available = {
+is_puppet = no
+is_in_faction = no
+}
+  prerequisite = { focus = BRT_a_democratic_brittany }
+
+  completion_reward = {
+set_rule = { can_create_factions = yes }
+create_faction = BRT_IMA
+  }
+}
+
+
+focus = {
+  id = BRT_invite_ireland
+  icon = GFX_goal_
+  x = 5
+  y = 10
+  cost = 2
+
+available = {
+country_exists = IRE
+IRE =  {
+has_government = democratic
+}
+IRE =  {
+is_puppet = no
+}
+IRE =  {
+is_in_faction = no
+}
+}
+
+
+  prerequisite = { focus = BRT_international_minor_alliance }
+
+  completion_reward = {
+IRE = {
+country_event = generic.5
+}
+  }
+}
+
+
+focus = {
+  id = BRT_invite_canada
+  icon = GFX_goal_
+  x = 3
+  y = 10
+  cost = 2
+
+  prerequisite = { focus = BRT_international_minor_alliance }
+
+  completion_reward = {
+
+  }
+}
+
+
+
+
+focus = {
+  id = BRT_invite_denmark
+  icon = GFX_goal_
+  x = 4
+  y = 11
+  cost = 2
+
+available = {
+country_exists = DEN
+DEN =  {
+has_government = democratic
+}
+DEN =  {
+is_puppet = no
+}
+DEN =  {
+is_in_faction = no
+}
+}
+
+
+
+  prerequisite = { focus = BRT_invite_canada focus = BRT_invite_ireland}
+
+  completion_reward = {
+DEN = {
+country_event = generic.5
+			}
+  }
+}
+
+
+
+focus = {
+  id = BRT_intervantionism
+  icon = GFX_goal_
+  x = 0
+  y = 12
+  cost = 10
+
+  prerequisite = { focus = BRT_invite_denmark focus = BRT_request_help_EC}
+
+  completion_reward = {
+add_ideas = BRT_intervantionism_idea
+  }
+}
+
+focus = {
+  id = BRT_a_new_election
+  icon = GFX_goal_
+  x = 2
+  y = 13
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_invite_denmark focus = BRT_request_help_EC}
+
+  completion_reward = {
+
+  }
+}
+
+###################### MIDDLE POL########################
+
+focus = {
+  id = BRT_renforce_royal_power
+  icon = GFX_goal_
+  x = 16
+  y = 4
+  cost = 10
+
+mutually_exclusive = { focus = BRT_collectivist_meeting focus = BRT_democratic_meeting focus = BRT_support_thomas }
+
+  prerequisite = { focus = BRT_remove_syndical_power focus = BRT_distribute_surplus_to_elites focus = BRT_lower_price_luxury_ressources focus = BRT_allow_cooperatives focus = BRT_distribute_food focus = BRT_lower_tariff_basic_need }
+
+  completion_reward = {
+add_ideas = BRT_renforced_royal_power
+  }
+}
+
+focus = {
+  id = BRT_night_of_long_knives
+  icon = GFX_goal_
+  x = 15
+  y = 5
+  cost = 2
+
+mutually_exclusive = { focus = BRT_dissolve_parliament  }
+
+  prerequisite = { focus = BRT_renforce_royal_power  }
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.21 }
+	}
+  }
+}
+
+focus = {
+  id = BRT_kill_thomas
+  icon = GFX_goal_
+  x = 15
+  y = 7
+  cost = 2
+
+mutually_exclusive = { focus = BRT_dissolve_parliament  }
+
+  prerequisite = { focus = BRT_night_of_long_knives  }
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.22 }
+	}
+  }
+}
+
+
+
+
+
+
+
+focus = {
+  id = BRT_dissolve_parliament
+  icon = GFX_goal_
+  x = 17
+  y = 5
+  cost = 10
+
+mutually_exclusive = { focus = BRT_night_of_long_knives  }
+
+  prerequisite = { focus = BRT_renforce_royal_power  }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_a_new_fair_election
+  icon = GFX_goal_
+  x = 17
+  y = 6
+  cost = 10
+
+mutually_exclusive = { focus = BRT_a_new_biased_election  }
+
+  prerequisite = { focus = BRT_dissolve_parliament  }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_a_new_biased_election
+  icon = GFX_goal_
+  x = 19
+  y = 6
+  cost = 10
+
+mutually_exclusive = { focus = BRT_a_new_fair_election  }
+
+  prerequisite = { focus = BRT_dissolve_parliament  }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_push_thomas_to_the_side
+  icon = GFX_goal_
+  x = 17
+  y = 7
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_a_new_biased_election focus = BRT_a_new_fair_election }
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.23 }
+	}
+  }
+}
+focus = {
+  id = BRT_fate_of_the_council
+  icon = GFX_goal_
+  x = 16
+  y = 8
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_push_thomas_to_the_side focus = BRT_kill_thomas }
+
+  completion_reward = {
+
+  }
+}
+
+
+
+focus = {
+  id = BRT_establish_royal_brest_guards
+  icon = GFX_goal_
+  x = 19
+  y = 9
+  cost = 10
+
+mutually_exclusive  = { focus = BRT_establish_royal_celtic_army }
+
+  prerequisite = { focus = BRT_fate_of_the_council }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_expand_royal_brest_guards
+  icon = GFX_goal_
+  x = 19
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus = BRT_establish_royal_brest_guards }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_establish_royal_celtic_army
+  icon = GFX_goal_
+  x = 21
+  y = 9
+  cost = 10
+
+mutually_exclusive  = { focus = BRT_establish_royal_brest_guards }
+
+  prerequisite = { focus = BRT_fate_of_the_council }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_expand_royal_celtic_army
+  icon = GFX_goal_
+  x = 21
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus = BRT_establish_royal_celtic_army }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_reclaim_noble_local_armies
+  icon = GFX_goal_
+  x = 20
+  y = 12
+  cost = 10
+
+
+  prerequisite = { focus = BRT_expand_royal_celtic_army  focus = BRT_expand_royal_brest_guards }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_abolish_stipend
+  icon = GFX_goal_
+  x = 13
+  y = 9
+  cost = 5
+
+
+
+  prerequisite = { focus = BRT_fate_of_the_council }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_noble_council_membership_fee
+  icon = GFX_goal_
+  x = 13
+  y = 10
+  cost = 5
+
+
+
+  prerequisite = { focus = BRT_abolish_stipend }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_distribute_land_farmer
+  icon = GFX_goal_
+  x = 16
+  y = 10
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_abolish_stipend focus = BRT_establish_royal_brest_guards}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_normand_royal_heritage
+  icon = GFX_goal_
+  x = 25
+  y = 12
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_distribute_land_farmer focus = BRT_council_election_method}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_brest_stay_capital
+  icon = GFX_goal_
+  x = 27
+  y = 13
+  cost = 10
+
+available = {
+has_full_control_of_state = 14
+ }
+
+mutually_exclusive = { focus = BRT_a_new_capital}
+
+  prerequisite = { focus = BRT_normand_royal_heritage }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_build_the_industry
+  icon = GFX_goal_
+  x = 27
+  y = 14
+  cost = 10
+
+available = {
+has_full_control_of_state = 14
+ }
+
+
+  prerequisite = { focus = BRT_brest_stay_capital }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_brest_hidden_ressources
+  icon = GFX_goal_
+  x = 29
+  y = 14
+  cost = 10
+
+available = {
+has_full_control_of_state = 14
+ }
+
+
+  prerequisite = { focus = BRT_brest_stay_capital }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_build_the_king_a_new_palace
+  icon = GFX_goal_
+  x = 27
+  y = 15
+  cost = 10
+
+
+  prerequisite = { focus = BRT_brest_hidden_ressources focus =  BRT_build_the_industry}
+
+  completion_reward = {
+
+  }
+}
+
+
+focus = {
+  id = BRT_a_new_capital
+  icon = GFX_goal_
+  x = 23
+  y = 13
+  cost = 10
+
+available = {
+has_full_control_of_state = 15
+ }
+
+
+mutually_exclusive = { focus = BRT_brest_stay_capital}
+
+  prerequisite = { focus = BRT_normand_royal_heritage }
+
+  completion_reward = {
+set_capital = 15
+  }
+}
+
+focus = {
+  id = BRT_relocate_the_industries
+  icon = GFX_goal_
+  x = 23
+  y = 14
+  cost = 10
+
+
+available = {
+has_full_control_of_state = 15
+has_full_control_of_state = 14
+ }
+
+
+  prerequisite = { focus = BRT_a_new_capital }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_recognize_minor_normand_nobles
+  icon = GFX_goal_
+  x = 21
+  y = 14
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_a_new_capital }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_move_the_king
+  icon = GFX_goal_
+  x = 23
+  y = 15
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_recognize_minor_normand_nobles focus = BRT_relocate_the_industries }
+
+  completion_reward = {
+
+  }
+}
+
+
+focus = {
+  id = BRT_waylins_marriage
+  icon = GFX_goal_
+  x = 9
+  y = 13
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_distribute_land_farmer}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_a_popular_personality
+  icon = GFX_goal_
+  x = 14
+  y = 14
+  cost = 10
+
+available = {
+is_puppet = no
+}
+
+
+  prerequisite = { focus = BRT_waylins_marriage}
+
+  completion_reward = {
+
+  }
+}
+
+
+focus = {
+  id = BRT_marry_arzhel
+  icon = GFX_goal_
+  x = 17
+  y = 15
+  cost = 10
+
+mutually_exclusive = { focus = BRT_marry_jeann_of_gallia focus = BRT_marry_sofia_of_frisia  focus = BRT_marry_hilda_of_britain}
+
+  prerequisite = { focus = BRT_marry_a_popular_personality}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_sofia_of_frisia
+  icon = GFX_goal_
+  x = 15
+  y = 15
+  cost = 10
+
+available = {
+country_exists = FRI
+}
+
+mutually_exclusive = { focus = BRT_marry_arzhel focus = BRT_marry_jeann_of_gallia  focus = BRT_marry_hilda_of_britain}
+
+  prerequisite = { focus = BRT_marry_a_popular_personality}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_jeann_of_gallia
+  icon = GFX_goal_
+  x = 13
+  y = 15
+  cost = 10
+
+mutually_exclusive = { focus = BRT_marry_arzhel focus = BRT_marry_sofia_of_frisia  focus = BRT_marry_hilda_of_britain }
+
+  prerequisite = { focus = BRT_marry_a_popular_personality}
+
+available = {
+country_exists = GAL
+}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_hilda_of_britain
+  icon = GFX_goal_
+  x = 11
+  y = 15
+  cost = 10
+
+available = {
+country_exists = ENG
+}
+
+
+mutually_exclusive = { focus = BRT_marry_arzhel focus = BRT_marry_sofia_of_frisia focus = BRT_marry_jeann_of_gallia }
+
+  prerequisite = { focus = BRT_marry_a_popular_personality}
+
+  completion_reward = {
+
+  }
+}
+
+
+
+focus = {
+  id = BRT_marry_a_foreign_royal
+  icon = GFX_goal_
+  x = 4
+  y = 14
+  cost = 10
+
+available = {
+is_puppet = no
+}
+
+
+  prerequisite = { focus = BRT_waylins_marriage}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_elizabeth_of_britain
+  icon = GFX_goal_
+  x = 1
+  y = 15
+  cost = 10
+
+
+available = {
+country_exists = ENG
+     ENG  = {
+has_government = monarchism
+    }
+}
+
+mutually_exclusive = { focus = BRT_marry_carmen_of_gallia focus = BRT_marry_cback_of_frisia focus = BRT_marry_waylina }
+
+
+  prerequisite = { focus = BRT_marry_a_foreign_royal}
+
+  completion_reward = {
+
+  }
+}
+
+
+focus = {
+  id = BRT_marry_carmen_of_gallia
+  icon = GFX_goal_
+  x = 3
+  y = 15
+  cost = 10
+
+
+available = {
+country_exists = GAL
+     GAL  = {
+has_government = monarchism
+    }
+}
+
+mutually_exclusive = { focus = BRT_marry_elizabeth_of_britain focus = BRT_marry_cback_of_frisia focus = BRT_marry_waylina }
+
+  prerequisite = { focus = BRT_marry_a_foreign_royal}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_cback_of_frisia
+  icon = GFX_goal_
+  x = 5
+  y = 15
+  cost = 10
+
+
+available = {
+country_exists = GAL
+     GAL  = {
+has_government = monarchism
+    }
+}
+
+mutually_exclusive = { focus = BRT_marry_waylina focus = BRT_marry_elizabeth_of_britain focus = BRT_marry_carmen_of_gallia }
+
+  prerequisite = { focus = BRT_marry_a_foreign_royal}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_marry_waylina
+  icon = GFX_goal_
+  x = 7
+  y = 15
+  cost = 10
+
+available = {
+has_government = monarchism
+}
+
+mutually_exclusive = { focus = BRT_marry_carmen_of_gallia focus = BRT_marry_elizabeth_of_britain focus = BRT_marry_cback_of_frisia }
+
+  prerequisite = { focus = BRT_marry_a_foreign_royal}
+
+  completion_reward = {
+
+  }
+}
+
+
+focus = {
+  id = BRT_alliance_britain
+  icon = GFX_goal_
+  x = 7
+  y = 17
+  cost = 10
+
+
+
+mutually_exclusive = { focus = BRT_alliance_gallia focus = BRT_alliance_gallia }
+
+  prerequisite = { focus = BRT_marry_elizabeth_of_britain focus = BRT_marry_hilda_of_britain  }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_alliance_gallia
+  icon = GFX_goal_
+  x = 9
+  y = 17
+  cost = 10
+
+
+
+mutually_exclusive = { focus = BRT_alliance_britain focus = BRT_alliance_frisia }
+
+  prerequisite = { focus = BRT_marry_carmen_of_gallia focus = BRT_marry_jeann_of_gallia  }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_alliance_frisia
+  icon = GFX_goal_
+  x = 11
+  y = 17
+  cost = 10
+
+
+
+mutually_exclusive = { focus = BRT_alliance_britain focus = BRT_alliance_gallia}
+
+  prerequisite = { focus = BRT_marry_cback_of_frisia focus = BRT_marry_sofia_of_frisia  }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_get_rid_collectivist
+  icon = GFX_goal_
+  x = 13
+  y = 11
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_distribute_land_farmer}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_anti_collectivist_rethorics
+  icon = GFX_goal_
+  x = 13
+  y = 12
+  cost = 10
+
+  prerequisite = { focus = BRT_get_rid_collectivist}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_get_rid_democrats
+  icon = GFX_goal_
+  x = 19
+  y = 11
+  cost = 10
+
+
+
+  prerequisite = { focus = BRT_distribute_land_farmer}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_take_back_our_rightful_colonies
+  icon = GFX_goal_
+  x = 15
+  y = 11
+  cost = 10
+
+  prerequisite = { focus = BRT_distribute_land_farmer }
+
+
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_unite_celtics
+  icon = GFX_goal_
+  x = 15
+  y = 12
+  cost = 10
+
+mutually_exclusive = { focus = BRT_join_gallia }
+
+
+  prerequisite = { focus = BRT_distribute_land_farmer }
+
+
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_liberate_frisian_workers
+  icon = GFX_goal_
+  x = 15
+  y = 13
+  cost = 10
+
+mutually_exclusive = { focus = BRT_join_gallia }
+
+
+  prerequisite = { focus = BRT_distribute_land_farmer }
+
+
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_join_gallia
+  icon = GFX_goal_
+  x = 17
+  y = 12
+  cost = 10
+
+  prerequisite = { focus = BRT_distribute_land_farmer }
+
+
+mutually_exclusive = { focus = BRT_unite_celtics }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_gallish_volunteers
+  icon = GFX_goal_
+  x = 17
+  y = 13
+  cost = 10
+
+  prerequisite = { focus = BRT_join_gallia }
+
+
+
+  completion_reward = {
+
+  }
+}
+######################## THOMAS/NOBLE COUNCIL ########################
+
+########## support king thomas ############
+focus = {
+  id = BRT_support_thomas
+  icon = GFX_goal_
+  x = 34
+  y = 4
+  cost = 10
+
+mutually_exclusive = { focus = BRT_collectivist_meeting focus = BRT_democratic_meeting focus = BRT_renforce_royal_power }
+
+  prerequisite = {focus = BRT_allow_cooperatives focus = BRT_distribute_food focus = BRT_lower_tariff_basic_need }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_puppet_king
+  icon = GFX_goal_
+  x = 36
+  y = 5
+  cost = 10
+
+mutually_exclusive = { focus = BRT_thomas_power  }
+
+  prerequisite = { focus = BRT_support_thomas  }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_council_support
+  icon = GFX_goal_
+  x = 38
+  y = 6
+  cost = 10
+  prerequisite = { focus = BRT_puppet_king  }
+
+
+
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_financial_elite_support
+  icon = GFX_goal_
+  x = 36
+  y = 6
+  cost = 10
+  prerequisite = { focus = BRT_puppet_king  }
+
+  completion_reward = {
+
+  }
+}
+
+
+
+focus = {
+  id = BRT_thomas_power
+  icon = GFX_goal_
+  x = 32
+  y = 5
+  cost = 10
+
+mutually_exclusive = { focus = BRT_puppet_king  }
+
+  prerequisite = { focus =  BRT_support_thomas }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_cultural_elite_support
+  icon = GFX_goal_
+  x = 30
+  y = 6
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_thomas_power }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_religious_support
+  icon = GFX_goal_
+  x = 32
+  y = 6
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_thomas_power }
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_attempt_to_assasinate_king
+  icon = GFX_goal_
+  x = 34
+  y = 7
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_religious_support focus = BRT_cultural_elite_support focus = BRT_financial_elite_support focus = BRT_council_support}
+
+  completion_reward = {
+
+  }
+}
+########################################
+focus = {
+  id = BRT_status_king2
+  icon = GFX_goal_
+  x = 36
+  y = 8
+  cost = 10
+
+mutually_exclusive = { focus = BRT_council_election_method }
+
+  prerequisite = { focus =  BRT_attempt_to_assasinate_king}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_corporate_death_squad
+  icon = GFX_goal_
+  x = 38
+  y = 9
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_status_king2}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_confiscate_guns
+  icon = GFX_goal_
+  x = 40
+  y = 9
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_status_king2}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_steal_private_proprerty
+  icon = GFX_goal_
+  x = 39
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_confiscate_guns  focus =  BRT_corporate_death_squad }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_remove_labor_laws
+  icon = GFX_goal_
+  x = 37
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_confiscate_guns  focus =  BRT_corporate_death_squad }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_highen_prices
+  icon = GFX_goal_
+  x = 41
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_confiscate_guns  focus =  BRT_corporate_death_squad }
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_force_non_labourer_to_work
+  icon = GFX_goal_
+  x = 38
+  y = 11
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_highen_prices  focus =  BRT_remove_labor_laws focus = BRT_steal_private_proprerty}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_legalize_slavery
+  icon = GFX_goal_
+  x = 40
+  y = 11
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_highen_prices  focus =  BRT_remove_labor_laws focus = BRT_steal_private_proprerty}
+
+  completion_reward = {
+
+  }
+}
+###################################
+focus = {
+  id = BRT_council_election_method
+  icon = GFX_goal_
+  x = 32
+  y = 8
+  cost = 10
+
+mutually_exclusive = { focus = BRT_status_king2 }
+
+  prerequisite = { focus =  BRT_attempt_to_assasinate_king}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_the_king_speech
+  icon = GFX_goal_
+  x = 31
+  y = 9
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_council_election_method}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_bread_for_the_people
+  icon = GFX_goal_
+  x = 31
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_the_king_speech}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_game_for_the_people
+  icon = GFX_goal_
+  x = 31
+  y = 11
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_bread_for_the_people}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_tolerance_league
+  icon = GFX_goal_
+  x = 31
+  y = 12
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_game_for_the_people}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_take_back_colonies
+  icon = GFX_goal_
+  x = 28
+  y = 9
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_council_election_method}
+
+  completion_reward = {
+
+  }
+}
+focus = {
+  id = BRT_establish_puppet_regime_frisia
+  icon = GFX_goal_
+  x = 28
+  y = 10
+  cost = 10
+
+
+  prerequisite = { focus =  BRT_take_back_colonies}
+
+  completion_reward = {
+
+  }
+}
+######### middle 
+
+focus = {
+  id = BRT_rome_alliance2
+  icon = GFX_goal_
+  x = 34
+  y = 10
+  cost = 10
+
+ mutually_exclusive = { focus = BRT_rome_alliance2  }
+
+ prerequisite = { focus = BRT_council_election_method focus = BRT_status_king2 }
+
+  completion_reward = {
+
+  }
+}
+###############################################################
+##ECONOMIC V.2
+#####################################################
+
+focus = {
+  id = BRT_breton_economy
+  icon = GFX_goal_
+  x = 48
+  y = 0
+  cost = 10
+
+
+  completion_reward = {
+  add_political_power = 100
+  }
+} 
+
+
+
+
+focus = {
+  id = BRT_agriculture
+  icon = GFX_goal_
+  x = 47
+  y = 1
+  cost = 10
+
+mutually_exclusive = { focus = BRT_artisans focus = BRT_industrial focus = BRT_army }
+
+ prerequisite = { focus = BRT_breton_economy}
+
+  completion_reward = {
+    add_ideas = BRT_agricultural
+  }
+}
+
+focus = {
+  id = BRT_encourage_land_owner_sell_land
+  icon = GFX_goal_
+  x = 47
+  y = 2
+  cost = 10
+
+ prerequisite = { focus = BRT_agriculture}
+
+  completion_reward = {
+  add_ideas = BRT_agricultural_2
+  }
+}
+
+focus = {
+  id = BRT_import_advanced_agricultural_technologies
+  icon = GFX_goal_
+  x = 47
+  y = 3
+  cost = 10
+
+ prerequisite = { focus = BRT_encourage_land_owner_sell_land }
+
+  completion_reward = {
+  add_ideas = BRT_agricultural_3
+  }
+}
+focus = {
+  id = BRT_annex_seigneurial_land
+  icon = GFX_goal_
+  x = 47
+  y = 4
+  cost = 10
+
+ prerequisite = { focus = BRT_import_advanced_agricultural_technologies }
+
+  completion_reward = {
+  add_ideas = BRT_agricultural_4
+  }
+}
+
+
+
+
+focus = {
+  id = BRT_artisans
+  icon = GFX_goal_
+  x = 45
+  y = 1
+  cost = 10
+
+available = {
+always = no
+}
+
+mutually_exclusive = { focus = BRT_agriculture focus = BRT_industrial focus = BRT_army }
+
+ prerequisite = { focus = BRT_breton_economy}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_artisan_of_luxury
+  icon = GFX_goal_
+  x = 45
+  y = 2
+  cost = 10
+
+ prerequisite = { focus = BRT_artisans}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_artisan_of_quality
+  icon = GFX_goal_
+  x = 45
+  y = 3
+  cost = 10
+
+
+ prerequisite = { focus = BRT_artisan_of_luxury}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_artisan_of_quantity
+  icon = GFX_goal_
+  x = 45
+  y = 4
+  cost = 10
+
+
+ prerequisite = { focus = BRT_artisan_of_quality}
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = BRT_industrial
+  icon = GFX_goal_
+  x = 49
+  y = 1
+  cost = 10
+
+mutually_exclusive = { focus = BRT_agriculture focus = BRT_artisans focus =  BRT_army }
+
+ prerequisite = { focus = BRT_breton_economy}
+
+  completion_reward = {
+add_ideas = BRT_industry_1
+  }
+}
+
+focus = {
+  id = BRT_mass_produce_importation_good
+  icon = GFX_goal_
+  x = 49
+  y = 2
+  cost = 10
+
+
+
+ prerequisite = { focus = BRT_industrial}
+
+  completion_reward = {
+add_ideas = BRT_industry_2
+  }
+}
+
+focus = {
+  id = BRT_factories_abroad
+  icon = GFX_goal_
+  x = 49
+  y = 3
+  cost = 10
+
+
+
+ prerequisite = { focus = BRT_mass_produce_importation_good}
+
+completion_reward = {
+add_offsite_building = { type = industrial_complex level = 5 }
+add_offsite_building = { type = arms_factory level = 2 }
+  }
+}
+
+
+focus = {
+  id = BRT_more_secure_factories
+  icon = GFX_goal_
+  x = 49
+  y = 4
+  cost = 10
+
+ prerequisite = { focus = BRT_factories_abroad}
+
+available = { 
+NOT =  { 
+has_idea = BRT_lower_regulations_idea
+}
+}
+
+  completion_reward = {
+add_ideas = BRT_industry_4
+
+  }
+}
+
+
+
+
+
+
+
+
+focus = {
+  id = BRT_army
+  icon = GFX_goal_
+  x = 51
+  y = 1
+  cost = 10
+
+mutually_exclusive = { focus = BRT_agriculture focus = BRT_artisans focus = BRT_industrial }
+
+ prerequisite = { focus = BRT_breton_economy}
+
+  completion_reward = {
+add_ideas = BRT_army_1
+  }
+}
+
+focus = {
+  id = BRT_mobilize_economy
+  icon = GFX_goal_
+  x = 51
+  y = 2
+  cost = 10
+
+
+ prerequisite = { focus = BRT_army}
+
+  completion_reward = {
+add_ideas = BRT_army_2
+  }
+}
+
+focus = {
+  id = BRT_be_prepared
+  icon = GFX_goal_
+  x = 51
+  y = 3
+  cost = 10
+
+
+ prerequisite = { focus = BRT_mobilize_economy}
+
+  completion_reward = {
+add_ideas = BRT_army_3
+  }
+}
+
+focus = {
+  id = BRT_scrap_objects_for_the_war_machine
+  icon = GFX_goal_
+  x = 51
+  y = 4
+  cost = 10
+
+available = {
+has_full_control_of_state = 14
+ }
+ prerequisite = { focus = BRT_be_prepared}
+
+      completion_reward = {
+
+  14 = {
+add_resource = {
+					type = aluminium
+					amount = 10
+  }
+add_resource = {
+					type = steel
+					amount = 30
+  }
+}
+     }
+}
+#######################################
+##religion
+#######################################
+focus = {
+  id = BRT_celtic_renaissance
+  icon = GFX_goal_
+  x = 47
+  y = 9
+  cost = 10
+
+  mutually_exclusive = { focus = BRT_christian_supremacy}
+
+  completion_reward = {
+add_political_power = 100
+    BRT = {
+			country_event = { id = brittany. }
+	}
+  }
+}
+
+focus = {
+  id = BRT_create_order_of_the_druid
+  icon = GFX_goal_
+  x = 45
+  y = 10
+  cost = 10
+
+prerequisite = { focus = BRT_celtic_renaissance}
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.7 }
+	}
+  }
+}
+
+
+
+
+focus = {
+  id = BRT_construct_temples_and_shrine
+  icon = GFX_goal_
+  x = 45
+  y = 11
+  cost = 10
+
+prerequisite = { focus = BRT_create_order_of_the_druid}
+
+  completion_reward = {
+add_ideas = BRT_regular_effigy_sacrifices
+  }
+}
+
+focus = {
+  id = BRT_teach_animism
+  icon = GFX_goal_
+  x = 45
+  y = 12
+  cost = 10
+
+prerequisite = { focus = BRT_construct_temples_and_shrine}
+
+  completion_reward = {
+add_stability = 0.1
+  }
+}
+
+
+
+
+
+
+
+
+
+focus = {
+  id = BRT_warrior_tradition
+  icon = GFX_goal_
+  x = 47
+  y = 10
+  cost = 10
+
+prerequisite = { focus = BRT_celtic_renaissance}
+
+  completion_reward = {
+add_ideas = BRT_warrior_traditions
+  }
+}
+
+focus = {
+  id = BRT_elevate_holiday
+  icon = GFX_goal_
+  x = 47
+  y = 11
+  cost = 10
+
+prerequisite = { focus = BRT_warrior_tradition}
+
+  completion_reward = {
+custom_effect_tooltip = 7_BRM_tt
+  }
+}
+
+
+focus = {
+  id = BRT_wicker_man_sacrifice
+  icon = GFX_goal_
+  x = 47
+  y = 12
+  cost = 10
+
+prerequisite = { focus = BRT_elevate_holiday}
+
+  completion_reward = {
+add_political_power = 100
+
+  }
+}
+
+focus = {
+  id = BRT_a_true_celtic_nation
+  icon = GFX_goal_
+  x = 47
+  y = 13
+  cost = 10
+
+prerequisite = { focus = BRT_wicker_man_sacrifice}
+prerequisite = { focus = BRT_teach_animism}
+  completion_reward = {
+add_stability = 0.05
+custom_effect_tooltip = 6_BRM_tt
+hidden_effect = {
+remove_ideas = christianity
+add_ideas = traditional_celtic_religion
+}
+  }
+}
+
+
+##########################################
+focus = {
+  id = BRT_christian_supremacy
+  icon = GFX_goal_
+  x = 49
+  y = 9
+  cost = 10
+
+  mutually_exclusive = { focus = BRT_celtic_renaissance}
+
+  completion_reward = {
+add_political_power = 100
+    BRT = {
+			country_event = { id = brittany. }
+	}
+  }
+}
+
+
+focus = {
+  id = BRT_christian_crusader
+  icon = GFX_goal_
+  x = 51
+  y = 10
+  cost = 10
+
+prerequisite = { focus = BRT_christian_supremacy}
+
+  completion_reward = {
+add_ideas = BRT_crusader
+  }
+}
+
+
+focus = {
+  id = BRT_fight_back_false_christianity
+  icon = GFX_goal_
+  x = 51
+  y = 11
+  cost = 10
+
+prerequisite = { focus = BRT_christian_crusader}
+
+  completion_reward = {
+add_ideas = BRT_fight_back
+  }
+}
+
+focus = {
+  id = BRT_read_church_archives
+  icon = GFX_goal_
+  x = 51
+  y = 12
+  cost = 10
+
+prerequisite = { focus = BRT_fight_back_false_christianity}
+
+  completion_reward = {
+army_experience = 25
+  }
+}
+
+
+
+
+focus = {
+  id = BRT_convert_religious_minorities
+  icon = GFX_goal_
+  x = 49
+  y = 10
+  cost = 10
+
+prerequisite = { focus = BRT_christian_supremacy}
+
+  completion_reward = {
+add_political_power = 100
+  }
+}
+
+focus = {
+  id = BRT_recolt_dime
+  icon = GFX_goal_
+  x = 49
+  y = 11
+  cost = 10
+
+prerequisite = { focus = BRT_convert_religious_minorities}
+
+  completion_reward = {
+add_ideas = BRT_dime
+  }
+}
+
+focus = {
+  id = BRT_invite_pope_for_visit
+  icon = GFX_goal_
+  x = 49
+  y = 12
+  cost = 10
+
+prerequisite = { focus = BRT_recolt_dime}
+
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.4 }
+	}
+  }
+}
+
+focus = {
+  id = BRT_a_true_christian_nation
+  icon = GFX_goal_
+  x = 49
+  y = 13
+  cost = 10
+
+prerequisite = { focus = BRT_invite_pope_for_visit}
+prerequisite = { focus = BRT_read_church_archives }
+  completion_reward = {
+add_stability = 0.05
+  }
+}
+
+
+
+
+
+
+
+
+################################################### Combat Tree ############################################
+
+###########################Defence path####################
+focus = {
+  id = BRT_defence
+  icon = GFX_focus_brittany_defense
+  x = 63
+  y = 0
+  cost = 3
+
+
+
+mutually_exclusive = { focus = BRT_attack }
+
+  completion_reward = {
+            add_tech_bonus = {
+				name = BRT_defence_doctrine
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+army_experience = 15
+  }
+ 
+ 
+}
+
+#line1
+#develop defence technology
+focus = {
+  id = BRT_develop_guns
+  icon = GFX_focus_brittany_develop_new
+  prerequisite = { focus = BRT_defence }
+  x = 63
+  y = 1
+  cost = 10
+  completion_reward = {
+  add_tech_bonus = {
+				name = BRT_gun
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+ }
+  }
+ 
+ 
+}
+#gun slightly faster
+focus = {
+  id = BRT_arm_a_lot
+  icon = GFX_focus_brittany_mass_produce_equipement
+  prerequisite = { focus = BRT_develop_guns }
+  x = 63
+  y = 2
+  cost = 10
+  completion_reward = {
+  add_ideas = BRT_guns_idea
+ }
+ 
+ 
+}
+#buy guns decision
+focus = {
+  id = BRT_buy_guns
+  icon = GFX_focus_brittany_buy_guns
+  prerequisite = { focus = BRT_arm_a_lot }
+  x = 63
+  y = 3
+  cost = 10
+  completion_reward = {
+ custom_effect_tooltip = 3_BRM_tt
+ hidden_effect = {
+ unlock_decision_tooltip = BRT_buy_guns
+ }
+ }
+ 
+ 
+}
+ 
+##Line 2
+#veneti forts
+focus = {
+  id = BRT_veneti_forts_story
+  icon = GFX_focus_brittany_veneti_forts
+  prerequisite = { focus = BRT_defence }
+  x = 65
+  y = 1
+  cost = 6
+  completion_reward = {
+    BRT = {
+			country_event = { id = brittany.1 }
+	}
+  }
+ 
+ 
+}
+ #forts on roman border
+focus = {
+  id = BRT_roman_forts
+  icon = GFX_focus_brittany_protect_border
+  prerequisite = { focus = BRT_veneti_forts_story }
+  x = 65
+  y = 2
+  cost = 10
+
+        available = {
+        has_full_control_of_state = 30
+		}
+
+  completion_reward = {
+ custom_effect_tooltip = 5_BRM_tt
+ hidden_effect = {
+ unlock_decision_tooltip = BRT_build_forts
+ }
+  }
+ 
+ 
+}
+#forts on coasts
+focus = {
+  id = BRT_coastal_forts
+  icon = GFX_focus_brittany_fort_ocean
+  prerequisite = { focus = BRT_roman_forts }
+  x = 65
+  y = 3
+  cost = 10
+
+      available = {
+        has_full_control_of_state = 14
+	  }
+
+  completion_reward = {
+  14 = {
+             add_building_construction = {
+				type = coastal_bunker
+				province = 542
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6536
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9510
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11465
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3552
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6572
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9525
+				level = 3
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11508
+				level = 3
+			}
+		}
+  }
+ 
+ 
+}
+
+
+
+################################Attack path########################
+
+#Attack theory
+focus = {
+  id = BRT_attack
+  icon = GFX_focus_brittany_offence
+  x = 57
+  y = 0
+  cost = 3
+
+  mutually_exclusive = { focus = BRT_defence }
+
+  completion_reward = {
+            add_tech_bonus = {
+				name = BRT_defence_doctrine
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+army_experience = 15
+  }
+ 
+ 
+}
+
+##A line continues
+ 
+focus = {
+  id = BRT_blitzkrieg_theory
+  icon = GFX_focus_brittany_blitzkrieg_theory
+  prerequisite = { focus = BRT_attack }
+  x = 57
+  y = 1
+  cost = 10
+  completion_reward = {
+  add_ideas = BRT_blitz_theory
+  }
+ 
+ 
+}
+#technology
+focus = {
+  id = BRT_mechanise_army
+  icon = GFX_focus_brittany_mechanization
+  prerequisite = { focus = BRT_blitzkrieg_theory }
+  x = 57
+  y = 2
+  cost = 10
+  completion_reward = {
+  			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}	
+  }
+ 
+ 
+}
+#tanks produce faster
+focus = {
+  id = BRT_tank_wave
+  icon = GFX_focus_brittany_tank_wave
+  prerequisite = { focus = BRT_mechanise_army }
+  x = 57
+  y = 3
+  cost = 10
+  completion_reward = {
+  add_ideas = BRT_tanks_idea
+  }
+ 
+ 
+}
+ 
+##B line begins
+ #
+focus = {
+  id = BRT_all_armed
+  icon = GFX_focus_brittany_offensive_army
+  prerequisite = { focus = BRT_attack }
+  x = 55
+  y = 1
+  cost = 10
+  completion_reward = {
+  add_ideas = BRT_all_armed_idea
+  }
+ 
+ 
+}
+#
+focus = {
+  id = BRT_pro_war_propaganda
+  icon = GFX_focus_brittany_propaganda
+  prerequisite = { focus = BRT_all_armed }
+  x = 55
+  y = 2
+  cost = 4
+  completion_reward = {
+  add_ideas = BRT_propaganda
+  }
+ 
+ 
+}
+#
+focus = {
+  id = BRT_protect_homeland_idea
+  icon = GFX_focus_brittany_total_war
+  prerequisite = { focus = BRT_pro_war_propaganda }
+  x = 55
+  y = 3
+  cost = 2
+  available = {
+       BRT = { surrender_progress > 0.5 }
+  }
+
+  completion_reward = {
+add_ideas = BRT_protect_our_homeland_idea
+  }
+ 
+
+}
+##########Advisors
+
+focus = {
+  id = BRT_hire_foreign_advisors
+  icon = GFX_focus_brittany_foreign_officers
+
+prerequisite = { focus = BRT_attack focus = BRT_defence } 
+
+  x = 60
+  y = 1
+  cost = 2
+  available = {
+  has_idea = BRT_inexperienced_army_1
+  }
+
+  completion_reward = {
+BRT = {
+			country_event = { id = brittany.2 }
+	}
+  }
+ 
+
+}
+
+
+focus = {
+  id = BRT_elite_troops
+  icon = GFX_focus_brittany_elite_tank_division
+
+prerequisite = { focus =  BRT_hire_foreign_advisors} 
+
+  x = 60
+  y = 3
+  cost = 2
+
+  completion_reward = {
+	BRT  = {
+    country_event = { id = brittany.3 }
+	}
+  }
+
+}
+##### Final Focuses
+
+
+#################################################Navy Focus###################################
+#Naval Effort
+focus = {
+  id = BRT_breton_navy
+  icon = GFX_goal_
+
+  x = 70
+  y = 0
+  cost = 10
+
+  completion_reward = {
+  navy_experience = 15
+              add_tech_bonus = {
+				name = BRT_naval_doctrine
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+  }
+}
+
+
+#Dockyard efforts
+focus = {
+  id = BRT_breton_dockyard
+  icon = GFX_goal_
+
+ prerequisite = { focus = BRT_breton_navy }
+
+  x = 73
+  y = 2
+  cost = 10
+
+bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = naval_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+  completion_reward = {
+  random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+	}
+
+  random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+   }
+   }
+ 
+
+}
+
+
+###capital
+focus = {
+  id = BRT_breton_capital_ship
+  icon = GFX_goal_
+
+mutually_exclusive = { focus = BRT_breton_numerous_ships}
+
+  x = 72
+  y = 1
+  cost = 10
+
+prerequisite = { focus = BRT_breton_navy  } 
+
+  completion_reward = {
+add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 0.5
+uses = 2
+category = fleet_in_being_tree
+}
+
+  }
+}
+
+###battleship
+focus = {
+  id = BRT_breton_battleship
+  icon = GFX_goal_
+
+  x = 72
+  y = 3
+  cost = 10
+
+prerequisite = { focus =  BRT_breton_capital_ship  } 
+
+  completion_reward = {
+navy_experience = 10
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = basic_battlecruiser
+							technology = basic_battleship
+							technology = improved_battleship
+							technology = advanced_battleship
+							technology = heavy_battleship
+							technology = heavy_battleship2
+							technology = early_carrier
+							technology = basic_carrier
+							technology = improved_carrier
+							technology = advanced_carrier
+						}
+
+  }
+}
+
+#lot of ships
+focus = {
+  id = BRT_breton_numerous_ships
+  icon = GFX_goal_
+
+  x = 68
+  y = 1
+  cost = 10
+
+mutually_exclusive = { focus = BRT_breton_capital_ship}
+
+prerequisite = { focus = BRT_breton_navy  } 
+
+  completion_reward = {
+add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 0.5
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+  }
+}
+
+
+#
+#Breton U-boats
+focus = {
+  id = BRT_breton_submarine
+  icon = GFX_goal_
+
+ prerequisite = { focus = BRT_breton_numerous_ships }
+
+  x = 67
+  y = 2
+  cost = 10
+
+  completion_reward = {
+  navy_experience = 10
+  add_tech_bonus = {
+				name = BRT_u_boat_effort
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
+  }
+ }
+
+#breton destroyers
+focus = {
+  id = BRT_breton_destroyers
+  icon = GFX_goal_
+
+ prerequisite = { focus = BRT_breton_numerous_ships }
+
+  x = 69
+  y = 2
+  cost = 10
+
+  completion_reward = {
+  navy_experience = 10
+ add_tech_bonus = {
+		name = dd_bonus
+		bonus = 0.5
+		ahead_reduction = 1
+		uses = 1
+		technology = early_destroyer
+		technology = basic_destroyer
+		technology = improved_destroyer
+		technology = advanced_destroyer
+}
+  }
+ }
+
+################################### Air focus ####################################
+
+#
+focus = {
+  id = BRT_aerial_effort
+  icon = GFX_goal_
+
+
+  x = 76
+  y = 0
+  cost = 10
+
+  completion_reward = {
+  air_experience = 15
+   add_tech_bonus = {
+				name = BRT_air_doctrine
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+  }
+ }
+
+focus = {
+  id = BRT_bomber
+  icon = GFX_goal_
+
+ prerequisite = { focus = BRT_aerial_effort }
+
+  x = 74
+  y = 3
+  cost = 10
+
+  completion_reward = {
+  air_experience = 10
+add_tech_bonus = {
+name = bomber_bonus
+bonus = 0.5
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+}
+  }
+ }
+
+focus = {
+  id = BRT_fighter
+  icon = GFX_goal_
+
+ prerequisite = { focus = BRT_aerial_effort }
+
+  x = 78
+  y = 3
+  cost = 10
+
+  completion_reward = {
+  air_experience = 10
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 0.5
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+  }
+ }
+
+######### Continuous Focus
+continuous_focus_position = { x = 1 y = 2500 }
