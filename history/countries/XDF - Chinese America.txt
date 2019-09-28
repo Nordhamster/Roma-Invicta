@@ -1,6 +1,6 @@
 ﻿capital = 366
 
-oob = "QAM_1936"
+oob = "XDF_1936"
 
 #religion
 add_ideas = {
@@ -34,7 +34,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	oob = "QAM_1939"
+	oob = "XDF_1939"
 
 	add_ideas = {
 		#laws
@@ -86,78 +86,71 @@ set_technology = {
 set_convoys = 25
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 0
-	oligarchic_democracy = 20		
+	democratic = 60
+	oligarchic_democracy = 15		
 	collectivism = 5	
-	monarchism = 75
-	dictatorship = 0
+	monarchism = 10
+	dictatorship = 10
 }
 
 create_country_leader = {
-	name = "J. B. M. Hertzog"
+	name = "Liu Qiu"
 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
-	picture = "GFX_SAF_james_hertzog"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = oligarchic_democracy_ideology
+	ideology = conservative
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "D. F. Malan"
+	name = "Yu Zan"
+	desc = "POLITICS_J_B_M_HERTZOG_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = aristocratic_democracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Teng Ruogang"
 	desc = "POLITICS_DF_MALAN_DESC"
-	picture = "GFX_SAF_daniel_malan"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nationalism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Moses Kotane"
+	name = "Deng Bo"
 	desc = "POLITICS_MOSES_KOTANE_DESC"
-	picture = "GFX_SAF_moses_kotane"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = syndicalism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Pixley Ka Isaka Seme"
+	name = "Zhu Yuxun"
 	desc = "POLITICS_PIXLEY_SEME_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = aristocracy
 	traits = {
 		#
 	}
-}
-
-create_corps_commander = {
-	name = "George Edwin Brink"
-	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox  }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = "Guy Hallifax"
-	gfx = "GFX_SAF_guy_halifax"
-	traits = { }
-	skill = 3
 }

@@ -4,7 +4,7 @@ state={
 	name="STATE_385"
 
 	history={
-		owner = QAM
+		owner = XDF
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
@@ -15,7 +15,7 @@ state={
 			}
 
 		}
-		add_core_of = QAM
+		add_core_of = XDF
 		victory_points = {
 			3513 1 
 		}

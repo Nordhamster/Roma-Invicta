@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = QAM
+		owner = XDF
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -32,7 +32,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = QAM
+		add_core_of = XDF
 		victory_points = {
 			9814 30
 		}

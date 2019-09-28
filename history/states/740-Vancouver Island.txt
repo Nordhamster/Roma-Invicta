@@ -7,11 +7,11 @@ state={
 	state_category = rural
 
 	history={
-		owner = QAM
+		owner = XDF
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = QAM
+		add_core_of = XDF
 	}
 
 	provinces={
