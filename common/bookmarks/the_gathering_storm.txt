@@ -88,8 +88,8 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
-		"YAK"={
-			history = "YAK_GATHERING_STORM_DESC"
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
 			ideology = collectivism
 			ideas = {
 				trotskyite_plot
@@ -126,7 +126,7 @@ bookmarks = {
 		"MAR"={
 			minor = yes
 			history = "MAR_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
 				RAJ_agrarian_society
 				RAJ_princely_states
@@ -150,10 +150,10 @@ bookmarks = {
 				POL_seek_accommodation_with_germany
 			}
 		}
-		"CAN"={
+		"BRT"={
 			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = "BRT_GATHERING_STORM_DESC"
+			ideology = monarchism
 			ideas = {
 				CAN_great_depression_1
 				CAN_conscription_crisis

@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = ENW
+		owner = ENG
 		add_core_of = LOA
 		victory_points = {
 			1903 1 
