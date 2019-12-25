@@ -53,7 +53,7 @@
  
  #oligarchic democracy ideologies
  roman_democracy:0 "Roman Democracy"
- roman_democracy_desc:0 "Roman Democrat \nRoman Democracy is a system of government a senate advises the leading magistrate with decrees, and the magistrates are elected from within the senate. Often, senators belong to a privileged social class."
+ roman_democracy_desc:0 "Roman Democrat \nRoman Democracy is a system of government a senate advises the leading magistrate with decrees, and the magistrates are elected from within the senate. Often, plebs belong to a privileged social class."
  democratic_centralism:0 "Democratic Centralist"
  democratic_centralism_desc:0 "Democratic Centralist \nDemocratic Centralism entails the government being run in a one-party system, but nevertheless the citizens can influence the government through democratic means."
  aristocratic_democracy:0 "Aristocratic Democracy"
@@ -129,8 +129,10 @@
  CHI_oligarchic_democracy_party_long:0 "Nationalist Party"
  CHI_dictatorship_party_long:0 "Yuan Shikai Loyalists"
  CHI_monarchism_party_long:0 "Society for Monarchical Constitutionalism"
+ CHI_collectivism_party:0 "Jitizhuyidang"
  CHI_collectivism_party_long:0 "Chinese Collectivist Party"
- CHI_democratic_party_long:0 "Chinese Democratic Socialist Party"
+ CHI_democratic_party:0 "Gonghedang"
+ CHI_democratic_party_long:0 "Republican Party"
  GAL_oligarchic_democracy_party:0 "Parti Consul Gaulois"
  GAL_oligarchic_democracy_party_long:0 "Gaulish Consul Party"
  GAL_dictatorship_party:0 "Parti de la Gaule Unie"

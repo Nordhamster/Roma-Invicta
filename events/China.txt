@@ -190,7 +190,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_country_flag = chinese_civil_war }
+		NOT = { has_global_flag = chinese_civil_war }
 		tag = QNG
 		has_government = monarchism
 		date > 1938.1.1 # Trigger at some point after 1938
@@ -234,6 +234,21 @@ country_event = {
 				transfer_state = 607
 				add_state_core = 607
 				
+				#These will become warlords
+				transfer_state = 595	
+				transfer_state = 594
+				transfer_state = 599
+				transfer_state = 325
+				transfer_state = 747
+				transfer_state = 751
+				transfer_state = 752
+				transfer_state = 753
+				transfer_state = 605
+				transfer_state = 603
+				transfer_state = 748
+				transfer_state = 591
+				transfer_state = 592
+				transfer_state = 593
 				
 				#Core Everything
 				add_state_core = 330
@@ -264,19 +279,20 @@ country_event = {
 				load_oob = CHI_1936
 			}
 			
-			QNG = {
-				country_event = { id = china.4 days = 4 }
-				country_event = { id = china.5 days = 2 }
-				country_event = { id = china.6 days = 3 }
-				country_event = { id = china.7 days = 5 }
-				country_event = { id = china.8 days = 6 }
-				country_event = { id = china.9 days = 5 }
-				country_event = { id = china.10 days = 5 }
-			}
+			#QNG = {
+			#	country_event = { id = china.4 days = 4 }
+			#	country_event = { id = china.5 days = 2 }
+			#	country_event = { id = china.6 days = 3 }
+			#	country_event = { id = china.7 days = 5 }
+			#	country_event = { id = china.8 days = 6 }
+			#	country_event = { id = china.9 days = 5 }
+			#	country_event = { id = china.10 days = 5 }
+			#	country_event = { id = china.14 days = 4 }
+			#}
 			set_global_flag = chinese_civil_war
-			CTL = {
-				country_event = { id = china.11 days = 3 }
-			}
+			#CTL = {
+			#	country_event = { id = china.11 days = 3 }
+			#}
 		}
 	}
 	
@@ -313,11 +329,14 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
 	fire_only_once = yes
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = QNG
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 4
 	}
 	
 	immediate = {
@@ -334,17 +353,18 @@ country_event = {
 				add_state_core = 330
 				transfer_state = 612
 				add_state_core = 612
+				transfer_state = 329
+				add_state_core = 329
 				
 				add_state_core = 756
 				add_state_core = 761
 				add_state_core = 611
 				add_state_core = 621
-				add_state_core = 329
 				
 				load_oob = MON_1936
 			}
 			
-			set_world_flag = chinese_civil_war
+			set_global_flag = chinese_civil_war
 		}
 	}
 	
@@ -377,11 +397,14 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
 	fire_only_once = yes
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = QNG
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 2
 	}
 	
 	immediate = {
@@ -402,6 +425,8 @@ country_event = {
 				add_state_core = 322
 				transfer_state = 601
 				add_state_core = 601
+				transfer_state = 434
+				add_state_core = 434
 				
 				add_state_core = 604
 				add_state_claim = 752
@@ -440,11 +465,14 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
 	fire_only_once = yes
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = QNG
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 6
 	}
 	
 	immediate = {
@@ -504,11 +532,14 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
 	fire_only_once = yes
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = CHI
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 5
 	}
 	
 	immediate = {
@@ -562,11 +593,14 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
 	fire_only_once = yes
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = QNG
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 5
 	}
 	
 	immediate = {
@@ -626,11 +660,14 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	
 	fire_only_once = yes
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = CHI
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 5
 	}
 	
 	immediate = {
@@ -646,7 +683,15 @@ country_event = {
 				transfer_state = 594
 				add_state_core = 594
 				transfer_state = 599
-				add_state_core = 599
+				add_state_core = 599	
+				add_state_core = 591
+				transfer_state = 591
+				add_state_core = 592
+				transfer_state = 592
+				add_state_core = 593
+				transfer_state = 593
+				
+				add_state_core = 788
 				
 				load_oob = GXC_1936
 			}
@@ -680,11 +725,14 @@ country_event = {
 	title = china.10.t
 	desc = china.10.d
 	picture = GFX_report_event_chinese_soldiers_fighting
-	
-	is_triggered_only = yes
+
+	trigger = {
+		TAG = CHI
+		has_global_flag = chinese_civil_war
+	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 4
 	}
 	
 	immediate = {
@@ -741,10 +789,14 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
+	trigger = {
+		TAG = CTL
+		has_global_flag = chinese_civil_war
+		country_exists = GXC
+	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 5
 	}
 	
 	option = {# Yoink Qing Land
@@ -769,6 +821,13 @@ country_event = {
 	
 	option = { # Nah, i'd rather not
 		name = china.11.b
+		hidden_effect = {
+			GXC = {
+				transfer_state = 591
+				transfer_state = 592
+				transfer_state = 593
+			}
+		}
 	}
 }
 
@@ -807,4 +866,149 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = china.13
+	title = china.13.t
+	desc = china.13.d
+	picture = GFX_report_event_chinese_soldiers	
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = CHI
+		always = no
+	}
+	
+	option = {
+		name = china.12.a
+		ai_will_do = {
+			factor = 10
+		}
+		set_autonomy = {
+			target = YUN
+			autonomy_state = autonomy_autonomous_warlord
+		}
+		set_autonomy = {
+			target = GXC
+			autonomy_state = autonomy_aligned_warlord
+		}
+		set_autonomy = {
+			target = XSM
+			autonomy_state = autonomy_integrated_warlord
+		}
+		set_autonomy = {
+			target = SZE
+			autonomy_state = autonomy_integrated_warlord
+		}
+	}
+}
+
+#Guizhou Splits Off
+country_event = {
+	id = china.14
+	title = china.14.t
+	desc = china.14.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+
+	trigger = {
+		TAG = CHI
+		has_global_flag = chinese_civil_war
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		hidden_effect = {
+			GUI = {
+				#declare_war_on = {
+				#	target = QNG
+				#	type = take_state_focus
+				#	generator = { 752 753 605 }
+				#}
+				country_event = { days = 1 id = china.12}
+				
+				transfer_state = 603
+				add_state_core = 603
+				transfer_state = 748
+				add_state_core = 748
+				
+				load_oob = GUI_1936
+			}
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Play as them
+		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			GUI = { change_tag_from = QNG }
+		}
+	}
+}
+
+#Fuijan Soviet Splits Off
+country_event = {
+	id = china.15
+	title = china.15.t
+	desc = china.15.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+
+	trigger = {
+		TAG = CHI
+		has_global_flag = chinese_civil_war
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = {
+		hidden_effect = {
+			GUI = {
+				country_event = { days = 1 id = china.12}
+				
+				transfer_state = 595
+				add_state_core = 595
+				
+				load_oob = FUJ_1936
+			}
+		}
+	}
+	
+	option = {# Oh god, oh fugg
+		name = china.3.a
+		effect_tooltip = {
+			#Put tooltip here
+		}
+	}
+	
+	option = { # Play as them
+		name = china.3.b
+		ai_will_do = {
+			factor = 0
+		}
+		effect_tooltip = {
+			#Put tooltip here
+		}
+		hidden_effect = {
+			FUJ = { change_tag_from = QNG }
+		}
+	}
+}
+
 

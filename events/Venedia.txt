@@ -69,6 +69,7 @@ country_event = {
 					has_government = collectivism
 				}
 				load_oob = "VEN_CW_Collectivists"
+				set_capital = 88
 				set_equipment_fraction = 0.5
 				set_stability = 0.9
 				set_war_support = 0.8
@@ -118,13 +119,14 @@ country_event = {
 	}
 	
 	option = {
-		name = venedia.1.a
+		name = venedia.3.a
 		kill_country_leader = yes
 		add_stability = -0.50
 		add_popularity = {
 			ideology = democratic
 			popularity = -0.30
 		}
+		set_country_flag = modrzewski_dead
 	}
 }
 

@@ -226,7 +226,7 @@ create_country_leader = {
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
 	picture = "Portrait_China_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
-	ideology = democratic_centralism
+	ideology = military
 	traits = {
 		generallissimo
 	}
@@ -246,9 +246,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wang Jingwei"
 	desc = "POLITICS_WANG_JINGWEI_DESC"
-	picture = "GFX_portrait_chi_wang_jingwei"
+	picture = "gfx/leaders/CHI/Portrait_CHI_Wang_Jingwei.dds"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = democratic_centralism
 	traits = {
 		#
 	}

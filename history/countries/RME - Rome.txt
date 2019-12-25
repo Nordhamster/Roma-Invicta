@@ -20,10 +20,10 @@ add_ideas = {
 }
 
 #set up roman senate
-set_variable = { var = senators_support value = 55 }
-set_variable = { var = senators_total value = 100 }
-set_variable = { var = representatives_support value = 400 }
-set_variable = { var = representatives_total value = 600 }
+set_variable = { var = plebs_support value = 55 }
+set_variable = { var = plebs_total value = 100 }
+set_variable = { var = senators_support value = 400 }
+set_variable = { var = senators_total value = 600 }
 set_variable = { var = quorum_low value = 23 }
 set_variable = { var = quorum_medium value = 33 }
 set_variable = { var = quorum_high value = 43 }

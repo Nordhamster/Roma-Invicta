@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = BEN
+		owner = QNG
+		add_core_of = QNG
 		buildings = {
 			infrastructure = 1
 		}

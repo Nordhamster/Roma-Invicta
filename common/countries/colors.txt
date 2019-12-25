@@ -409,10 +409,23 @@ SZE = {
 	color = rgb { 200 130 20 }
 	color_ui = rgb { 200 130 20 }
 }
+GUI = {
+	color = rgb { 60 120 150 }
+	color_ui = rgb { 60 120 150 }
+}
 GEL = {
 	color = rgb { 80 150 80 }
 	color_ui = rgb { 80 150 80 }
 }
+FUJ = {
+	color = rgb { 212 60 60 }
+	color_ui = rgb { 212 60 60 }
+}
+KUM = {
+	color = rgb { 240 170 100 }
+	color_ui = rgb { 240 170 100 }
+}
+
 
 
 D01 = {
