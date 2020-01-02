@@ -1,0 +1,25 @@
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Home Command Legacy Test"			
+		naval_base = 3552 # Constanta
+		task_force = {
+			name = "Home Fleet"
+			location = 3552 # Constanta
+			ship = { name = "HMS Curacoa" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = BRT } } }
+			ship = { name = "HMS Curacoa" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = BRT } } }
+			ship = { name = "HMS Curacoa" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BRT } } }
+			ship = { name = "HMS Sabre" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRT } } }
+			ship = { name = "HMS Shikari" definition = destroyer equipment = { destroyer_2 = { amount = 4 owner = BRT } } }						# to RCN as Saskatchewan, 1943	
+		}
+		task_force = {
+			name = "Channel Guard"
+			location = 3552
+			ship = { name = "Saviour" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BRT } } }
+			ship = { name = "Saviour2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BRT } } }
+			ship = { name = "Saviour3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRT } } }
+			ship = { name = "Saviour4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRT } } }
+			ship = { name = "Saviour5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRT } } }
+		}
+}
