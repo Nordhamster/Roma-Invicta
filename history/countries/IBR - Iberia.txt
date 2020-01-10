@@ -1,7 +1,7 @@
 ﻿capital = 41
 
 oob = "IBR_1936"
-
+set_naval_oob = "IBR_1936_Naval_Legacy"
 #religion
 add_ideas = {
 	christianity
