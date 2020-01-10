@@ -1,0 +1,131 @@
+######################Get Guns ########################
+BRT_buy_guns = {
+	allowed = {
+		original_tag = BRT
+	}
+
+available = { 
+          num_of_civilian_factories > 3
+     }
+
+	visible = {
+	has_completed_focus = BRT_buy_guns
+	}
+}
+######################Roman Forts ############################
+BRT_build_forts = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = generic_army_support
+
+	visible = {
+	has_completed_focus = BRT_roman_forts
+	}
+}
+################Train The Army##############
+BRT_train_army = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_hire_foreign_advisors
+	}
+}
+##############Taxes###################
+BRT_taxes_poor = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_taxes_poor
+	NOT =  {
+    ruling_party = collectivism
+    ruling_party = democratic
+	}
+	}
+}
+
+BRT_taxes_rich = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_taxes_rich
+	NOT =  {
+    ruling_party = dictatorship
+    ruling_party = oligarchic_democracy
+	}
+	}
+}
+########## Build Factories ###########
+BRT_build_the_factory = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_build_factories
+	
+	}
+}
+###############################
+BRT_democratic_meetings = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_democratic_meeting
+	
+	}
+}
+BRT_collectivist_meetings = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_collectivist_meeting
+	
+	}
+}
+BRT_remove_negative = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+has_government = democratic
+}	
+	}
+################################
+BRT_EC_help = {
+	allowed = {
+		original_tag = BRT
+	}
+
+icon = decision_category_army_reform
+
+	visible = {
+	has_completed_focus = BRT_request_help_EC
+	}
+}

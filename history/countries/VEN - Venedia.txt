@@ -84,9 +84,9 @@ set_politics = {
 
 set_popularities = {
 	democratic = 50
-	dictatorship = 15	
-	collectivism = 15	
-	monarchism = 20
+	dictatorship = 20	
+	collectivism = 20	
+	monarchism = 10
 }
 
 create_country_leader = {
@@ -101,22 +101,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Antanas Snieckus"
-	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	name = "Aleksandr Sitek"
+	desc = "POLITICS_ALEKSANDR_SITEK_DESC"
+	picture = "gfx/leaders/VEN/Portrait_VEN_Aleksandr_Sitek.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = syndicalism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Augustinas Voldemaras"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Kondrat Surma"
+	desc = "POLITICS_KONDRAT_SURMA_DESC"
+	picture = "gfx/leaders/VEN/Portrait_VEN_Kondrat_Surma.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nationalism
 	traits = {
 		#
 	}

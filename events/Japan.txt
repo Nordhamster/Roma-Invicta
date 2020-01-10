@@ -94,7 +94,7 @@ country_event = {
 	option = { # yes
 		name = japan.3.a
 		ai_will_do = { factor = 10}
-		AMZ = { add_to_faction = JAP }
+		ENG = { add_to_faction = JAP }
 	}
 	
 	option = { # no
@@ -237,20 +237,9 @@ country_event = {
 		has_global_flag = chinese_civil_war
 	}
 	
-	option = {# Interfere
-		name = japan.6.a
-		ai_will_do = {
-			factor = 10
-		}
+	immediate = {
 		hidden_effect = {
-			puppet = FEN
 			FEN = {
-				declare_war_on = {
-					target = QNG
-					type = take_state_focus
-					generator = { 752 753 605 }
-				}
-				
 				transfer_state = 716
 				add_state_core = 716
 				transfer_state = 328
@@ -265,12 +254,28 @@ country_event = {
 				add_state_core = 409
 				add_state_core = 657
 				
-				
 				load_oob = MAN_1936
 			}
 		}
-		effect_tooltip = {
-			#Put tooltip here
+	}
+	
+	option = {# Interfere
+		name = japan.6.a
+		ai_will_do = {
+			factor = 10
+		}
+		hidden_effect = {
+			FEN = {
+				declare_war_on = {
+					target = QNG
+					type = take_state_focus
+					generator = { 752 753 605 }
+				}
+			}
+		}	
+		set_autonomy = {
+			target = FEN
+			autonomy_state = autonomy_aligned_warlord
 		}
 	}
 	
@@ -278,6 +283,11 @@ country_event = {
 		name = china.11.b
 		effect_tooltip = {
 			#Put tooltip here
+		}
+		hidden_effect = {
+			FEN = {
+				country_event = { days = 1 id = china.12}
+			}
 		}
 	}
 }

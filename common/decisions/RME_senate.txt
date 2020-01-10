@@ -3,8 +3,8 @@ RME_senate = {
 		icon = generic_political_discourse
 		available = {
 			OR = {
+				check_variable = { plebs_support < plebs_total }
 				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
 			}
 			not = {
 				has_decision = RME_medium_lobby_effort
@@ -42,8 +42,8 @@ RME_senate = {
 		icon = generic_political_discourse
 		available = {
 			OR = {
+				check_variable = { plebs_support < plebs_total }
 				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
 			}
 			not = {
 				has_decision = RME_small_lobby_effort
@@ -83,7 +83,7 @@ RME_senate = {
             custom_trigger_tooltip = {
                 tooltip = senate_low_support_trigger_tt
                 OR = {
-                check_variable = { var = representatives_support value = 91 compare = less_than_or_equals }
+                check_variable = { var = senators_support value = 91 compare = less_than_or_equals }
                 }
             }
             OR = {

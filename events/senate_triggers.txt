@@ -17,8 +17,8 @@ country_event = {
 		name = rme_senate.1.a
 		clear_variable = sen_loc
 		clear_variable = ror_loc
+		clear_variable = plebs_for_reelection
 		clear_variable = senators_for_reelection
-		clear_variable = representatives_for_reelection
 	}
 
 }
@@ -35,8 +35,8 @@ country_event = {
 		name = rme_senate.2.a
 		clear_variable = sen_loc
 		clear_variable = ror_loc
+		clear_variable = plebs_for_reelection
 		clear_variable = senators_for_reelection
-		clear_variable = representatives_for_reelection
 	}
 
 }
@@ -427,7 +427,7 @@ country_event = {
 		name = rme_senate.15.a
 		RME_election_plebs = yes
 		clear_variable = ror_loc
-		clear_variable = representatives_for_reelection
+		clear_variable = senators_for_reelection
 		set_country_flag = snap_elections
 		hidden_effect = {
 			country_event = { id = rme_senate.16 days = 140 }
@@ -454,7 +454,7 @@ country_event = {
 		name = rme_senate.16.a
 		RME_election_plebs = yes
 		clear_variable = ror_loc
-		clear_variable = representatives_for_reelection
+		clear_variable = senators_for_reelection
 		set_politics = { ruling_party = oligarchic_democracy elections_allowed = yes }
 	}
 
@@ -462,7 +462,7 @@ country_event = {
 		name = rme_senate.16.b
 		RME_election_senate = yes
 		clear_variable = ror_loc
-		clear_variable = representatives_for_reelection
+		clear_variable = senators_for_reelection
 		set_politics = { ruling_party = neutrality elections_allowed = yes }
 	}
 
@@ -470,7 +470,7 @@ country_event = {
 		name = rme_senate.16.c
 		RME_election_plebs = yes
 		clear_variable = ror_loc
-		clear_variable = representatives_for_reelection
+		clear_variable = senators_for_reelection
 		set_politics = { ruling_party = collectivism elections_allowed = no }
 	}
 
@@ -478,7 +478,7 @@ country_event = {
 		name = rme_senate.16.d
 		RME_election_senate = yes
 		clear_variable = ror_loc
-		clear_variable = representatives_for_reelection
+		clear_variable = senators_for_reelection
 		set_politics = { ruling_party = dictatorship elections_allowed = no }
 	}
 

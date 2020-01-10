@@ -165,7 +165,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Thomas I"
 	desc = ""
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	picture = "gfx/leaders/BRT/Portrait_BRT_Thomas.dds"
 	expire = "1965.1.1"
 	ideology = aristocratic_democracy
 	traits = {
@@ -178,7 +178,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = libertarian
+	ideology = libertarianism
 	traits = {
 		stout_defender
 	}

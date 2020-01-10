@@ -116,10 +116,10 @@ set_politics = {
 
 set_popularities = {
 	democratic = 0
-	oligarchic_democracy = 0		
+	oligarchic_democracy = 30		
 	collectivism = 0	
 	monarchism = 0
-	dictatorship = 100
+	dictatorship = 70
 }
 
 create_country_leader = {
@@ -140,6 +140,17 @@ create_corps_commander = {
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ma Zhongyin
+	portrait_path = "gfx/leaders/CHI/Portrait_XSM_Ma_Zhongying.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
 }

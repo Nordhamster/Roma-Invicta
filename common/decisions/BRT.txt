@@ -1,0 +1,879 @@
+BRT_buy_guns = {
+BRT_buy_guns_citizens = {
+
+days_remove = 130
+
+days_re_enable = 20
+
+fire_only_once = no
+
+cost = 40
+
+          modifier = {
+           consumer_goods_factor = 0.1
+          }
+
+
+        remove_effect = {
+		   add_equipment_to_stockpile = {
+           type = infantry_equipment
+           amount = 550
+           producer = BRT
+           }
+
+		}
+
+}
+
+
+
+
+
+
+BRT_buy_guns_shop = {
+
+days_remove = 100
+
+days_re_enable = 20
+
+fire_only_once = no
+
+cost = 60
+
+
+          modifier = {
+         consumer_goods_factor = 0.2
+          }
+
+
+
+        remove_effect =  {
+	       add_equipment_to_stockpile = {
+           type = infantry_equipment
+           amount = 550
+           producer = BRT
+           }
+
+		}
+}
+
+
+
+
+
+
+BRT_recolt_guns = {
+
+days_remove = 200
+
+days_re_enable = 20
+
+fire_only_once = no
+
+cost = 80
+
+
+            modifier = {
+            consumer_goods_factor = 0.2 
+            }
+
+
+
+
+        remove_effect = {
+        random_list = {
+fixed_random_seed = no
+				33 = {
+
+		            add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 200
+                    producer = BRT
+                    }
+				}
+
+				33 ={
+
+		            add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = BRT
+
+                    }
+				}
+
+				33 = {
+
+		            add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 900
+                    producer = BRT
+
+                    }
+				}
+           
+		}
+        }
+}
+}
+################### Forts ####################
+
+BRT_build_forts = {
+   BRT_build_forts_roman_1 = {
+
+
+days_remove = 100
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 2
+owns_state = 30
+controls_state = 30
+}
+
+		highlight_provinces = {
+			province = 11613
+			province = 11616
+			province = 9867
+			province = 9478
+		}
+
+          modifier = {
+         civilian_factory_use = -3
+          }
+
+
+remove_effect = {
+
+custom_effect_tooltip = 1_BRM_tt
+
+unlock_decision = { BRT_build_forts_roman_2 }
+
+
+	    hidden_effect = {
+        30 = {
+			add_building_construction = {
+				type = bunker
+				province = 11616
+				level = 2
+			    instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9867
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11613
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9478
+				level = 2
+				instant_build = yes
+			}
+	    }
+		set_country_flag = fort1
+        }
+}
+}
+
+BRT_build_forts_roman_2 = {
+
+
+days_remove = 100
+
+fire_only_once = yes
+
+visible = { 
+has_country_flag = fort1
+}
+
+
+available = { 
+num_of_available_civilian_factories > 1
+owns_state = 30
+controls_state = 30
+}
+
+		highlight_provinces = {
+			province = 11613
+			province = 11616
+			province = 9867
+			province = 9478
+		}
+
+          modifier = {
+         civilian_factory_use = -2
+          }
+
+
+	    remove_effect = {
+	    
+custom_effect_tooltip = 2_BRM_tt
+
+	    hidden_effect = {
+  30 = {
+			add_building_construction = {
+				type = bunker
+				province = 11616
+				level = 2
+			    instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9867
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11613
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9478
+				level = 2
+				instant_build = yes
+			}
+	   }
+    }
+}
+
+
+   }
+}
+
+BRT_train_army = {
+BRT_train_the_army = {
+
+days_re_enable = 20
+
+visible = {
+  OR = {
+  has_idea = BRT_inexperienced_army_1
+  has_idea = BRT_inexperienced_army_2
+  has_idea = BRT_inexperienced_army_3
+  }
+}
+
+icon = generic_prepare_civil_war
+
+available = {
+has_army_experience > 24
+has_completed_focus = BRT_hire_foreign_advisors
+}
+
+days_remove = 30
+
+ai_will_do = {
+factor = 500
+}
+
+
+
+
+
+remove_effect = {
+			if = {
+				limit = { has_idea = BRT_inexperienced_army_1 }
+				swap_ideas = {
+					remove_idea = BRT_inexperienced_army_1
+					add_idea = BRT_inexperienced_army_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = BRT_inexperienced_army_2 }
+				swap_ideas = {
+					remove_idea = BRT_inexperienced_army_2
+					add_idea = BRT_inexperienced_army_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = BRT_inexperienced_army_3 }
+				remove_ideas = BRT_inexperienced_army_3
+			}
+		}
+
+complete_effect = {
+army_experience = -25
+}	
+
+
+
+
+
+
+}
+}
+########### Taxes ###########
+BRT_taxes_poor = {
+BRT_taxes_low = {
+
+cost = 25
+
+        remove_effect = {
+custom_effect_tooltip = 10_BRM_tt
+hidden_effect  = {
+add_ideas = BRT_taxe_low
+remove_ideas = BRT_taxe_medium
+remove_ideas = BRT_taxe_high
+}
+		}
+
+}
+
+BRT_taxes_medium = {
+
+cost = 25
+
+        remove_effect = {
+custom_effect_tooltip = 11_BRM_tt
+
+hidden_effect  = {
+add_ideas = BRT_taxe_medium
+remove_ideas = BRT_taxe_high
+remove_ideas = BRT_taxe_low
+}
+		}
+
+}
+
+BRT_taxes_high = {
+
+cost = 25
+
+        remove_effect = {
+custom_effect_tooltip = 12_BRM_tt
+
+hidden_effect  = {
+add_ideas =  BRT_taxe_high
+remove_ideas = BRT_taxe_medium
+remove_ideas = BRT_taxe_low
+}
+		}
+
+
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BRT_build_the_factory = {
+   BRT_build_the_factory_1= {
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 3
+owns_state = 30
+controls_state = 30 
+}
+
+		highlight_states = {
+           state = 30
+		}
+
+          modifier = {
+         civilian_factory_use = -4
+          }
+
+
+remove_effect = {
+custom_effect_tooltip = 18_BRM_tt
+
+	    hidden_effect = {
+         30 = {
+        add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				state = 30
+				level = 2
+			    instant_build = yes
+			}
+		
+	    }
+        }
+}
+}
+  BRT_build_the_factory_2= {
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 3
+owns_state = 14
+controls_state = 14 
+}
+
+		highlight_states = {
+           state = 14
+		}
+
+          modifier = {
+         civilian_factory_use = -4
+          }
+
+
+remove_effect = {
+custom_effect_tooltip = 18_BRM_tt
+
+	    hidden_effect = {
+        14 = {
+        add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				state = 14
+				level = 2
+			    instant_build = yes
+			}
+		
+	    }
+        }
+}
+}
+  BRT_build_the_factory_3= {
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 3
+owns_state = 15
+controls_state = 15 
+}
+
+		highlight_states = {
+           state = 15
+		}
+
+          modifier = {
+         civilian_factory_use = -4
+          }
+
+
+remove_effect = {
+custom_effect_tooltip = 18_BRM_tt
+
+	    hidden_effect = {
+        15 = {
+        add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				state = 15
+				level = 2
+			    instant_build = yes
+			}
+		
+	    }
+        }
+}
+}
+  BRT_build_the_factory_4= {
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 3
+owns_state = 30
+controls_state = 30
+}
+
+		highlight_states = {
+           state = 30
+		}
+
+          modifier = {
+         civilian_factory_use = -4
+          }
+
+
+remove_effect = {
+custom_effect_tooltip = 17_BRM_tt
+
+	    hidden_effect = {
+        30 = {
+        add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				state = 30
+				level = 2
+			    instant_build = yes
+			}
+		
+	    }
+        }
+}
+}
+  BRT_build_the_factory_5= {
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 3
+owns_state = 14
+controls_state = 14 
+}
+
+		highlight_states = {
+           state = 14
+		}
+
+          modifier = {
+         civilian_factory_use = -4
+          }
+
+
+remove_effect = {
+custom_effect_tooltip = 17_BRM_tt
+
+	    hidden_effect = {
+        14 = {
+        add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				state = 14
+				level = 2
+			    instant_build = yes
+			}
+		
+	    }
+        }
+}
+}
+  BRT_build_the_factory_6= {
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+num_of_available_civilian_factories > 3
+owns_state = 15
+controls_state = 15 
+}
+
+		highlight_states = {
+           state = 15
+		}
+
+          modifier = {
+         civilian_factory_use = -4
+          }
+
+
+remove_effect = {
+custom_effect_tooltip = 17_BRM_tt
+
+	    hidden_effect = {
+        15 = {
+        add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				state = 15
+				level = 2
+			    instant_build = yes
+			}
+		
+	    }
+        }
+}
+}
+}
+
+
+
+BRT_taxes_rich = {
+BRT_taxes_low_1 = {
+
+cost = 25
+
+        remove_effect = {
+custom_effect_tooltip = 10_BRM_tt
+hidden_effect  = {
+add_ideas = BRT_taxe_low_1
+remove_ideas = BRT_taxe_low_1
+remove_ideas = BRT_taxe_high_1
+}
+		}
+
+}
+
+BRT_taxes_medium_1 = {
+
+cost = 25
+
+        remove_effect = {
+custom_effect_tooltip = 15_BRM_tt
+
+hidden_effect  = {
+add_ideas = BRT_taxe_medium_1
+remove_ideas = BRT_taxe_low_1
+remove_ideas = BRT_taxe_high_1
+}
+		}
+
+}
+
+BRT_taxes_high_1 = {
+
+cost = 25
+
+        remove_effect = {
+custom_effect_tooltip = 16_BRM_tt
+
+hidden_effect  = {
+add_ideas = BRT_taxe_high_1
+remove_ideas = BRT_taxe_low_1
+remove_ideas = BRT_taxe_medium_1
+}
+		}
+
+
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+BRT_democratic_meetings = {
+   BRT_dem_1 = {
+
+cost = 60
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+owns_state = 30
+controls_state = 30 
+}
+
+		highlight_states = {
+           state = 30
+		}
+
+
+
+modifier = {
+democratic_drift = 0.02
+stability_weekly = -0.005
+}
+
+  
+
+}
+
+
+   BRT_dem_2 = {
+
+cost = 60
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+owns_state = 14
+controls_state = 14 
+}
+
+		highlight_states = {
+           state = 14
+		}
+
+
+
+modifier = {
+democratic_drift = 0.02
+stability_weekly = -0.005
+}
+
+  
+
+}
+
+
+
+
+   BRT_dem_3 = {
+
+cost = 60
+
+
+days_remove = 200
+
+fire_only_once = yes
+
+available = { 
+owns_state = 15
+controls_state = 15 
+}
+
+		highlight_states = {
+           state = 15
+		}
+
+
+
+modifier = {
+democratic_drift = 0.02
+stability_weekly = -0.005
+}
+
+  
+
+}
+
+}
+
+
+
+
+BRT_remove_negative = {
+   BRT_syndicat_no = {
+
+cost = 10
+
+fire_only_once = yes
+
+available = { 
+has_government = democratic
+has_idea = BRT_syndicat_power_no
+}
+
+remove_effect  = { 
+remove_ideas = BRT_syndicat_power_no
+}
+
+}
+   BRT_lower_regulations_remove = {
+
+cost = 10
+
+fire_only_once = yes
+
+available = { 
+has_government = democratic
+has_idea = BRT_lower_regulations_idea
+}
+
+remove_effect  = { 
+remove_ideas = BRT_lower_regulations_idea
+}
+
+}
+}
+
+BRT_EC_help = {
+   BRT_EC_help_GER = {
+
+days_re_enable = 100
+
+cost = 50
+
+fire_only_once = yes
+
+available = { 
+is_in_faction_with = GER
+}
+
+remove_effect  = { 
+GER  = {
+country_event = brittany.help
+}
+}
+
+}
+   BRT_EC_help_GAL = {
+
+days_re_enable = 100
+
+cost = 50
+
+fire_only_once = yes
+
+available = { 
+is_in_faction_with = GAL
+}
+
+remove_effect  = { 
+GAL  = {
+country_event = 
+}
+}
+
+}
+}

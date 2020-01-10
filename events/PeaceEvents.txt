@@ -16,7 +16,7 @@ country_event = {
 	option = {
 		name = peace.accept
 		any_state = {
-			if = {
+			IF = {
 				limit = {
 					THIS = {
 						is_owned_by = FROM
@@ -46,17 +46,26 @@ country_event = {
 	
 	option = {
 		name = peace.accept
-		if = {
+		any_state = {
 			limit = {
-				15 = {
-					is_owned_by = BRT
+				OR = {
+					is_core_of = FROM
+					is_claimed_by = FROM
 				}
 			}
-			GAL = {
-				transfer_state = 15
+			IF = {
+				limit = {
+					THIS = {
+						is_owned_by = BRT
+						is_controlled_by = FROM
+					}
+				}
+				FROM = {
+					transfer_state = THIS
+				}
 			}
 		}
-		white_peace = GAL
+		white_peace = FROM
 	}
 	option = {
 		name = peace.reject

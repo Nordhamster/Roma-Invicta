@@ -35,7 +35,7 @@ country_event = {
                     attack_skill = 2
                     defense_skill = 3
                     planning_skill = 2
-                    logistics_skill = 5
+                    logistics_skill = 4
                     id = 1000
                     traits = {  unyielding_defender }
     } 
@@ -138,7 +138,7 @@ country_event = {
     add_political_power = 50  
     hidden_effect =  {  
         BRT = {
-            country_event = { id = brittany.6 days = 360 } 
+            country_event = { id = brittany.6 days = 365 } 
         }
 
      }
@@ -148,7 +148,7 @@ country_event = {
     add_timed_idea = { idea =  BRT_stronger_brittany days = 120 }
       hidden_effect =  {  
         BRT = {
-            country_event = { id = brittany.5 days = 360 } 
+            country_event = { id = brittany.5 days = 365 } 
         }
 
      }
@@ -182,7 +182,7 @@ country_event = {
     add_political_power = 50  
     hidden_effect =  {  
         BRT = {
-            country_event = { id = brittany.6 days = 360 } 
+            country_event = { id = brittany.6 days = 365 } 
         }
 
      }
@@ -192,7 +192,7 @@ country_event = {
     add_timed_idea = { idea =  BRT_stronger_brittany days = 120 }
       hidden_effect =  {  
         BRT = {
-            country_event = { id = brittany.6 days = 360 } 
+            country_event = { id = brittany.6 days = 365 } 
         }
 
      }
@@ -220,8 +220,9 @@ country_event = {
     option = {
         name = brittany.7.a
     add_ideas = BRT_druid_order
-         random_list = {
+        
 hidden_effect = {
+ random_list = {
                 50 = {
 BRT = {
 country_event = { id = brittany.8 days = 360 } 
@@ -312,7 +313,7 @@ country_event = {
                 20 = {
 
     BRT = {
-            country _event = { id = brittany.13 }
+            country_event = { id = brittany.13 }
     }
 }
 
@@ -347,6 +348,7 @@ start_civil_war = {
                     
                 }
             }
+add_ideas = BRT_shaken_from_civil_war
 remove_ideas = BRT_noble_council
 remove_ideas = BRT_power_struggle
    }
@@ -464,6 +466,7 @@ start_civil_war = {
                     
                 }
             }
+add_ideas = BRT_shaken_from_civil_war
 remove_ideas = BRT_noble_council
 remove_ideas = BRT_power_struggle
 set_country_flag = BRT_civil_war_demo1
@@ -542,6 +545,7 @@ start_civil_war = {
                     
                 }
             }
+add_ideas = BRT_shaken_from_civil_war
     }
 
                 }
@@ -559,6 +563,7 @@ start_civil_war = {
                     
                 }
             }
+add_ideas = BRT_shaken_from_civil_war
     }
 
                 }
@@ -596,6 +601,7 @@ start_civil_war = {
    
                 }
             }
+add_ideas = BRT_shaken_from_civil_war
     }
 
             
@@ -612,6 +618,7 @@ start_civil_war = {
                     
                 }
             }
+add_ideas = BRT_shaken_from_civil_war
     }
                 15 = {
 remove_ideas = BRT_noble_council
@@ -629,4 +636,1615 @@ remove_ideas = BRT_noble_council
 
 
 
+####################### Ask Equipment Brittany ###################
+country_event = {
+    id = brittany.help
+    title = brittany.help.t
+    desc = brittany.help.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
     
+    option = {
+        name = brittany.help.a
+ai_will_do = {
+  factor = 40
+     }
+BRT = {
+country_event = brittany.help.2
+    }
+ add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -750
+    producer = GER
+}       
+                        }
+    option = {
+        name = brittany.help.b   
+ai_will_do = {
+  factor = 80
+     }
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -250
+    producer = GER
+}  
+BRT = {
+country_event = brittany.help.1
+    }
+                        }
+    option = {
+        name = brittany.help.c
+ai_will_do = {
+  factor = 20
+     }
+                        }
+
+   }
+
+country_event = {
+    id = brittany.help.1
+    title = brittany.help.1.t
+    desc = brittany.help.1.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.help.1.a
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 250
+    producer = GER
+}        
+
+                        }
+
+             }
+
+country_event = {
+    id = brittany.help.2
+    title = brittany.help.2.t
+    desc = brittany.help.2.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.help.2.a
+ add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 750
+    producer = GER
+}       
+
+                        }
+
+             }
+
+
+country_event = {
+    id = brittany.30
+    title = brittany.30.t
+    desc = brittany.30.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.30.a
+add_ideas = BRT_renforced_royal_power
+
+                        }
+
+             }
+
+
+country_event = {
+    id = brittany.31
+    title = brittany.31.t
+    desc = brittany.31.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.31.a
+add_ideas = BRT_opponents_eliminated
+add_stability = 0.05
+
+                        }
+
+             }
+
+country_event = {
+    id = brittany.32
+    title = brittany.32.t
+    desc = brittany.32.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.32.a
+add_stability = -0.1
+
+                        }
+
+             }
+country_event = {
+    id = brittany.33
+    title = brittany.33.t
+    desc = brittany.33.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.33.a
+        random_list = {
+fixed_random_seed = no
+                50 = {
+    BRT = {
+            country_event = { id = brittany.34 }
+    }
+                }
+
+                50 ={
+    BRT = {
+            country_event = { id = brittany.35 }
+    }
+                }
+
+           
+        }
+
+                        }
+
+             }
+country_event = {
+    id = brittany.34
+    title = brittany.34.t
+    desc = brittany.34.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.34.a
+add_ideas = BRT_loyalist_majority
+add_popularity = {
+    ideology = monarchism
+    popularity = 0.3
+}
+                        }
+
+             }
+country_event = {
+    id = brittany.35
+    title = brittany.35.t
+    desc = brittany.35.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.35.a
+add_ideas = BRT_thomatist_majority 
+add_popularity = {
+    ideology = dictatorship
+    popularity = 0.2
+}
+                        }
+
+             }
+
+country_event = {
+    id = brittany.36
+    title = brittany.36.t
+    desc = brittany.36.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.36.a
+        random_list = {
+fixed_random_seed = no
+                80 = {
+    BRT = {
+            country_event = { id = brittany.37 }
+    }
+                }
+
+                20 ={
+    BRT = {
+            country_event = { id = brittany.38 }
+    }
+                }
+
+           
+        }
+
+                        }
+
+             }
+country_event = {
+    id = brittany.37
+    title = brittany.37.t
+    desc = brittany.37.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.37.a
+add_ideas = BRT_loyalist_majority
+add_popularity = {
+    ideology = monarchism
+    popularity = 0.3
+}
+                        }
+
+             }
+country_event = {
+    id = brittany.38
+    title = brittany.38.t
+    desc = brittany.38.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.38.a
+        random_list = {
+fixed_random_seed = no
+                50 = {
+    BRT = {
+    country_event = { id = brittany.39 }    
+    }
+                }
+
+                50 ={
+    BRT = {
+    country_event = { id = brittany.40 }     
+    }
+                }
+
+           
+        }
+
+                        }
+
+             }
+country_event = {
+    id = brittany.39
+    title = brittany.39.t
+    desc = brittany.39.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.39.a
+add_popularity = {
+    ideology = dictatorship
+    popularity = 0.3
+}
+stability_factor = -0.3
+}
+                        }
+
+             
+country_event = {
+    id = brittany.40
+    title = brittany.40.t
+    desc = brittany.40.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.40.a
+start_civil_war = {
+                ruling_party = monarchism
+                ideology = dictatorship
+                size = 0.5
+                only_own_territory = no
+                capital = 
+                states = { 30 }
+                keep_unit_leaders = {
+                    
+                }
+            }
+    add_ideas = BRT_shaken_from_civil_war
+                        }
+
+             }
+country_event = {
+    id = brittany.41
+    title = brittany.41.t
+    desc = brittany.41.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.41.a
+        add_stability = 0.1
+                    BRT = {
+    country_event = { id = brittany.100 }    
+    }
+    remove_ideas = BRT_power_struggle
+                        }
+        option = {
+        name = brittany.41.b
+        add_ideas = BRT_weak_council
+        remove_ideas = BRT_noble_council
+            BRT = {
+    country_event = { id = brittany.100 }    
+    }
+    remove_ideas = BRT_power_struggle
+                        }
+            option = {
+        name = brittany.41.c
+        remove_ideas = BRT_noble_council
+        add_stability = -0.1
+        war_support = -0.05
+            BRT = {
+    country_event = { id = brittany.100 }    
+    }
+    remove_ideas = BRT_power_struggle
+                        }
+
+             }
+country_event = {
+    id = brittany.100
+    title = brittany.100.t
+    desc = brittany.100.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.100.a
+        add_political_power = 100
+        hidden_effect =  {  
+          BRT = {
+        news_event = { id = brittany.200 days = 1 }
+                        }
+           }
+         }
+
+             }
+      
+news_event = {
+    id = brittany.200
+    picture = GFX_news_event_
+
+    major = no
+
+    is_triggered_only = yes 
+
+    hidden = no
+
+    fire_only_once = yes 
+
+    
+    option = { 
+        name = brittany.centralization.a
+    }
+}
+country_event = {
+    id = brittany.42
+    title = brittany.42.t
+    desc = brittany.42.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.42.a
+add_political_power = 50
+}
+                        }
+country_event = {
+    id = brittany.43
+    title = brittany.43.t
+    desc = brittany.43.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.43.a
+add_political_power = 50
+}
+                        }
+country_event = {
+    id = brittany.44
+    title = brittany.44.t
+    desc = brittany.44.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.44.a
+        random_list = {
+fixed_random_seed = no
+
+                70 = {
+    BRT = {
+    country_event = { id = brittany.45 }    
+    }
+                }
+
+                30 ={
+    BRT = {
+    country_event = { id = brittany.46 }     
+    }
+                }
+
+           
+        }
+}
+                        }
+country_event = {
+    id = brittany.45
+    title = brittany.45.t
+    desc = brittany.45.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.45.a
+add_stability = -0.05
+}
+                        }
+country_event = {
+    id = brittany.46
+    title = brittany.46.t
+    desc = brittany.46.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.46.a
+start_civil_war = {
+                ruling_party = monarchism
+                ideology = dictatorship
+                size = 0.5
+                only_own_territory = no
+                capital = 
+                states = { 30 }
+                keep_unit_leaders = {
+                    
+                }
+            }
+add_ideas = BRT_shaken_from_civil_war
+}
+                        }
+country_event = {
+    id = brittany.47
+    title = brittany.47.t
+    desc = brittany.47.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.47.a
+start_civil_war = {
+                ruling_party = monarchism
+                ideology = dictatorship
+                size = 0.5
+                only_own_territory = no
+                capital = 
+                states = { 30 }
+                keep_unit_leaders = {
+                    
+                }
+            }
+    add_ideas = BRT_shaken_from_civil_war
+}
+                        }
+country_event = {
+    id = brittany.48
+    title = brittany.48.t
+    desc = brittany.48.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.48.a
+add_stability = -0.1
+}
+                        }
+country_event = {
+    id = brittany.49
+    title = brittany.49.t
+    desc = brittany.49.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.49.a
+   random_list = {
+                50 = {
+    BRT = {
+            country_event = { id = brittany.47 }
+    }
+
+                }
+        50 = {
+    BRT = {
+            country_event = { id = brittany.48 }
+    }
+        }
+        }
+}
+                        }
+country_event = {
+    id = brittany.50
+    title = brittany.50.t
+    desc = brittany.50.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.50.a
+add_ideas = BRT_celtic_army 
+}
+                        }
+country_event = {
+    id = brittany.51
+    title = brittany.51.t
+    desc = brittany.51.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.51.a
+add_ideas = BRT_royal_army
+}
+                        }
+country_event = {
+    id = brittany.52
+    title = brittany.52.t
+    desc = brittany.52.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.52.a
+add_manpower = 50000
+    create_corps_commander = {
+                    name = "Jarles Duchamps"
+                    gfx = GFX_portrait_
+                    skill = 4
+                    attack_skill = 3
+                    defense_skill = 3
+                    planning_skill = 3
+                    logistics_skill = 4
+                    id = 1000
+                    traits = {  brilliant_strategist }
+    } 
+}
+                        }
+country_event = {
+    id = brittany.53
+    title = brittany.53.t
+    desc = brittany.53.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.53.a
+
+}
+}                      
+country_event = {
+    id = brittany.54
+    title = brittany.54.t
+    desc = brittany.54.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.54.a
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = RAM
+}
+}
+                        }
+country_event = {
+    id = brittany.55
+    title = brittany.55.t
+    desc = brittany.55.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.55.a
+add_ideas = BRT_low_membership_fee
+    }
+    option = {
+        name = brittany.55.b
+add_ideas = BRT_medium_membership_fee
+    }
+    option = {
+        name = brittany.55.c
+add_ideas = BRT_high_membership_fee
+    }
+                        }
+country_event = {
+    id = brittany.56
+    title = brittany.56.t
+    desc = brittany.56.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.56.a
+    create_corps_commander = {
+                    name = "Mark Bosser"
+                    gfx = GFX_portrait_
+                    skill = 4
+                    attack_skill = 4
+                    defense_skill = 3
+                    planning_skill = 3
+                    logistics_skill = 5
+                    id = 1000
+                    traits = {  unyielding_defender }
+    } 
+}
+                        }
+country_event = {
+    id = brittany.57
+    title = brittany.57.t
+    desc = brittany.57.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.57.a
+
+}
+}  
+country_event = {
+    id = brittany.58
+    title = brittany.58.t
+    desc = brittany.58.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.58.a
+
+}
+}  
+country_event = {
+    id = brittany.59
+    title = brittany.59.t
+    desc = brittany.59.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.59.a
+add_political_power = 100
+}
+}  
+country_event = {
+    id = brittany.60
+    title = brittany.60.t
+    desc = brittany.60.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.60.a
+add_political_power = 100
+}
+}  
+country_event = {
+    id = brittany.61
+    title = brittany.61.t
+    desc = brittany.61.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.61.a
+
+}
+}  
+country_event = {
+    id = brittany.62
+    title = brittany.62.t
+    desc = brittany.62.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.62.a
+
+}
+}  
+country_event = {
+    id = brittany.63
+    title = brittany.63.t
+    desc = brittany.63.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.63.a
+ add_stability = 0.1
+  set_province_name = {
+    id = 6449
+    name = "Norcia"
+}
+}
+}  
+country_event = {
+    id = brittany.64
+    title = brittany.64.t
+    desc = brittany.64.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.64.a
+
+}
+}
+country_event = {
+    id = brittany.65
+    title = brittany.65.t
+    desc = brittany.65.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.65.a
+
+}
+}
+news_event = {
+    id = brittany.66
+    title = brittany.66.t
+    desc = brittany.66.d
+    picture = GFX_caca
+ 
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.66.a
+
+}
+}
+country_event = {
+    id = brittany.67
+    title = brittany.67.t
+    desc = brittany.67.d
+    picture = GFX_caca
+ 
+  
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.67.a
+add_popularity = {
+ideology = oligarchic_democracy
+popularity = 0.10
+   }  
+add_popularity = {
+ideology = dictatorship
+popularity = 0.05
+   }  
+}
+}
+country_event = {
+    id = brittany.68
+    title = brittany.68.t
+    desc = brittany.68.d
+    picture = GFX_caca
+ 
+ 
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.68.a
+add_popularity = {
+ideology =  oligarchic_democracy
+popularity = 0.10
+   }  
+add_political_power = 50
+}
+}
+country_event = {
+    id = brittany.69
+    title = brittany.69.t
+    desc = brittany.69.d
+    picture = GFX_caca
+ 
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.69.a
+add_popularity = {
+ideology = dictatorship
+popularity = 0.10
+   }  
+add_political_power = 50
+}
+}
+country_event = {
+    id = brittany.70
+    title = brittany.70.t
+    desc = brittany.70.d
+    picture = GFX_caca
+ 
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.70.a
+    remove_ideas = BRT_power_struggle
+   random_list = {
+                70 = {
+    BRT = {
+            country_event = { id = brittany.71 }
+    }
+     }
+                
+        30 = {
+    BRT = {
+            country_event = { id = brittany.72 }
+    }
+        }
+        }
+        }
+}
+
+country_event = {
+    id = brittany.71
+    title = brittany.71.t
+    desc = brittany.71.d
+    picture = GFX_caca
+ 
+  
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.71.a
+ start_civil_war = {
+                ruling_party = oligarchic_democracy
+                ideology = ROOT
+                size = 0.6
+                only_own_territory = no
+                capital = 
+                states = { 30 }
+                keep_unit_leaders = {
+                    
+                }
+            }
+
+ add_ideas = BRT_unloyal_guards
+ add_ideas = BRT_political_dissent
+ add_timed_idea = { idea = BRT_shaken_from_civil_war days = 250 }
+ add_stability = -0.2
+}
+}
+country_event = {
+    id = brittany.72
+    title = brittany.72.t
+    desc = brittany.72.d
+    picture = GFX_caca
+ 
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.72.a
+set_politics = {  ruling_party = oligarchic_democracy  }
+add_ideas = BRT_unloyal_guards
+add_ideas = BRT_political_dissent
+add_stability = -0.2
+}
+}
+country_event = {
+    id = brittany.73
+    title = brittany.73.t
+    desc = brittany.73.d
+    picture = GFX_caca
+ 
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.73.a
+}
+    option = {
+        name = brittany.73.b
+}
+    option = {
+        name = brittany.73.c
+}
+}
+country_event = {
+    id = brittany.74
+    title = brittany.74.t
+    desc = brittany.74.d
+    picture = GFX_caca
+ 
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.74.a
+    BRT = {
+            country_event = { id = brittany.101 }
+    }
+}
+    option = {
+        name = brittany.74.b
+        remove_ideas = noble_council
+add_ideas = BRT_weak_council
+    BRT = {
+            country_event = { id = brittany.101 }
+    }
+}
+    option = {
+        name = brittany.74.c
+remove_ideas = noble_council
+add_stability = -0.1
+    BRT = {
+            country_event = { id = brittany.101 }
+    }
+}
+}
+
+country_event = {
+    id = brittany.75
+    title = brittany.75.t
+    desc = brittany.75.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.75.a
+        add_political_power = 50
+        add_stability = 0.05
+        add_war_support = 0.05
+         }
+
+             }
+country_event = {
+    id = brittany.76
+    title = brittany.76.t
+    desc = brittany.76.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.76.a
+        add_political_power = 150
+        add_stability = 0.1
+        add_war_support = 0.1
+         }
+
+             }
+country_event = {
+    id = brittany.77
+    title = brittany.77.t
+    desc = brittany.77.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.77.a
+        add_ideas = BRT_operation_JDG
+         }
+
+             }
+country_event = {
+    id = brittany.78
+    title = brittany.78.t
+    desc = brittany.78.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.78.a
+        add_ideas = BRT_army_purged
+        add_manpower = -20000
+        hidden_effect = {
+           BRT = {
+            country_event = { id = brittany.79 days = 30 }
+            country_event = { id = brittany.200 days = 150 }
+    }
+        }
+         }
+    option = {
+        name = brittany.78.b
+        add_ideas = BRT_industrialists_purged
+           hidden_effect = {
+           BRT = {
+            country_event = { id = brittany.80 days = 30 }
+            country_event = { id = brittany.201 days = 150 }
+    }
+        }
+         }
+
+    option = {
+        name = brittany.78.c
+        add_ideas = BRT_purge_political_people
+           hidden_effect = {
+           BRT = {
+            country_event = { id = brittany.81 days = 30 }
+            country_event = { id = brittany.202 days = 150 }
+    }
+        }
+         }
+             }
+
+
+
+country_event = {
+    id = brittany.79
+    title = brittany.79.t
+    desc = brittany.79.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+
+
+    option = {
+        name = brittany.79.a
+        
+         }
+    option = {
+        name = brittany.79.b
+        
+         }
+    option = {
+        name = brittany.79.c
+    add_ideas = BRT_army_purged_2 
+         }
+             }
+    
+
+country_event = {
+    id = brittany.80
+    title = brittany.80.t
+    desc = brittany.80.d
+    picture = GFX_caca
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.80.a
+        
+         }
+    option = {
+        name = brittany.80.b
+        
+         }
+    option = {
+        name = brittany.80.c
+    add_ideas = BRT_industrialists_purged_2
+         }
+             }
+
+country_event = {
+    id = brittany.81
+    title = brittany.81.t
+    desc = brittany.81.d
+    picture = GFX_caca
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.81.a
+        
+         }
+    option = {
+        name = brittany.81.b
+        
+         }
+    option = {
+        name = brittany.81.c
+   add_ideas = BRT_purge_political_people_2
+         }
+             }
+
+country_event = {
+    id = brittany.200
+    title = brittany.200.t
+    desc = brittany.200.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.200.a
+        remove_ideas = BRT_army_purged_2 
+        remove_ideas = BRT_army_purged
+         }
+
+             }
+country_event = {
+    id = brittany.201
+    title = brittany.201.t
+    desc = brittany.201.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.201.a
+        remove_ideas = BRT_industrialists_purged_2
+        remove_ideas = BRT_industrialists_purged
+         }
+
+             }
+country_event = {
+    id = brittany.202
+    title = brittany.202.t
+    desc = brittany.202.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.202.a
+        remove_ideas = BRT_purge_political_people_2
+        remove_ideas = BRT_purge_political_people
+         }
+
+             }
+country_event = {
+    id = brittany.82
+    title = brittany.82.t
+    desc = brittany.82.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.82.a
+        add_political_power = 100
+         }
+
+             }
+country_event = {
+    id = brittany.83
+    title = brittany.83.t
+    desc = brittany.83.d
+    picture = GFX_caca
+ 
+
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.83.a
+    add_ideas = BRT_symbol_king
+    set_politics = {  ruling_party = dictatorship  }
+    BRT = {
+            country_event = { id = brittany.102 }
+    }
+}
+    option = {
+        name = brittany.83.b
+add_ideas = BRT_throw_the_king_into_anonymity
+set_politics = {  ruling_party = dictatorship  }
+    BRT = {
+            country_event = { id = brittany.102 }
+    }
+}
+    option = {
+        name = brittany.83.c
+add_ideas = BRT_kill_thomas_idea
+kill_country_leader = yes
+set_politics = {  ruling_party = dictatorship  }
+    BRT = {
+            country_event = { id = brittany.102 }
+    }
+}
+}
+country_event = {
+    id = brittany.84
+    title = brittany.84.t
+    desc = brittany.84.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.84.a
+        add_political_power = 50
+        add_ideas = BRT_heavy_expenses
+         }
+
+             }
+country_event = {
+    id = brittany.85
+    title = brittany.85.t
+    desc = brittany.85.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.85.a
+        add_to_faction = BRT
+            BRT = {
+            country_event = { id = brittany.86 }
+    }
+         }
+      option = {
+        name = brittany.85.b
+          BRT = {
+            country_event = { id = brittany.87 }
+    }
+         }
+             }
+country_event = {
+    id = brittany.86
+    title = brittany.86.t
+    desc = brittany.86.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.86.a
+         }
+             }
+country_event = {
+    id = brittany.87
+    title = brittany.87.t
+    desc = brittany.87.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.87.a
+     add_political_power = -50
+         }
+             }
+country_event = {
+    id = brittany.88
+    title = brittany.88.t
+    desc = brittany.88.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.88.a
+        add_to_faction = BRT
+            BRT = {
+            country_event = { id = brittany.89 }
+    }
+         }
+      option = {
+        name = brittany.88.b
+          BRT = {
+            country_event = { id = brittany.90 }
+    }
+         }
+             }
+country_event = {
+    id = brittany.89
+    title = brittany.89.t
+    desc = brittany.89.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.89.a
+        add_to_faction = BRT
+         }
+             }
+country_event = {
+    id = brittany.90
+    title = brittany.90.t
+    desc = brittany.90.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.90.a
+     add_political_power = -50
+         }
+             }
+country_event = { 
+    id = brittany.91
+    title = brittany.91.t
+    desc = brittany.91.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.91.a
+        add_to_faction = BRT
+            BRT = {
+            country_event = { id = brittany.92 }
+    }
+         }
+      option = {
+        name = brittany.91.b
+          BRT = {
+            country_event = { id = brittany.93 }
+    }
+         }
+             }
+country_event = {
+    id = brittany.92
+    title = brittany.92.t
+    desc = brittany.92.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.92.a
+        BRT = {
+    set_state_owner = 24
+    }
+         }
+             }
+country_event = {
+    id = brittany.93
+    title = brittany.93.t
+    desc = brittany.93.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.93.a
+     add_political_power = -50
+         }
+    option = {
+        name = brittany.93.b
+     complete_national_focus = BRT_invade_gallia
+         }
+             }
+country_event = { 
+    id = brittany.94
+    title = brittany.94.t
+    desc = brittany.94.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.94.a
+        add_to_faction = BRT
+            BRT = {
+            country_event = { id = brittany.95 }
+    }
+         }
+      option = {
+        name = brittany.94.b
+          BRT = {
+            country_event = { id = brittany.96 }
+    }
+         }
+             }
+country_event = {
+    id = brittany.95
+    title = brittany.95.t
+    desc = brittany.95.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.95.a
+        BRT = {
+    set_state_owner = 23
+    }
+         }
+             }
+country_event = {
+    id = brittany.96
+    title = brittany.96.t
+    desc = brittany.96.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.96.a
+     add_political_power = -50
+         }
+    option = {
+        name = brittany.96.b
+     complete_national_focus = BRT_invade_rome
+         }
+             }
+country_event = {
+    id = brittany.101
+    title = brittany.101.t
+    desc = brittany.101.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.101.a
+        add_political_power = 100
+         }
+
+             }
+country_event = {
+    id = brittany.102
+    title = brittany.102.t
+    desc = brittany.102.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.102.a
+        add_political_power = 100
+         }
+
+             }
+country_event = {
+    id = brittany.103
+    title = brittany.103.t
+    desc = brittany.103.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.103.a
+                  BRT = {
+            country_event = { id = brittany.104 }
+    }
+         }
+    option = {
+        name = brittany.103.b
+                  BRT = {
+            country_event = { id = brittany.105 }
+    }
+         }
+             }
+country_event = {
+    id = brittany.104
+    title = brittany.104.t
+    desc = brittany.104.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.104.a
+        add_political_power = 50
+        add_to_faction = IRE
+        add_ai_strategy = {
+    type = alliance
+    id = "IRE"
+    value = 200
+}
+         }
+
+             }
+country_event = {
+    id = brittany.105
+    title = brittany.105.t
+    desc = brittany.105.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.105.a
+        add_political_power = -50
+         }
+
+             }
+country_event = {
+    id = brittany.106
+    title = brittany.106.t
+    desc = brittany.106.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.106.a
+                  BRT = {
+            country_event = { id = brittany.107 }
+    }
+         }
+    option = {
+        name = brittany.106.b
+                  BRT = {
+            country_event = { id = brittany.108 }
+    }
+         }
+             }
+country_event = {
+    id = brittany.107
+    title = brittany.107.t
+    desc = brittany.107.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.107.a
+        add_political_power = 50
+        add_to_faction = SCO
+        add_ai_strategy = {
+    type = alliance
+    id = "SCO"
+    value = 200
+}
+         }
+
+             }
+country_event = {
+    id = brittany.108
+    title = brittany.108.t
+    desc = brittany.108.d
+    picture = GFX_caca
+
+    is_triggered_only = yes
+    
+    option = {
+        name = brittany.108.a
+        add_political_power = -50
+         }
+
+             }

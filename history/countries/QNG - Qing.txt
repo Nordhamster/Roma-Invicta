@@ -6,7 +6,7 @@ add_ideas = {
 }
 
 oob = "QNG_1936"
-set_stability = 0.0
+set_stability = 0.1
 set_war_support = 0.5
 # Starting tech
 set_technology = {
@@ -24,6 +24,8 @@ set_convoys = 40
 
 add_ideas = {
 	QNG_ineffective_bureaucracy
+	CHI_banditry
+	QNG_warlordism
 }
 
 1939.1.1 = {

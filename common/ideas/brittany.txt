@@ -30,6 +30,22 @@ ideas = {
 				always = no
 			}
 
+
+			
+			picture = BRT_power_struggle
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		BRT_shaken_from_civil_war = {
+			allowed = {
+				always = no
+			}
+
 			allowed_civil_war = {
 				OR = {
 					has_government = oligarchic_democracy
@@ -43,29 +59,17 @@ ideas = {
 	
 
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.4
+				consumer_goods_factor = 0.4
+				        line_change_production_efficiency_factor = -0.55
+		production_factory_start_efficiency_factor = -0.15
+		global_building_slots_factor = -0.30
+		monthly_population = -0.10
+		production_factory_max_efficiency_factor = -0.55
+		production_factory_efficiency_gain_factor = -0.55
 			}
-		}
-		
-		BRT_inexperienced_army_1 = {
-			allowed = {
-				always = no
-			}
+		}		
 
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = BRT_inexperienced_army
-			
-			removal_cost = -1
-	
-			modifier = {
-				army_attack_factor = -0.15
-				army_defence_factor = 0.05
-				army_morale_factor = -0.20
-			}
-		}
 		BRT_inexperienced_army_1 = {
 			allowed = {
 				always = no
@@ -248,9 +252,9 @@ BRT_inexperienced_army_3 = {
 			removal_cost = -1
 	
 			modifier = {
-            army_attack_factor = 0.05
-            war_support_factor = 0.05
-            stability_factor = 0.1
+            army_attack_factor = 0.1
+            war_support_factor = 0.15
+            stability = 0.1
 			}
 		}
 
@@ -271,9 +275,9 @@ BRT_inexperienced_army_3 = {
 	
 			modifier = {
             conscription = 0.025
-            war_support_factor = 0.05
+            war_support_factor = 0.30
             army_core_attack_factor = 0.1
-            stability_factor = -0.2
+            stability = -0.2
 			}
 		}
 
@@ -287,7 +291,7 @@ BRT_inexperienced_army_3 = {
 				always = yes
 			}
 			
-			picture = NULL 
+			picture =
 			
 			removal_cost = -1
 	
@@ -305,7 +309,7 @@ BRT_agricultural_2 = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -326,7 +330,7 @@ BRT_agricultural_3 = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -345,7 +349,7 @@ BRT_agricultural_4 = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -362,7 +366,7 @@ BRT_industry_1 = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -380,7 +384,7 @@ BRT_industry_2 = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -398,7 +402,7 @@ BRT_industry_2 = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -418,15 +422,15 @@ industrial_capacity_factory = -0.1
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
 			modifier = {
-conscription = 0.03
+conscription = 0.05
 stability_factor = -0.2
 industrial_capacity_factory = -0.5
-consumer_goods_factor = -0.05
+consumer_goods_factor = 0.15
 production_factory_max_efficiency_factor = -0.5
 production_factory_efficiency_gain_factor = -0.5
 		}
@@ -441,7 +445,7 @@ production_factory_efficiency_gain_factor = -0.5
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -460,7 +464,7 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -481,7 +485,7 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -499,7 +503,7 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -518,7 +522,7 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -536,12 +540,12 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
 			modifier = {
-          army_attack_factor = 0.05          
+          army_attack_factor = 0.075          
 		}
 	}
 
@@ -555,7 +559,7 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -578,7 +582,7 @@ conversion_cost_civ_to_mil_factor = -0.40
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -598,7 +602,7 @@ industrial_capacity_factory = -0.05
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -619,7 +623,7 @@ industrial_capacity_factory = -0.05
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -640,7 +644,7 @@ industrial_capacity_factory = -0.05
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -659,7 +663,7 @@ industrial_capacity_factory = -0.05
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -678,7 +682,7 @@ industrial_capacity_factory = -0.05
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -705,7 +709,7 @@ production_factory_efficiency_gain_factor = 0.1
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -726,12 +730,12 @@ production_factory_efficiency_gain_factor = 0.1
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
 			modifier = {
-        		production_speed_industrial_complex_factor = 0.2
+        		production_speed_industrial_complex_factor = 0.1
 		}
 	}
 
@@ -747,7 +751,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -782,7 +786,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -805,7 +809,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -828,7 +832,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -852,7 +856,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -875,7 +879,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -896,7 +900,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -915,7 +919,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -936,7 +940,7 @@ BRT_allow_cooperative = {
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -955,7 +959,7 @@ production_speed_industrial_complex_factor = 0.15
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -964,7 +968,7 @@ stability_factor = 0.1
 
 		}
 	}
-	BRT_weak_council= {
+	BRT_weak_council = {
 			allowed = {
 				always = yes
 			}
@@ -973,13 +977,66 @@ stability_factor = 0.1
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
 			modifier = {
 stability_factor = 0.05
 political_power_cost = 0.25
+		}
+	}
+	BRT_throw_the_king_into_anonymity = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+stability_factor = 0.05
+political_power_cost = 0.1
+		}
+	}
+	BRT_symbol_king = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+stability_factor = 0.1
+political_power_cost = 0.25
+		}
+	}
+	BRT_kill_thomas_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+         stability_factor = -0.1
 		}
 	}
 	BRT_renforced_royal_power = {
@@ -991,7 +1048,7 @@ political_power_cost = 0.25
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -1008,12 +1065,172 @@ monarchism_drift = 0.07
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
 			modifier = {
 stability_factor = -0.1
+		}
+	}
+
+BRT_bread = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = 0.02
+political_power_gain = 0.50
+stability_factor = 0.05
+		}
+	}
+
+	BRT_game = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = 0.02
+war_support_factor = 0.1
+		}
+	}
+	BRT_tolerance = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = -0.05
+stability_factor = 0.05
+war_support_factor = -0.1
+		}
+	}
+	BRT_alcohol = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = 0.05
+stability_factor = -0.05
+war_support_factor = 0.1
+		}
+	}
+	BRT_production = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+	production_factory_max_efficiency_factor = 0.05
+line_change_production_efficiency_factor = 0.05
+industrial_capacity_factory = 0.05
+production_factory_efficiency_gain_factor = 0.05
+		}
+	}
+
+	BRT_uzindouar = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+production_speed_arms_factory_factor = 0.15
+		}
+	}
+
+	BRT_deal_with_the_devil = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+             stability_factor = -0.05
+             war_support_factor = -0.05
+		}
+	}
+
+
+
+
+	BRT_intervantionism_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+    join_faction_tension = -0.20	
+	justify_war_goal_time = -0.25
+	enemy_justify_war_goal_time = -0.1
+	send_volunteer_size = 5
+	join_faction_tension = -0.5
+	send_volunteers_tension = -0.5
 		}
 	}
 
@@ -1077,6 +1294,28 @@ stability_factor = -0.1
 
 
 
+
+
+	BRT_opponents_eliminated = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+         collectivism_drift = -0.05
+         dictatorship_drift = -0.05
+         oligarchic_democracy_drift = -0.05
+         democratic_drift = -0.05
+		}
+	}
 
 
 
@@ -1092,7 +1331,7 @@ stability_factor = -0.1
 				always = yes
 			}
 			
-			picture = NULL
+			picture =
 			
 			removal_cost = -1
 	
@@ -1101,14 +1340,771 @@ stability_factor = -0.1
 		}
 	}
 
+	BRT_loyalist_majority = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+stability_factor = 0.1
+		}
+	}
+	BRT_thomatist_majority = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+stability_factor = -0.1
+		}
+	}
+	BRT_royal_army = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+stability_factor = -0.1
+		}
+	}
+	BRT_royal_army_expanded = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+stability_factor = -0.1
+		}
+	}
+	BRT_celtic_army = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+conscription = 0.01
+army_morale_factor = -0.05
+		}
+	}
+	BRT_celtic_expanded = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+conscription = 0.0075
+army_morale_factor = -0.025
+		}
+	}
+	BRT_royal_army = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+	army_org_factor = 0.05
+	army_morale_factor = 0.05
+		}
+	}
+	BRT_royal_expanded = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+	army_org_factor = 0.05
+	army_morale_factor = 0.05
+		}
+	}
+	BRT_anti_collectivist_rhetorics = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+collectivism_drift = -0.02
+		}
+	}
+
+	BRT_abolished_stipend = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = -0.05
+political_power_cost = -0.25
+		}
+	}
+	BRT_low_membership_fee = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = -0.025
+		}
+	}
+	BRT_medium_membership_fee = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = -0.05
+stability_factor = -0.05
+		}
+	}
+	BRT_high_membership_fee = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+consumer_goods_factor = -0.075
+stability_factor = -0.1
+		}
+	}
+	BRT_land_distributed_to_loyal_farmer = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+production_speed_industrial_complex_factor = 0.1
+MONTHLY_POPULATION = 0.25     
+		}
+	}
+	BRT_bcia = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+    stability_factor = 0.1
+    encryption_factor = 0.15
+    foreign_subversive_activites = -0.1
+		}
+	}
+	BRT_agency = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	decryption_factor = 0.15
+            subversive_activites_upkeep = -0.1
+		}
+	}
+	BRT_noble_army_reclaimed = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	conscription = 0.01
+        	army_org_factor = 0.05
+		}
+	}
+	BRT_normand_noble_recognized = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	partisan_effect = 0.25
+        		enemy_partisan_effect = -0.1	
+		}
+	}
+## Thomas
+	BRT_elder_support = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	oligarchic_democracy_drift = 0.05
+		}
+	}
+	BRT_the_religious_support = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	oligarchic_democracy_drift = 0.05
+		}
+	}
+	BRT_bourgeoie = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	dictatorship_drift = 0.05
+		}
+	}
+	BRT_council = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	dictatorship_drift = 0.05
+		}
+	}
+	BRT_hurt_by_civil_war = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	
+		}
+	}
+	BRT_unloyal_guards = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	army_org_factor = -0.05
+	army_morale_factor = -0.05
+	stability_factor = -0.05
+		}
+	}
+	BRT_guards_disbanded = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	army_org_factor = -0.1
+	army_morale_factor = -0.1
+	stability_factor = -0.1
+		}
+	}
+	BRT_political_dissent = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        political_power_cost = 0.25
+        stability_factor = -0.1
+		}
+	}
+	BRT_governement_employees_purged = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        political_power_cost = 0.50
+        stability_factor = -0.2
+		}
+	}
+	BRT_operation_JDG = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        generate_wargoal_tension = -0.1
+        justify_war_goal_time = -0.25
+        army_attack_factor = 0.05
+        motorized_attack_factor = 0.1
+        surrender_limit = 0.1
+        			 equipment_bonus = {
+			 motorized = {
+				instant = yes
+				maximum_speed = 0.20
+			 }
+		     }
+		}
+	}
+##
+
+	BRT_army_purged = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.1
+        	army_speed_factor = -0.3
+        	oligarchic_democracy_drift = -0.10
+        	
+		}
+	}
+	BRT_industrialists_purged = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.1
+        	global_building_slots_factor = -0.30
+        	oligarchic_democracy_drift = -0.10
+        	production_speed_buildings_factor = -0.3
+        	conversion_cost_civ_to_mil_factor = 0.2
+        	industry_repair_factor = -0.5
+		}
+	}
+	BRT_purge_political_people = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.1
+        	political_power_cost = 0.50
+            political_advisor_cost_factor = 0.25
+            drift_defence_factor = 0.25
+            oligarchic_democracy_drift = -0.10
+		}
+	}
+
+	BRT_army_purged_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.05
+        	army_speed_factor = -0.2
+        	
+		}
+	}
+	BRT_industrialists_purged_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.1
+        	global_building_slots_factor = -0.15
+        	oligarchic_democracy_drift = -0.05
+        	production_speed_buildings_factor = -0.15
+        	conversion_cost_civ_to_mil_factor = 0.15
+        	industry_repair_factor = -0.25
+		}
+	}
+	BRT_purge_political_people_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.1
+        	political_power_cost = 0.50
+            political_advisor_cost_factor = 0.25
+            drift_defence_factor = 0.25
+            oligarchic_democracy_drift = -0.10
+		}
+	}
+	BRT_centralize_the_power = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = 0.1
+		}
+	}
+	BRT_1932_labor = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = -0.2
+        	production_factory_max_efficiency_factor = 0.1
+            line_change_production_efficiency_factor = 0.1
+            industrial_capacity_factory = 0.1
+            production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+
+	BRT_aperturh_science = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+		research_speed_factor = 0.1
+		}
+	}
+
+	BRT_heavy_expenses = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+		consumer_goods_factor = 0.05
+		}
+	}
+
 
 
 
 ##
+	BRT_uniad_ceilteach = {
+			allowed = {
+				always = yes
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	stability_factor = 0.1
+		}
+	}
+	BRT_roman_will = {
+			allowed = {
+				always = yes
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	conscription = 0.007
+		}
+	}
+	BRT_roman_discipline = {
+			allowed = {
+				always = yes
+			}
 
-
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture =
+			
+			removal_cost = -1
+	
+			modifier = {
+        	army_org_factor = 0.05
+		}
+	}
 
 
 

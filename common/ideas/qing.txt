@@ -177,6 +177,42 @@ ideas = {
 			}
 
 		}
+		
+		CHI_banditry = {
+		
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		QNG_warlordism = {
+			
+			picture = chi_warlord_integration	
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+		}
 
 		QNG_incompetent_officers = {
 
