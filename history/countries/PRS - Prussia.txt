@@ -1,7 +1,7 @@
 ﻿capital = 763 #Tvankste
 
 oob = "PRS_1936"
-
+set_naval_oob = "PRS_1936_Naval_Legacy"
 #religion
 add_ideas = {
 	christianity

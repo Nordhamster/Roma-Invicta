@@ -1,7 +1,7 @@
 ﻿capital = 202 #Kiev
 
 oob = "SLV_1936"
-
+oob = "SLV_1936_Naval_Legacy"
 #religion
 add_ideas = {
 	christianity

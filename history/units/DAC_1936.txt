@@ -50,14 +50,14 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Regimentul de Blindate" 				# Armor Regiment
+	name = "Regimentul de Mobil" 				# Mobile Regiment
 	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
 	division_names_group = ROM_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
 		motorized = { x = 1 y = 0 }           # added motorized not to make it a death trap
 		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
 }
 
@@ -165,9 +165,9 @@ units = {
 	division = {
 		name = "Regimentul 1 de Blindate"
 		location = 9617
-		division_template = "Regimentul de Blindate"
+		division_template = "Regimentul de Mobil"
 		start_experience_factor = 0.3
-		force_equipment_variants = { gw_tank_equipment = { owner = "DAC" creator = "GAL" amount = 72 } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "DAC" creator = "GAL" amount = 42 } }
 
 	}
 
@@ -297,25 +297,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-
-
-### Fortele Aeriene Regale ale României (FFAR) ###
-air_wings = {
-	46 = {
-		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
-		fighter_equipment_0 = {
-			owner = "DAC" 
-			creator = "VEN"
-			amount = 48
-		}
-	}
-	79 = {
-		# Grup 2 Avion de Vanatoare -- IAR 14, 15 fighters
-		fighter_equipment_0 = {
-			owner = "DAC" 
-			amount = 24
-		}
-	}
 }
 
 ### Starting Production ###
@@ -327,33 +308,6 @@ instant_effect = {
 		}
 		requested_factories = 2
 		progress = 0.87
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "DAC"
-		}
-		requested_factories = 1
-		progress = 0.19
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "DAC"
-		}
-		requested_factories = 1
-		progress = 0.24
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "DAC" 
-		}
-		requested_factories = 1
-		progress = 0.4
 		efficiency = 100
 	}
 }

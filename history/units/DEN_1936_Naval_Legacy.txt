@@ -1,0 +1,24 @@
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Home Command Legacy Test"			
+		naval_base = 6287 # Constanta
+		task_force = {
+			name = "Home Fleet"
+			location = 6287 # Constanta
+			ship = { name = "HMS Curacoa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "HMS Sabre" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "HMS Shikari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DAC } } }						# to RCN as Saskatchewan, 1943
+			ship = { name = "HMS Shikari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "HMS Shikari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DAC } } }
+		}
+		task_force = {
+			name = "Balkin Sneakas"
+			location = 6287
+			ship = { name = "Saviour2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+		}
+}

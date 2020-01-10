@@ -1,7 +1,7 @@
 ﻿capital = 126
 
 oob = "ENG_1936"
-
+set_naval_oob = "ENG_1936_Naval_Legacy"
 #religion
 add_ideas = {
 	atheism
