@@ -1,0 +1,27 @@
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "Home Command Legacy Test"			
+		naval_base = 6906 # Constanta
+		task_force = {
+			name = "Home Fleet"
+			location = 6906 # Constanta
+			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } } }
+			ship = { name = "HMS Norfolk" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Norfolk" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Curacoa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Shikari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DAC } } }						# to RCN as Saskatchewan, 1943	
+		}
+		task_force = {
+			name = "Merchant Hunting Force"
+			location = 6906
+			ship = { name = "Saviour" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+			ship = { name = "Saviour5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DAC } } }
+		}
+}
