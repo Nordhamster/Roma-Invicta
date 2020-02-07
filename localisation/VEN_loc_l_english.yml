@@ -1,0 +1,45 @@
+﻿l_english:
+ VEN_oligarchic_democracy:0 "Commonwealth of Venedia"
+ VEN_oligarchic_democracy_DEF:0 "the Commonwealth of Venedia"
+ VEN_dictatorship:0 "Venedic Folk State"
+ VEN_dictatorship_DEF:0 "the Venedic Folk State"
+ VEN_monarchism:0 "Kingdom of Venedia"
+ VEN_monarchism_DEF:0 "Kingdom of Venedia"
+ VEN_democratic:0 "Second Venedic Republic"
+ VEN_democratic_DEF:0 "the Second Venedic Republic"
+ VEN_collectivism:0 "Venedic Commune"
+ VEN_collectivism_DEF:0 "Venedic Commune"
+ VEN_oligarchic_democracy_ADJ:0 "Venedic"
+ VEN_dictatorship_ADJ:0 "Venedic"
+ VEN_democratic_ADJ:0 "Venedic"
+ VEN_monarchism_ADJ:0 "Venedic"
+ VEN_collectivism_ADJ:0 "Venedic"
+ 
+ VEN_oligarchic_democracy_party:0 "Partia Konstytucyjna"
+ VEN_oligarchic_democracy_party_long:0 "Constitutional Party"
+ VEN_dictatorship_party:0 "Liga Żelaza"
+ VEN_dictatorship_party_long:0 "Iron League"
+ VEN_monarchism_party:0 "Liga Renowacja Królewska"
+ VEN_monarchism_party_long:0 "Royal Restoration League"
+ VEN_collectivism_party:0 "Kongres Związków Przemysłowy"
+ VEN_collectivism_party_long:0 "Industrial Union Congress"
+ VEN_democratic_party:0 "Partia Konstytucyjna"
+ VEN_democratic_party_long:0 "Constitutional Party"
+ 
+ #####FOCUS#####
+ 
+ #####IDEAS#####
+ 
+ #####DECISIONS#####
+
+ #####EVENTS#####
+ venedia.1.t:0 "Nationalist Coup!"
+ venedia.1.d:0 "As the parliament was holding a congress this morning, members of the far-right Iron League marched on the Sejm Complex in Warsaw. Entering the building, they declared the institution dissovled and the nation now under the rule of the Iron League. At the same time, strategic and political targets were siezed all over the country, and the headquarters of newpapers and organisations critical of the League were raided.\n\nSpeaking to the country, Kondrat Surma, leader of the Iron League, said: 'Today we begin to return Venedia to its former, rightful glory. Our great nation has cast off the burdens of democracy and collectivism, and marches into the future under the banner of the Iron League! Long Live Venedia!'"
+ venedia.1.a:0 "A New Venedia arises..."
+ venedia.2.t:0 "Venedic Civil War!"
+ venedia.2.d:0 "Disaster! In response to the nationalist coup, the Industrial Union Congress has rallied it's supporters, declaring that the current government is illegitimate, and that armed struggle is the only option left. Many more trade unions and left-wing parties have flocked to their side and taken up arms to oppose us. As militas begin to clash in the streets, the nation is plunged into civil war."
+ venedia.2.a:0 "These leftists need to learn their place!"
+ venedia.2.b:0 "The people will depose these tyrants!"
+ venedia.3.t:0 "Modrzewski Dies!"
+ venedia.3.d:0 "Earlier today, President [VEN.GetLeader] was hospitalised, as the condition of his health deteriorated. Though he initially reported starting to feel better, soon he was barely mobile and by noon he was pronounced dead. Mourners lined the streets as his coffin was taken to his final resting place, and all over the nation tears were shed for the passing of this great man. 'It is as if a dark cloud has decended upon the nation', one journalist was quotes as saying.\n\nIn the political sphere, there are concerns for the stablilty of the nation without the guidance of the late President. Already there is instability brewing, and militias of the Iron League and the Unionists have bagun marching in the streets. The future of Venedia is uncertain..."
+ venedia.3.a:0 "A tragic loss for the nation..."
