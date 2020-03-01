@@ -1,6 +1,6 @@
 state={
-	id=789
-	name="STATE_789"
+	id=798
+	name="STATE_798"
 	manpower = 500000
 	
 	state_category = pastoral

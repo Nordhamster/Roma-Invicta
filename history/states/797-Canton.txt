@@ -1,6 +1,6 @@
 state={
-	id=788
-	name="STATE_788" #Guangzhou
+	id=797
+	name="STATE_797" #Guangzhou
 	manpower=1112600
 	state_category = metropolis
 	resources={

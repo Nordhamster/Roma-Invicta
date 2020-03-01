@@ -1,28 +1,30 @@
-
 state={
-	id=174
-	name="STATE_174"
-	manpower = 1566041
-	
-	state_category = large_town
+	id=790
+	name="STATE_790"
 
 	history={
 		owner = IBR
 		victory_points = {
-			11707 1 
+			11707 3
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			11707 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = IBR
+
 	}
 
 	provinces={
-		726 918 920 3725 3727 3918 3920 6746 6907 9699 11843 13219 13232 
+		738 3729 3744 6749 9703 9719 11688 11707 13218 
 	}
+	manpower=1197252
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }
