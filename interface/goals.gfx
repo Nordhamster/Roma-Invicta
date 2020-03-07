@@ -63,6 +63,11 @@ spriteTypes = {
 	}	
 	
 	#### Generic goal icons
+	
+	SpriteType = {
+	name = "GFX_focus_generic_election"
+	texturefile = "gfx/interface/goals/focus_generic_election.dds"			
+	}
 
 	SpriteType = {
 	name = "GFX_focus_generic_steel"
@@ -1247,6 +1252,12 @@ spriteTypes = {
 		name = "GFX_focus_jap_zero"
 		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_focus_JAP_challange_zaibatsu"
+		texturefile = "gfx/interface/goals/focus_JAP_challange_zaibatsu.dds"
+	}
+	
  	### MEX
 	
 	SpriteType = { 

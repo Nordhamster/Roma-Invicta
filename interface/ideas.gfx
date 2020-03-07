@@ -1925,10 +1925,75 @@ spriteTypes = {
 	}
 	
 	### ROMAN IDEAS
+	### ROMAN IDEAS		
 	spriteType = {
 		name = "GFX_idea_RME_rampant_corruption"
 		texturefile = "gfx/interface/ideas/idea_RME_rampant_corruption.dds"
 	}
+    spriteType = {
+		name = "GFX_idea_RME_inefficient_republic"
+		texturefile = "gfx/interface/ideas/RME_inefficient_republic.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_roma_invicta"
+		texturefile = "gfx/interface/ideas/RME_roma_invicta.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_RME_emperor_cult"
+		texturefile = "gfx/interface/ideas/RME_emperor_cult.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_RME_main_european_exporter"
+		texturefile = "gfx/interface/ideas/RME_main_european_exporter.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_RME_nepotism"
+		texturefile = "gfx/interface/ideas/RME_nepotism.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_RME_lack_of_naval_interest"
+		texturefile = "gfx/interface/ideas/RME_lack_of_naval_interest.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_RME_unemployment"
+		texturefile = "gfx/interface/ideas/RME_unemployment.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_RME_inflation"
+		texturefile = "gfx/interface/ideas/RME_inflation.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_weak_nationalism"
+		texturefile = "gfx/interface/ideas/RME_weak_nationalism.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_treaty_of_vienna"
+		texturefile = "gfx/interface/ideas/RME_treaty_of_vienna.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_monopoly"
+		texturefile = "gfx/interface/ideas/RME_monopoly.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_private_military"
+		texturefile = "gfx/interface/ideas/RME_private_military.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_weak_military"
+		texturefile = "gfx/interface/ideas/RME_weak_military.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_roman_spirit"
+		texturefile = "gfx/interface/ideas/RME_roman_spirit.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_internal_tensions"
+		texturefile = "gfx/interface/ideas/RME_internal_tensions.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_RME_budget_deficit"
+		texturefile = "gfx/interface/ideas/RME_budget_deficit.dds"
+	}	
 	
 	### BRETON IDEAS
 	spriteType = {

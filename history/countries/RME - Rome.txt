@@ -1,22 +1,33 @@
-﻿capital = 2
+capital = 2
 
-set_oob = "RME_1936"
-set_naval_oob = "RME_1936_Naval_Legacy"
-#religion
-add_ideas = {
-	roman_christianity
-}
+oob = "RME_1936"
 
 set_research_slots = 4
-set_stability = 0.3
-set_war_support = 0.1
+set_stability = 0.8
+set_war_support = 0.4
 add_ideas = {
-	roma_invicta
-	rampant_corruption
-	stagnant_economy
-	limited_exports
-	limited_conscription
-	civilian_economy
+
+    roman_christianity
+
+
+
+	RME_roma_invicta
+	RME_roman_spirit
+	RME_main_european_exporter
+	RME_inefficient_republic
+	RME_rampant_corruption
+	RME_budget_deficit
+	RME_high_inflation
+	RME_monopolies
+	RME_unemployment
+	RME_emperor_cult
+	RME_weak_nationalism
+	RME_unadapted_military
+	RME_private_militaries
+	RME_nepotism
+	RME_lack_of_naval_interest
+	RME_internal_tensions
+	RME_treaty_of_vienna
 }
 
 #set up roman senate
@@ -29,8 +40,8 @@ set_variable = { var = quorum_medium value = 33 }
 set_variable = { var = quorum_high value = 43 }
 RME_recalc_congress_icon_frames = yes
 RME = {
-	country_event = { id = rme_senate.14 days = 2 }
-	country_event = { id = rme_senate.15 days = 2 }
+    country_event = { id = rme_senate.14 days = 2 }
+    country_event = { id = rme_senate.15 days = 2 }
 }
 
 # Starting tech
@@ -149,7 +160,6 @@ if = {
 		concentrated_industry3 = 1
 	}
 	
-	set_stability = 0.8
 }
 
 
@@ -187,19 +197,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperator Benitus Mussolinius"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_italy_Benito_Mussolini.dds"
-	expire = "1965.1.1"
-	ideology = roman_dictatorship
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
 	name = "Cassius Valerianus"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	desc = "POLITICS_CASSIUS_VALERIANUS_DESC"
 	picture = "gfx/leaders/RME/Portrait_RME_Cassius_Valerianus.dds"
 	expire = "1965.1.1"
 	ideology = liberatarian
@@ -209,16 +208,52 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Palmirus Togliatti"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_RME_palmiro_togliatti"
+	name = "Quintus Marcallas Ordius"
+	desc = "POLITICS_QINTUS_DESC"
+	picture = "gfx/leaders/RME/Portrait_RME_Quintus_Marcallas_Ordius.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = autocracy
 	traits = {
 		
 	}
 }
 
+create_country_leader = {
+	name = "Benitus Cornelius Mussolinius"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "gfx/leaders/RME/Portrait_RME_Benito_Mussolini.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Sextus Atrius Betto"
+	desc = "POLITICS_SEX_DESC"
+	picture = "gfx/leaders/RME/Portrait_RME_Sextus_Atrius_Betto.dds"
+	expire = "1965.1.1"
+	ideology = roman_dictatorship
+	traits = {
+		
+	}
+}
+
+
+create_country_leader = {
+	name = "Petrus Nennius"
+	desc = "POLITICS_PIETRO_DESC"
+	picture = "gfx/leaders/RME/Portrait_RME_Petrus_Nennius.dds"
+	expire = "1965.1.1"
+	ideology = communalism
+	traits = {
+		
+	}
+}
+
+
+###########################
 create_field_marshal = {
 	name = "Pietrus Badoglius"
 	picture = "Portrait_italy_Pietro_Badoglio.dds"

@@ -35,7 +35,7 @@ RME_senate = {
 		}
 		days_remove = 30
 		remove_effect = {
-			RME_congress_small_support = yes
+			RME_senate_small_support = yes
 		}
 	}
 	RME_medium_lobby_effort = {
@@ -74,7 +74,7 @@ RME_senate = {
 			political_power_gain = -0.75
 		}
 		remove_effect = {
-			RME_congress_medium_support = yes
+			RME_senate_medium_support = yes
 		}
 	}
 	RME_snap_elections = {
