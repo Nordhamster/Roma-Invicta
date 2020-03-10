@@ -1,5 +1,5 @@
 version="0.0"
-supported_version="1.8.*"
+supported_version="1.9.*"
 replace_path="common/bookmarks"
 replace_path="common/countries"
 replace_path="common/ideologies"

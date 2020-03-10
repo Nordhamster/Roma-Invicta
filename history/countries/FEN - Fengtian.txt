@@ -1,6 +1,6 @@
 ﻿capital = 328
 
-oob = "MAN_1936"
+#oob = "MAN_1936"
 
 #religion
 add_ideas = {
@@ -115,12 +115,12 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Yoshiko Kawashima"
-	
+	name = "Zhang Zuolin"
 	picture = "GFX_portrait_man_yoshiko_kawashima"
 	expire = "1960.1.1"
 	ideology = military
 	traits = {
+		warrior_code
 	}
 }
 

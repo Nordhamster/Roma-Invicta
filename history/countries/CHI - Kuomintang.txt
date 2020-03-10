@@ -237,7 +237,7 @@ create_country_leader = {
 	desc = "POLITICS_ZHANG_GUOTAO_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = councilism
+	ideology = centralism
 	traits = {
 		cornered_fox
 	}
@@ -255,13 +255,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zhang Junmai" 
-	desc = "POLITICS_ZHANG_LAN_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	name = "Gu Weijun" #Wellington Koo
+	desc = ""
+	picture = "gfx/leaders/CHI/Portrait_CHI_Gu_Weijun.dds"
 	expire = "1965.1.1"
-	ideology = socialist
+	ideology = libertarian
 	traits = {
-		#
 	}
 }
 

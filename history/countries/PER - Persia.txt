@@ -88,11 +88,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Reza Shah Pahlavi"
+	name = "Majles-e Shahanshahi"
 	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
-	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
+	picture = "gfx/leaders/PER/Portrait_PER_Majles-e_Shahanshahi.dds"
 	expire = "1965.1.1"
-	ideology = autocracy
+	ideology = aristocracy
 	traits = {
 		#
 	}

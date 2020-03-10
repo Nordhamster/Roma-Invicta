@@ -264,6 +264,10 @@ country_event = {
 		ai_will_do = {
 			factor = 10
 		}
+		set_autonomy = {
+			target = FEN
+			autonomy_state = autonomy_aligned_warlord
+		}
 		hidden_effect = {
 			FEN = {
 				declare_war_on = {
@@ -273,10 +277,6 @@ country_event = {
 				}
 			}
 		}	
-		set_autonomy = {
-			target = FEN
-			autonomy_state = autonomy_aligned_warlord
-		}
 	}
 	
 	option = { # I dont wanna!

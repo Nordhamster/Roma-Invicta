@@ -10,7 +10,7 @@ ideologies = {
 			progressive = {
 			}
 			
-			liberatarian = {
+			libertarian = {
 			}
 			
 			socialist = {
@@ -235,7 +235,7 @@ ideologies = {
 			centralism = {
 			}
 			
-			councilism = {
+			guild_socialism = {
 			}
 		}
 		

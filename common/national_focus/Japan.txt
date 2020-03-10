@@ -294,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_challenge_zaibatsu
-		icon = GFX_focus_jap_zaibatsu
+		icon = GFX_focus_JAP_challange_zaibatsu
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_restructure_government

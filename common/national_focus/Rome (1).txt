@@ -1,0 +1,119 @@
+focus_tree = {
+	id = Rome
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = RME
+		}
+	}
+
+	#Focus for For The People !
+	focus = {
+		id = Rome_forthepeople
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = Rome_appointanewdictator 
+		}
+		mutually_exclusive = { 
+			focus = Rome_sharpenthyclaws 
+		}
+		mutually_exclusive = { 
+			focus = Rome_keepthesenate 
+		}
+		mutually_exclusive = { 
+			focus = Rome_fortheromanpeople 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	       load_focus_tree = { tree = Rome_Collectivist keep_completed = yes }		
+		}
+	}
+	#Focus for For The Roman People !
+	focus = {
+		id = Rome_fortheromanpeople
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = Rome_appointanewdictator 
+		}
+		mutually_exclusive = { 
+			focus = Rome_sharpenthyclaws 
+		}
+		mutually_exclusive = { 
+			focus = Rome_keepthesenate 
+		}
+		mutually_exclusive = { 
+			focus = Rome_forthepeople 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	       load_focus_tree = { tree = Rome_Collectivist_Nationalist keep_completed = yes }		
+		}
+	}
+	#Focus for Sharpen Thy Claws
+	focus = {
+		id = Rome_sharpenthyclaws
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = Rome_forthepeople 
+		}
+		mutually_exclusive = { 
+			focus = Rome_appointanewdictator 
+		}
+		mutually_exclusive = { 
+			focus = Rome_keepthesenate 
+		}
+		mutually_exclusive = { 
+			focus = Rome_fortheromanpeople 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	       load_focus_tree = { tree = Rome_Imperial keep_completed = yes }		
+		}
+	}
+	#Focus for Keep The Senate
+	focus = {
+		id = Rome_keepthesenate
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = Rome_forthepeople 
+		}
+		mutually_exclusive = { 
+			focus = Rome_appointanewdictator 
+		}
+		mutually_exclusive = { 
+			focus = Rome_sharpenthyclaws 
+		}
+		mutually_exclusive = { 
+			focus = Rome_fortheromanpeople 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	       load_focus_tree = { tree = Rome_Democratic keep_completed = yes }		
+		}
+	}
+}

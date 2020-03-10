@@ -1,0 +1,1462 @@
+focus_tree = {
+	id = Rome_Collectivist_Nationalist
+	country = {
+		factor = 0
+	}
+
+
+
+
+
+
+####################################################
+####################################################
+# NATIONAL SOCIALISM
+####################################################
+####################################################
+	#Focus for National Collectivism
+	focus = {
+		id = Rome_nationalcollectivism
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Form The PAASP
+	focus = {
+		id = Rome_formthepaasp
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_nationalcollectivism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Arm The PAASP
+	focus = {
+		id = Rome_armthepaasp
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_formthepaasp }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Reservists In The PAASP
+	focus = {
+		id = Rome_reservistsinthepaasp
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_formthepaasp }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Organize PAASP Marchs
+	focus = {
+		id = Rome_organizepaaspmarchs
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_reservistsinthepaasp 
+		}
+		prerequisite = { 
+			focus = Rome_armthepaasp 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for Renforce The Quadrumvir
+	focus = {
+		id = Rome_renforcethequadrumvir
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_nationalcollectivism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Assasinate Matteoti
+	focus = {
+		id = Rome_assasinatematteoti
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_renforcethequadrumvir }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for They're Coming !
+	focus = {
+		id = Rome_theyrecoming
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_renforcethequadrumvir }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mussolini's Speech
+	focus = {
+		id = Rome_mussolinisspeech
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_assasinatematteoti 
+		}
+		prerequisite = { 
+			focus = Rome_theyrecoming 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ascension To Power
+	focus = {
+		id = Rome_ascensiontopower
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_organizepaaspmarchs 
+		}
+		prerequisite = { 
+			focus = Rome_mussolinisspeech 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Give Out Mass Membership
+	focus = {
+		id = Rome_giveoutmassmembership
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_ascensiontopower }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Unite With Similar Parties
+	focus = {
+		id = Rome_unitewithsimilarparties
+		icon = GFX_goal_unknown
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_ascensiontopower }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Spread Agitative Propaganda
+	focus = {
+		id = Rome_spreadagitativepropaganda
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_giveoutmassmembership 
+		}
+		prerequisite = { 
+			focus = Rome_unitewithsimilarparties 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Intimidate Opponents
+	focus = {
+		id = Rome_intimidateopponents
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_spreadagitativepropaganda }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Mass Bombings
+	focus = {
+		id = Rome_massbombings
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_spreadagitativepropaganda 
+		}
+		prerequisite = { 
+			focus = Rome_intimidateopponents 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Mussolini Denounce The Senate
+	focus = {
+		id = Rome_mussolinidenouncethesenate
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 15
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_spreadagitativepropaganda 
+		}
+		prerequisite = { 
+			focus = Rome_intimidateopponents 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for March On Rome
+	focus = {
+		id = Rome_marchonrome
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_mussolinidenouncethesenate 
+		}
+		prerequisite = { 
+			focus = Rome_massbombings 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Establish Martial Law
+	focus = {
+		id = Rome_establishmartiallaw
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_marchonrome }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Create The Grand Council of National Collectivist
+	focus = {
+		id = Rome_createthegrandcouncilofnationalcollectivist
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_establishmartiallaw }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Arrest Main Opponents
+	focus = {
+		id = Rome_arrestmainopponents
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 16
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_establishmartiallaw }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Reign Of Terror
+	focus = {
+		id = Rome_areignofterror
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_createthegrandcouncilofnationalcollectivist 
+		}
+		prerequisite = { 
+			focus = Rome_arrestmainopponents 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Form The  National Custodibus Romanis
+	focus = {
+		id = Rome_formthenationalcustodibusromanis
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_areignofterror }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Mass Trials
+	focus = {
+		id = Rome_masstrials
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_areignofterror }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Disallow Critics
+	focus = {
+		id = Rome_disallowcritics
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_areignofterror }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Create The ARS
+	focus = {
+		id = Rome_createthears
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_formthenationalcustodibusromanis 
+		}
+		prerequisite = { 
+			focus = Rome_masstrials 
+		}
+		prerequisite = { 
+			focus = Rome_disallowcritics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The National Index
+	focus = {
+		id = Rome_thenationalindex
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_formthenationalcustodibusromanis 
+		}
+		prerequisite = { 
+			focus = Rome_masstrials 
+		}
+		prerequisite = { 
+			focus = Rome_disallowcritics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Purge The Military
+	focus = {
+		id = Rome_purgethemilitary
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 16
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_formthenationalcustodibusromanis 
+		}
+		prerequisite = { 
+			focus = Rome_masstrials 
+		}
+		prerequisite = { 
+			focus = Rome_disallowcritics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Create Mussolini's  Youth
+	focus = {
+		id = Rome_createmussolinisyouth
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_formthenationalcustodibusromanis 
+		}
+		prerequisite = { 
+			focus = Rome_masstrials 
+		}
+		prerequisite = { 
+			focus = Rome_disallowcritics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Get Rid Of The Quadrumviris
+	focus = {
+		id = Rome_getridofthequadrumviris
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_thenationalindex 
+		}
+		prerequisite = { 
+			focus = Rome_purgethemilitary 
+		}
+		prerequisite = { 
+			focus = Rome_createthears 
+		}
+		prerequisite = { 
+			focus = Rome_createmussolinisyouth 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Change The State Religion To Catholicism
+	focus = {
+		id = Rome_changethestatereligiontocatholicism
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 6
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_getridofthequadrumviris }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Arrest Roman Christianism Clerics
+	focus = {
+		id = Rome_arrestromanchristianismclerics
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_changethestatereligiontocatholicism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Destroy Temples And Churchs
+	focus = {
+		id = Rome_destroytemplesandchurchs
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_changethestatereligiontocatholicism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Force The Populace To Convert
+	focus = {
+		id = Rome_forcethepopulacetoconvert
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 6
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_arrestromanchristianismclerics 
+		}
+		prerequisite = { 
+			focus = Rome_destroytemplesandchurchs 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Invite The Pope
+	focus = {
+		id = Rome_invitethepope
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 3
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_forcethepopulacetoconvert }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Appoint Clerics
+	focus = {
+		id = Rome_appointclerics
+		icon = GFX_goal_unknown
+		x = 6
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_forcethepopulacetoconvert }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for New Roman Christian Traditions
+	focus = {
+		id = Rome_newromanchristiantraditions
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_appointclerics 
+			focus = Rome_invitethepope 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Gift The Vatican To The Pope
+	focus = {
+		id = Rome_giftthevaticantothepope
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_invitethepope }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Build Churches
+	focus = {
+		id = Rome_buildchurches
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_newromanchristiantraditions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Demand Roman America To Switch State Religion
+	focus = {
+		id = Rome_demandromanamericatoswitchstatereligion
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 3
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_giftthevaticantothepope 
+			focus = Rome_buildchurches 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Roman Supremacy
+	focus = {
+		id = Rome_romansupremacy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_getridofthequadrumviris }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for Spatium Animam Viventem
+	focus = {
+		id = Rome_spatiumanimamviventem
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_romansupremacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Roman Deathsquads
+	focus = {
+		id = Rome_romandeathsquads
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_romansupremacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Reform The Exercitus Romanus
+	focus = {
+		id = Rome_reformtheexercitusromanus
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_romansupremacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for Take Out The Vermins
+	focus = {
+		id = Rome_takeoutthevermins
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_spatiumanimamviventem 
+		}
+		prerequisite = { 
+			focus = Rome_reformtheexercitusromanus 
+		}
+		prerequisite = { 
+			focus = Rome_romandeathsquads 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Pacificate African Provinces
+	focus = {
+		id = Rome_pacificateafricanprovinces
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_takeoutthevermins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Romanize Our Iberian Territories
+	focus = {
+		id = Rome_romanizeouriberianterritories
+		icon = GFX_goal_unknown
+		x = 11
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_takeoutthevermins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Disallow Miscegeneration With Non-Europeans
+	focus = {
+		id = Rome_disallowmiscegenerationwithnoneuropeans
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_takeoutthevermins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Romanize Eastern Anatolia
+	focus = {
+		id = Rome_romanizeeasternanatolia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_takeoutthevermins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Send Roman Settlers In The Balkans
+	focus = {
+		id = Rome_sendromansettlersinthebalkans
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_takeoutthevermins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Other Romans
+	focus = {
+		id = Rome_theotherromans
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_disallowmiscegenerationwithnoneuropeans 
+			focus = Rome_sendromansettlersinthebalkans 
+			focus = Rome_romanizeouriberianterritories 
+			focus = Rome_pacificateafricanprovinces 
+			focus = Rome_romanizeeasternanatolia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Purge Within The Party
+	focus = {
+		id = Rome_purgewithintheparty
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theotherromans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Enemy Of Our Enemy Is An Opportunity
+	focus = {
+		id = Rome_theenemyofourenemyisanopportunity
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theotherromans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Develop The Arms Industry
+	focus = {
+		id = Rome_developthearmsindustry
+		icon = GFX_goal_unknown
+		x = 6
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theenemyofourenemyisanopportunity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Romani Aces
+	focus = {
+		id = Rome_romaniaces
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theenemyofourenemyisanopportunity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Wake Up Roman Nationalism
+	focus = {
+		id = Rome_wakeupromannationalism
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theotherromans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Write A National Epic
+	focus = {
+		id = Rome_writeanationalepic
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_wakeupromannationalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Dante Alighieri Society
+	focus = {
+		id = Rome_dantealighierisociety
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 16
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_wakeupromannationalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#Focus for Nationalistic Propaganda
+	focus = {
+		id = Rome_nationalisticpropaganda
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_writeanationalepic 
+			focus = Rome_dantealighierisociety 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Cult Of Personality
+	focus = {
+		id = Rome_acultofpersonality
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_nationalisticpropaganda }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for National Collectivist Assault Squads
+	focus = {
+		id = Rome_nationalcollectivistassaultsquads
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 26
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_acultofpersonality }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Greek Volunteers
+	focus = {
+		id = Rome_greekvolunteers
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theotherromans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Rome Defense  Forts
+	focus = {
+		id = Rome_theromedefenseforts
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_greekvolunteers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Build The Versus Alp
+	focus = {
+		id = Rome_buildtheversusalp
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theromedefenseforts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Protect Peninsular Italy
+	focus = {
+		id = Rome_protectpeninsularitaly
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 16
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_buildtheversusalp }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Roman Emergency Procedure
+	focus = {
+		id = Rome_romanemergencyprocedure
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_theromedefenseforts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Protect What We Can !
+	focus = {
+		id = Rome_protectwhatwecan
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_romanemergencyprocedure }
+		mutually_exclusive = { focus = Rome_takebackourhomeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Establish A Defense Line
+	focus = {
+		id = Rome_establishadefenseline
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 26
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_protectwhatwecan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The italian Forts
+	focus = {
+		id = Rome_theitalianforts
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 27
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_establishadefenseline }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Take Back Our Homeland !
+	focus = {
+		id = Rome_takebackourhomeland
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_romanemergencyprocedure }
+		mutually_exclusive = { focus = Rome_protectwhatwecan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Not One Step Back !
+	focus = {
+		id = Rome_notonestepback
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 26
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_takebackourhomeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Call The Populace !
+	focus = {
+		id = Rome_callthepopulace
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 27
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_notonestepback }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Fix The Economy
+	focus = {
+		id = Rome_fixtheeconomy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_getridofthequadrumviris }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Great Works
+	focus = {
+		id = Rome_greatworks2
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_fixtheeconomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Rebuild The Via Appia
+	focus = {
+		id = Rome_rebuildtheviaappia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_greatworks2 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Make The Trains Run On Time
+	focus = {
+		id = Rome_makethetrainsrunontime
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_rebuildtheviaappia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Get Rid Of Unemployment
+	focus = {
+		id = Rome_getridofunemployment
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_rebuildtheviaappia 
+		}
+		prerequisite = { 
+			focus = Rome_offeremploymentsinstaterunfactories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Seize Non-Roman Assets
+	focus = {
+		id = Rome_seizenonromanassets
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_greatworks2 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Break Up Big Businesses
+	focus = {
+		id = Rome_breakupbigbusinesses
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_seizenonromanassets }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Offer Employments In State-Run Factories
+	focus = {
+		id = Rome_offeremploymentsinstaterunfactories
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_breakupbigbusinesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Rebuild Roma
+	focus = {
+		id = Rome_rebuildroma
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 27
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_greatworks2 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Economical Reforms
+	focus = {
+		id = Rome_economicalreforms
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 31
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_fixtheeconomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Control Product's Prices
+	focus = {
+		id = Rome_controlproductsprices
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_economicalreforms }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for To War !
+	focus = {
+		id = Rome_towar
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_romanmills }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Mobilize The Industry !
+	focus = {
+		id = Rome_mobilizetheindustry
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_towar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Steal Large Companies' Wealth
+	focus = {
+		id = Rome_steallargecompanieswealth
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 33
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_economicalreforms }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Eradicate Inflation
+	focus = {
+		id = Rome_eradicateinflation
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 31
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_controlproductsprices 
+		}
+		prerequisite = { 
+			focus = Rome_steallargecompanieswealth 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Privatize Services
+	focus = {
+		id = Rome_privatizeservices
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_eradicateinflation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Roman Mills
+	focus = {
+		id = Rome_romanmills
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 27
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_rebuildroma }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Give To The People !
+	focus = {
+		id = Rome_givetothepeople
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_eradicateinflation
+			focus = Rome_getridofunemployment
+			focus = Rome_mobilizetheindustry
+		}
+		mutually_exclusive = { focus = Rome_expandthestate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Hand-Out Businesses
+	focus = {
+		id = Rome_handoutbusinesses
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_givetothepeople }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Fund Small Businesses
+	focus = {
+		id = Rome_fundsmallbusinesses
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_givetothepeople }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Lower The Price Of Machinery
+	focus = {
+		id = Rome_lowerthepriceofmachinery
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_givetothepeople }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand The State
+	focus = {
+		id = Rome_expandthestate
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 28
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_eradicateinflation
+			focus = Rome_getridofunemployment
+			focus = Rome_mobilizetheindustry
+		}
+		mutually_exclusive = { focus = Rome_givetothepeople }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Absorb Factories In Provinces
+	focus = {
+		id = Rome_absorbfactoriesinprovinces
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_expandthestate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Develop Mainland Rome
+	focus = {
+		id = Rome_developmainlandrome
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 28
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_expandthestate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Invest In Off-Shore Businesses
+	focus = {
+		id = Rome_investinoffshorebusinesses
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 30
+		y = 26
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_developmainlandrome }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Deal With The Budget Deficit
+	focus = {
+		id = Rome_dealwiththebudgetdeficit
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 27
+		y = 27
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_lowerthepriceofmachinery 
+			focus = Rome_investinoffshorebusinesses 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Use Assets To Pay The Debt
+	focus = {
+		id = Rome_useassetstopaythedebt
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 28
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_dealwiththebudgetdeficit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Demand Loans To Be Payed
+	focus = {
+		id = Rome_demandloanstobepayed
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 28
+		y = 28
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Rome_dealwiththebudgetdeficit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Stable Budget
+	focus = {
+		id = Rome_astablebudget
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 27
+		y = 29
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Rome_useassetstopaythedebt 
+			focus = Rome_demandloanstobepayed 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+}

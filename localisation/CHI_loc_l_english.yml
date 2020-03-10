@@ -1,0 +1,32 @@
+﻿l_english:
+ CHI_oligarchic_democracy:0 "Republic of China"
+ CHI_oligarchic_democracy_DEF:0 "the Republic of China"
+ CHI_dictatorship:0 "Chinese Empire"
+ CHI_dictatorship_DEF:0 "the Chinese Empire"
+ CHI_monarchism:0 "Han China"
+ CHI_monarchism_DEF:0 "the Han China"
+ CHI_democratic:0 "Chinese Republic"
+ CHI_democratic_DEF:0 "the Chinese Republic"
+ CHI_collectivism:0 "People's Republic of China"
+ CHI_collectivism_DEF:0 "the People's Republic of China"
+ CHI_oligarchic_democracy_ADJ:0 "Chinese"
+ CHI_dictatorship_ADJ:0 "Chinese"
+ CHI_democratic_ADJ:0 "Chinese"
+ CHI_monarchism_ADJ:0 "Chinese"
+ CHI_collectivism_ADJ:0 "Chinese"
+ 
+ CHI_oligarchic_democracy_party:0 "Kuomintang (Left)"
+ CHI_oligarchic_democracy_party_long:0 "Left Faction of the Nationalist Party"
+ CHI_dictatorship_party:0 "Kuomintang (Right)"
+ CHI_dictatorship_party_long:0 "Right Faction of the Nationalist Party"
+ CHI_monarchism_party_long:0 "Society for Monarchical Constitutionalism"
+ CHI_collectivism_party:0 "Jitizhuyidang"
+ CHI_collectivism_party_long:0 "Chinese Collectivist Party"
+ CHI_democratic_party:0 "Gonghedang"
+ CHI_democratic_party_long:0 "Republican Party"
+
+ #####IDEAS#####
+ CHI_banditry:0 "Banditry"
+ CHI_banditry_desc:0 "At the frontiers of our nation, bandits prowl, terrorising and robbing the countryside. So far, we have been unable to fully deal the situation, and the population isn't all too happy about this."
+
+ #####EVENTS#####

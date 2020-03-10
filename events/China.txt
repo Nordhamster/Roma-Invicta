@@ -14,7 +14,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { # Refuse
-		name = china.1.a
+		name = china.1.a	
 		ai_chance = { factor = 90 }
 		effect_tooltip = {
 			JAP = {
@@ -203,10 +203,6 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			CHI = {
-				declare_war_on = {
-					target = QNG
-					type = annex_everything
-				}
 				transfer_state = 613
 				add_state_core = 613
 				transfer_state = 596
@@ -276,7 +272,27 @@ country_event = {
 				add_state_core = 595
 				add_state_core = 599
 				
-				load_oob = CHI_1936
+				# load_oob = CHI_1936
+				QNG = {
+					transfer_units_fraction = {
+						target = CHI
+						stockpile_ratio = 0.4
+						army_ratio = 0.4
+						navy_ratio = 0.4
+						air_ratio = 0.4
+						keep_unit_leaders = {
+							
+						}
+						keep_unit_leaders_trigger = {
+
+						}
+					}
+				}
+				
+				declare_war_on = {
+					target = QNG
+					type = civil_war
+				}
 			}
 			
 			#QNG = {
@@ -725,6 +741,8 @@ country_event = {
 	title = china.10.t
 	desc = china.10.d
 	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
 
 	trigger = {
 		TAG = CHI
@@ -843,7 +861,7 @@ country_event = {
 	option = {# Anti-Qing Stance
 		name = china.12.a
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		declare_war_on = { 
 			target = QNG 
@@ -854,17 +872,20 @@ country_event = {
 	option = { # Neutrality
 		name = china.12.b
 		ai_will_do = {
-			factor = 4
+			factor = 1
 		}
 	}
 	
-	option = { # Anti-KMT stance
-		name = china.12.c
-		declare_war_on = { 
-			target = CHI 
-			type = take_core_state
-		}
-	}
+	# option = { # Anti-KMT stance
+		# name = china.12.c
+		# ai_will_do = {
+			# factor = 0
+		# }
+		# declare_war_on = { 
+			# target = CHI 
+			# type = take_core_state
+		# }
+	# }
 }
 
 country_event = {
@@ -910,6 +931,8 @@ country_event = {
 	title = china.14.t
 	desc = china.14.d
 	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
 
 	trigger = {
 		TAG = CHI
@@ -967,6 +990,8 @@ country_event = {
 	title = china.15.t
 	desc = china.15.d
 	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
 
 	trigger = {
 		TAG = CHI

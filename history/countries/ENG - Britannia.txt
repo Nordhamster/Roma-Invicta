@@ -153,7 +153,7 @@ create_country_leader = {
 	desc = "POLITICS_DOUGLAS_BAKER_DESC"
 	picture = "gfx/leaders/ENG/Portrait_ENG_Douglas_Baker.dds"
 	expire = "1965.1.1"
-	ideology = centralism
+	ideology = guild_socialism
 	traits = {
 		
 	}

@@ -1347,21 +1347,7 @@
  HAW_collectivism_ADJ:0 ""
  
  
- CHI_oligarchic_democracy:0 "Republic of China"
- CHI_oligarchic_democracy_DEF:0 "the Republic of China"
- CHI_dictatorship:0 "Chinese Empire"
- CHI_dictatorship_DEF:0 "the Chinese Empire"
- CHI_monarchism:0 "Han China"
- CHI_monarchism_DEF:0 "the Han China"
- CHI_democratic:0 "Chinese Republic"
- CHI_democratic_DEF:0 "the Chinese Republic"
- CHI_collectivism:0 "People's Republic of China"
- CHI_collectivism_DEF:0 "the People's Republic of China"
- CHI_oligarchic_democracy_ADJ:0 "Chinese"
- CHI_dictatorship_ADJ:0 "Chinese"
- CHI_democratic_ADJ:0 "Chinese"
- CHI_monarchism_ADJ:0 "Chinese"
- CHI_collectivism_ADJ:0 "Chinese"
+ 
  MON_oligarchic_democracy:0 "Mongolian Directorate"
  MON_oligarchic_democracy_DEF:0 "the Mongolian Directorate"
  MON_dictatorship:0 "Dayar Mongol"

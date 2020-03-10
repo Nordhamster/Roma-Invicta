@@ -170,6 +170,16 @@ add_ideas = {
 }
 
 create_country_leader = {
+	name = "Sebastian Heider"
+	desc = "POLITICS_SEBASTIAN_HEIDER_DESC"
+	picture = "gfx/leaders/GER/Portrait_GER_Sebastian_Heider.dds"
+	expire = "1965.1.1"
+	ideology = libertarian
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Eckhart Theismann"
 	desc = "POLITICS_ECKHART_THEISMANN_DESC"
 	picture = "gfx/leaders/GER/Portrait_GER_Eckhart_Theismann.dds"
@@ -181,10 +191,10 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Konstantin Heissler"
-	desc = ""
-	picture = gfx/leaders/GER/Portrait_GER_Konstantin_Heissler.dds"
+	desc = "POLITICS_KONSTANTIN_HEISSLER_DESC"
+	picture = "gfx/leaders/GER/Portrait_GER_Konstantin_Heissler.dds"
 	expire = "1965.1.1"
-	ideology = nationalist
+	ideology = nationalism
 	traits = {
 	}
 }

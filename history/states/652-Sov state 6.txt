@@ -10,12 +10,12 @@ state={
 	}
 
 	history={
-		owner = KZN
+		owner = KAZ
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = KZN
+		add_core_of = KAZ
 	}
 
 	provinces={
