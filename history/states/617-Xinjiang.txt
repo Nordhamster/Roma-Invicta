@@ -4,9 +4,7 @@ state={
 
 	history={
 		owner = QNG
-		add_core_of = QNG
-		add_core_of = QNG
-		add_core_of = QNG
+		add_core_of = UYG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2

@@ -5,8 +5,7 @@ state={
 	history={
 		owner = QNG
 		add_core_of = QNG
-		add_core_of = QNG
-		add_core_of = QNG
+		add_core_of = TIB
 		victory_points = {
 			7940 10 
 		}

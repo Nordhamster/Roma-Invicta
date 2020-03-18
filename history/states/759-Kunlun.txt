@@ -9,9 +9,7 @@ state={
 	state_category = wasteland
 	history={
 		owner = QNG
-		add_core_of = QNG
-		add_core_of = QNG
-		add_core_of = QNG
+		add_core_of = UYG
 		buildings = {
 			infrastructure = 1
 

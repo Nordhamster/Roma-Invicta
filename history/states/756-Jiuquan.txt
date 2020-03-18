@@ -10,26 +10,9 @@ state={
 	history={
 		owner = QNG
 		add_core_of = QNG
-		add_core_of = QNG
-		add_core_of = QNG
+		add_core_of = MON
 		buildings = {
 			infrastructure = 1
-
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				QNG = {
-					transfer_state = PREV
-
-				}
-
-			}
 
 		}
 
