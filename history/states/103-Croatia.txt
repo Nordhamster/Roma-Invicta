@@ -24,8 +24,7 @@ state={
 			}
 		}
 		add_core_of = RME
-		#add_claim_by = RME #added by focus
-		add_core_of = CRO
+		add_core_of = ILY
 	}
 
 	provinces={

@@ -25,13 +25,7 @@ state={
 			}
 		}
 		add_core_of = RME
-		add_claim_by = RME
-
-		1939.4.12 = {
-			owner = RME
-			controller = RME
-			remove_claim_by = RME
-		}
+		add_core_of = ILY
 	}
 
 	provinces={

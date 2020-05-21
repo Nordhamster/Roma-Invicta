@@ -8,6 +8,8 @@ state=
 	
 	history={
 		owner = RME
+		add_core_of = RME
+		add_core_of = ILY
 		buildings = {
 			infrastructure = 5
 			3943 = {

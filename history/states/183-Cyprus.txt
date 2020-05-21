@@ -11,6 +11,8 @@ state= {
 	history=
 	{
 		owner = RME
+		add_core_of = RME
+		add_core_of = ANA
 		buildings = {
 			infrastructure = 4
 			air_base = 1

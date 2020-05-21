@@ -17,6 +17,7 @@ state={
 			940 1 
 		}
 		add_core_of = RME
+		add_core_of = ANA
 	}
 
 	provinces={
