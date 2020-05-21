@@ -1,10 +1,7 @@
 
 state={
 	id=783
-	name="STATE_783" # Sidi Ifni
-	manpower = 11043
-	
-	state_category = pastoral
+	name="STATE_783"
 
 	history={
 		owner = RME
@@ -12,11 +9,17 @@ state={
 			infrastructure = 1
 			12857 = {
 				naval_base = 1
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		12857
+		12857 
 	}
+	manpower=11043
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
