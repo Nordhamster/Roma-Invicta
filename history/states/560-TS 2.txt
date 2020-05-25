@@ -10,11 +10,11 @@ state={
 	}
 
 	history={
-		owner = YAK
+		owner = QNG
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = YAK
+		add_core_of = QNG
 	}
 
 	provinces={

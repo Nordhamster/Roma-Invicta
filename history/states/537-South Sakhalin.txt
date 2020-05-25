@@ -9,8 +9,7 @@ state= {
 	state_category = rural
 
 	history= {
-		owner = QNG
-		add_core_of = QNG
+		owner = JAP
 		buildings = {
 			infrastructure = 3
 			12446 = {
