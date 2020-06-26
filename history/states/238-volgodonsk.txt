@@ -7,11 +7,11 @@ state={
 	state_category = rural
 
 	history={
-		owner = CAU
+		owner = KHZ
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = CAU
+		add_core_of = KHZ
 	}
 
 	provinces={

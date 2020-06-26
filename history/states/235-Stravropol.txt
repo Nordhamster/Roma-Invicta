@@ -10,12 +10,12 @@ state={
 	}
 
 	history={
-		owner = CAU
+		owner = KHZ
 		buildings = {
 			infrastructure = 4
 			air_base = 2
 		}
-		add_core_of = CAU
+		add_core_of = KHZ
 	}
 
 	provinces={

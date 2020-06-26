@@ -12,7 +12,7 @@ state={
 	history={
 		owner = RME
 		victory_points = {
-			890 1 
+			11811 1 
 		}
 		buildings = {
 			infrastructure = 4

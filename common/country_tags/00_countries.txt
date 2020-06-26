@@ -94,6 +94,7 @@ GEL = "countries/Geledi.txt"
 HAW = "countries/Hawaii.txt"
 QAR = "countries/Qara Qoyunlu.txt"
 HEL = "countries/Helvetica.txt"
+KHZ = "countries/Khazaria.txt"
 
 #Releasables, Seperatists etc...
 CHI = "countries/China.txt" #Kuomintang Government

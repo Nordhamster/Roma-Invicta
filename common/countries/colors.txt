@@ -453,6 +453,10 @@ AQU = {
 	color = rgb { 150 50 0 }
 	color_ui = rgb { 150 50 0 }
 }
+KHZ = {
+	color = rgb { 115 90 155 }
+	color_ui = rgb { 115 90 155 }
+}
 
 
 
