@@ -88,9 +88,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
+	name = "Damdin Sukhbaatar"
+	desc = "POLITICS_SUKHBAATAR_DESC"
+	picture = "gfx/leader/MON/Portrait_MON_Damdin_Sukhbaatar.dds"
 	expire = "1965.1.1"
 	ideology = centralism
 	traits = {

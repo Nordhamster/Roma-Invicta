@@ -148,11 +148,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
+	name = "César de la Cavallería"
+	desc = "POLITICS_CESAR_DE_LA_CABALLERIA_DESC"
+	picture = "gfx/leaders/IBR/Portrait_IBR_Cesar_de_la_Cavalleria.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nationalism
 	traits = {
 		#
 	}

@@ -159,14 +159,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
+    name = "Lakshmi Sehgal"
+    desc = "POLITICS_LAKSHMI_SEHGAL_DESC"
+    picture = "gfx/leaders/MAR/Portrait_MAR_Lakshmi_Sahgal.dds"
+    expire = "1965.1.1"
+    ideology = centralism
+    traits = {
+        #
+    }
 }
 
 create_country_leader = {

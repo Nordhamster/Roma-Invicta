@@ -102,8 +102,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Enomoto Takenori"
-	desc = ""
-	picture = ""
+	desc = "POLITICS_ENOMOTO_TAKENORI_DESC"
+	picture = "gfx/leaders/JAM/Portrait_JAM_Enomoto_Takenori.dds"
 	expire = "1965.1.1"
 	ideology = military
 	traits = {

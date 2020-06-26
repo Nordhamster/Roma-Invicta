@@ -116,7 +116,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Zhang Zuolin"
-	picture = "GFX_portrait_man_yoshiko_kawashima"
+	picture = "gfx/leaders/FEN/Portrait_FEN_Zhang_Zuolin.dds"
 	expire = "1960.1.1"
 	ideology = military
 	traits = {
