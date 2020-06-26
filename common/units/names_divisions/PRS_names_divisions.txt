@@ -213,22 +213,22 @@ PRS_PAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { PRS_INF_01 }
 
-	fallback_name = "%s. Gabenamas Diwizija"
+	fallback_name = "%s. Krusnassirmeniks Diwizija"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%s. Gabenamas Diwizija" }
-		2 = { "%s. Gabenamas Diwizija" }
-		3 = { "%s. Gabenamas Diwizija" }
-		4 = { "%s. Gabenamas Diwizija" }
-		5 = { "%s. Gabenamas Diwizija" }
-		6 = { "%s. Gabenamas Diwizija" }
-		7 = { "%s. Gabenamas Diwizija" }
-		8 = { "%s. Gabenamas Diwizija" }
-		9 = { "%s. Gabenamas Diwizija" }
-		10 = { "%s. Gabenamas Diwizija" }
+		1 = { "%s. Krusnassirmeniks Diwizija" }
+		2 = { "%s. Krusnassirmeniks Diwizija" }
+		3 = { "%s. Krusnassirmeniks Diwizija" }
+		4 = { "%s. Krusnassirmeniks Diwizija" }
+		5 = { "%s. Krusnassirmeniks Diwizija" }
+		6 = { "%s. Krusnassirmeniks Diwizija" }
+		7 = { "%s. Krusnassirmeniks Diwizija" }
+		8 = { "%s. Krusnassirmeniks Diwizija" }
+		9 = { "%s. Krusnassirmeniks Diwizija" }
+		10 = { "%s. Krusnassirmeniks Diwizija" }
 	}
 }
 
