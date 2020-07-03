@@ -9,7 +9,10 @@ state={
 	history={
 		owner = IBR
 		victory_points = {
-			6906 5 
+			6906 10
+		}
+		victory_points = {
+			4098 3
 		}
 		buildings = {
 			infrastructure = 6
@@ -18,7 +21,7 @@ state={
 			6906 = {
 				naval_base = 3
 			}
-			962 = {
+			4098 = {
 				naval_base = 2
 			}
 		}
