@@ -1,0 +1,320 @@
+ideas = {
+
+	head_of_government = {
+		generic_popular_figurehead = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { popular_figurehead }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_silent_workhorse = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { silent_workhorse }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_staunch_constitutionalist = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { staunch_constitutionalist }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	minister_economy = {
+		generic_captain_of_industry = {	
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { captain_of_industry }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_financial_expert = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { financial_expert }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_war_industrialist = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { war_industrialist }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	minister_defence = {
+		generic_armaments_organizer = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { armaments_organizer }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_military_theorist = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { military_theorist }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_quartermaster_general = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { quartermaster_general }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	minister_internal_affairs = {
+		generic_prince_of_terror = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { prince_of_terror }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_propaganda_expert = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { propaganda_expert }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_backroom_backstabber = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { backroom_backstabber }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	minister_foreign_affairs = {
+		generic_smooth_talking_charmer = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { smooth_talking_charmer }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_compassionate_gentleman = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { compassionate_gentleman }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_ideological_crusader = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { ideological_crusader }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	minister_culture = {
+		generic_rocket_scientist = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { rocket_scientist }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_nuclear_scientist = {
+			allowed = {
+				NOT = {
+					#put countries with finished ministers here
+				}			
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { nuclear_scientist }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

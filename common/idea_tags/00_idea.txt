@@ -14,13 +14,25 @@ idea_categories = {
 		removal_cost = -1
 	}
 	
-	government = {
+	laws = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
+		slot = religion
 		slot = political_advisor
 		slot = political_advisor
-		slot = political_advisor
+		
+		cost = 150
+		removal_cost = 0
+	}
+	
+	government = {
+		slot = head_of_government
+		slot = minister_economy
+		slot = minister_defence
+		slot = minister_internal_affairs
+		slot = minister_foreign_affairs
+		slot = minister_culture
 		
 		cost = 150
 		removal_cost = 0
@@ -50,7 +62,4 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
-	others = {
-	slot = religion
-
 }
