@@ -18,3 +18,4 @@ tags={
 	"Map"
 }
 name="Roma Invicta"
+path="mod/Roma-Invicta"
