@@ -95,6 +95,18 @@ HAW = "countries/Hawaii.txt"
 QAR = "countries/Qara Qoyunlu.txt"
 HEL = "countries/Helvetica.txt"
 KHZ = "countries/Khazaria.txt"
+XHO = "countries/Xhosa.txt"
+ZUL = "countries/Zulu.txt"
+BNG = "Bangwaketse.txt"
+ZIM = "Zimbabwe.txt"
+MLW = "Maravi.txt"
+UNY = "Unyamwezi.txt"
+BGS = "Bangassou.txt"
+BRD = "Burundi.txt"
+DAH = "Dahomey.txt"
+ARO = "Aro.txt"
+LUN = "Lunda.txt"
+KZM = "Kazembe.txt"
 
 #Releasables, Seperatists etc...
 CHI = "countries/China.txt" #Kuomintang Government

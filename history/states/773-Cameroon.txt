@@ -4,8 +4,8 @@ state={
 	name="STATE_773"
 
 	history={
-		owner = ENG
-		add_core_of = LOA
+		owner = SOK
+		add_core_of = SOK
 		victory_points = {
 			2080 1 
 		}
@@ -23,7 +23,7 @@ state={
 	}
 
 	provinces={
-		2080 5036 5054 6039 9137 11012 
+		5054 8078 9137 11012 11194 12830 
 	}
 	manpower=2945782
 	buildings_max_level_factor=1.000

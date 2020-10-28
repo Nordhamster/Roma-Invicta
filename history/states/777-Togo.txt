@@ -4,8 +4,8 @@ state={
 	name="STATE_777"
 
 	history={
-		owner = BNI
-		add_core_of = BNI
+		owner = DAH
+		add_core_of = DAH
 		victory_points = {
 			1951 1 
 		}
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1951 12843 
+		1951 10919 12843 
 	}
 	manpower=1101346
 	buildings_max_level_factor=1.000

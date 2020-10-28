@@ -8,8 +8,7 @@ state={
 	}
 
 	history={
-		owner = BAN
-		add_core_of = BAN
+		owner = ZIM
 		buildings = {
 			infrastructure = 3
 
@@ -22,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1874 2151 2216 4851 7842 10929 
+		1688 1874 2151 2193 2216 4851 5155 5177 5199 7842 7872 10929 12935 
 	}
 	manpower=4155400
 	buildings_max_level_factor=1.000

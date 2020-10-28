@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		owner = KAN
-		add_core_of = KAN
+		owner = BGS
+		add_core_of = BGS
 		victory_points = {
 			12830 1 
 		}
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		1974 3165 5084 8078 11108 11194 12719 12830 
+		1953 3165 4033 5084 8052 10764 10857 10883 12719 12741 12824 
 	}
 	manpower=1136921
 	buildings_max_level_factor=1.000

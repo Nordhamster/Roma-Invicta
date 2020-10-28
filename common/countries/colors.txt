@@ -337,8 +337,8 @@ BNI = {
 	color_ui = rgb { 0 120 51 }
 }
 KEN = {
-	color = rgb { 255 57 195 }
-	color_ui = rgb { 255 57 195 }
+	color = rgb { 100 125 150 }
+	color_ui = rgb { 100 125 150 }
 }
 SOF = {
 	color = rgb { 210 170 90 }
@@ -457,6 +457,56 @@ KHZ = {
 	color = rgb { 115 90 155 }
 	color_ui = rgb { 115 90 155 }
 }
+XHO = {
+	color = rgb { 90 105 70 }
+	color_ui = rgb { 90 105 70 }
+}
+ZUL = {
+	color = rgb { 160 100 100 }
+	color_ui = rgb { 160 100 100 }
+}
+BNG {
+	color = rgb { 90 130 130 }
+	color_ui = rgb { 90 130 130 }
+}
+ZIM = {
+	color = rgb { 115 165 105 }
+	color_ui = rgb { 115 165 105 }
+}
+MLW = {
+	color = rgb { 170 90 160 }
+	color_ui = rgb { 170 90 160 }
+}
+UNY = {
+	color = rgb { 175 100 110 }
+	color_ui = rgb { 175 100 110 }
+}
+BGS = {
+	color = rgb { 70 90 100 }
+	color_ui = rgb { 70 90 100 }
+}
+BRD = {
+	color = rgb { 110 165 150 }
+	color_ui = rgb { 110 165 150 }
+}
+DAH = {
+	color = rgb { 110 160 170 }
+	color_ui = rgb { 110 160 170 }
+}
+ARO = {
+	color = rgb { 175 200 115 }
+	color_ui = rgb { 175 200 115 }
+}
+LUN = {
+	color = rgb { 210 155 210 }
+	color_ui = rgb { 210 155 210 }
+}
+KZM = {
+	color = rgb { 165 40 40 }
+	color_ui = rgb { 165 40 40 }
+}
+
+
 
 
 

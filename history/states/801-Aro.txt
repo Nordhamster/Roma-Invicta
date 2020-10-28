@@ -1,0 +1,17 @@
+state={
+	id=801
+	name="STATE_801"
+	
+	history={
+		owner = ARO
+		add_core_of = ARO
+
+	}
+
+	provinces={
+		6039 8034 10831 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

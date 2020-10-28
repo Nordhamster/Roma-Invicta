@@ -6,7 +6,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = KAN
+		owner = RME
 		add_core_of = KAN
 		buildings = {
 			infrastructure = 0

@@ -5,7 +5,7 @@ state={
 
 	history={
 		add_core_of = EGY
-		owner = EGY
+		owner = RME
 		buildings = {
 			infrastructure = 0
 
@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		7987 8103 10900 
+		7987 
 	}
 	manpower=8143
 	buildings_max_level_factor=1.000

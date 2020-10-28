@@ -4,8 +4,8 @@ state={
 	name="STATE_768"
 
 	history={
-		owner = BAN
-		add_core_of = BAN
+		owner = BUG
+		add_core_of = BUG
 		victory_points = {
 			9962 1 
 		}

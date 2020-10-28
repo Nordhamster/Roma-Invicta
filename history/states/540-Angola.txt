@@ -7,8 +7,7 @@ state={
 	}
 
 	history={
-		owner = BAN
-		add_core_of = BAN
+		owner = ENG
 		buildings = {
 			infrastructure = 2
 			8248 = {
