@@ -1,0 +1,15 @@
+state={
+	id=808
+	name="STATE_808"
+	history={
+		add_core_of = CAM
+		owner = SIA
+
+	}
+	provinces={
+		1353 4251 4302 10134 10177 10467 12460 
+	}
+	manpower=1504000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

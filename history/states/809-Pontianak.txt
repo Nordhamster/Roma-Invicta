@@ -1,0 +1,30 @@
+state={
+	id=809
+	name="STATE_809"
+	resources={
+		rubber=15.000
+	}
+	
+	history={
+		owner = CTL
+		add_core_of = CTL
+		victory_points = {
+			10237 1 
+		}
+		buildings = {
+			infrastructure = 3
+			1316 = {
+				naval_base = 1
+				industrial_complex = 1
+			}
+
+		}
+
+	}
+	provinces={
+		1230 1304 1316 4279 12129 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

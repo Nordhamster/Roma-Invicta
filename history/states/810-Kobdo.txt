@@ -1,0 +1,19 @@
+state={
+	id=810
+	name="STATE_810"
+	history={
+		owner = QNG
+		add_core_of = MON
+		
+		victory_points = {
+			10539 1
+		}
+
+	}
+	provinces={
+		1749 1774 4751 4823 4849 7693 7737 7808 7843 7870 10539 12427 12520
+	}
+	manpower=103000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

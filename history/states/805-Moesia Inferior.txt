@@ -1,0 +1,32 @@
+state={
+	id=805
+	name="STATE_805"
+	manpower = 1218780
+
+	state_category=rural
+
+	history={
+		owner = RME
+		victory_points = { #Dorostorum
+			9612 3
+		}
+		victory_points = { #Novae
+			3796 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex =1
+
+		}
+		add_core_of = RME
+		add_core_of = MOE
+
+	}
+
+	provinces={
+		793 965 3796 9610 9612 9771 11754 11868
+	}
+#	resources={
+#		oil=1
+#	}
+}

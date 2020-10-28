@@ -1,0 +1,26 @@
+
+state={
+	id=806
+	name="STATE_806"
+
+	history={
+		victory_points = {
+			11857 1 
+		}
+		owner = RME
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = RME
+		add_core_of = MOE
+
+	}
+
+	provinces={
+		6940 9874 11832 11857 11868 
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
