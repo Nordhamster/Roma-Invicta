@@ -1,6 +1,6 @@
 RME = "countries/Rome.txt"
 BRT = "countries/Brittany.txt"
-GER = "countries/CoGP.txt"
+GER = "countries/Germania.txt"
 SLV = "countries/Slavia.txt"
 POM = "countries/Pomerania.txt"
 BOH = "countries/Bohemia.txt"
@@ -107,6 +107,9 @@ DAH = "Dahomey.txt"
 ARO = "Aro.txt"
 LUN = "Lunda.txt"
 KZM = "Kazembe.txt"
+BRU = "Brunei.txt"
+MAL = "Malacca.txt"
+TER = "Ternate.txt"
 
 #Releasables, Seperatists etc...
 CHI = "countries/China.txt" #Kuomintang Government

@@ -505,6 +505,18 @@ KZM = {
 	color = rgb { 165 40 40 }
 	color_ui = rgb { 165 40 40 }
 }
+BRU = {
+	color = rgb { 250 255 0 }
+	color_ui = rgb { 250 255 0 }
+}
+MAL = {
+	color = rgb { 30 30 110 }
+	color_ui = rgb { 30 30 110 }
+}
+TER = {
+	color = rgb { 55 165 15 }
+	color_ui = rgb { 55 165 15 }
+}
 
 
 

@@ -7,19 +7,20 @@ state={
 		victory_points = {
 			1910 1 
 		}
-		owner = SIK
+		owner = QNG
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = SIK
+		add_core_of = TIB
+		add_claim_by = SIK
 
 	}
 
 	provinces={
-		1910 2041 2084 
+		2041 5042 7273 8005 10821 12884 
 	}
-	manpower=1415800
+	manpower=415800
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

@@ -24,6 +24,7 @@ state= {
 		}
 		add_core_of = RME
 		add_core_of = ANA
+		add_core_of = THR
 	}
 	provinces=
 	{
